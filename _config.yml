@@ -1,0 +1,14 @@
+url: ""
+name: ADFINITAS Care Petition
+logo: "../lib/img/logo.png"
+permalink: "/:title"
+encoding: UTF-8
+woopra_id: carefrance.org
+email_test: "tech2@adfinitas.fr"
+collections:
+  petition:
+    output: true
+    permalink: /form/:title/
+  thanks:
+    output: true
+    permalink: /thanks/:title.html
