@@ -1,4 +1,4 @@
-url: ""
+url: lib
 name: ADFINITAS Care Petition
 logo: lib/img/logo.png
 permalink: "/:title"
