@@ -6,7 +6,7 @@ encoding: UTF-8
 woopra_id: carefrance.org
 email_test: "tech2@adfinitas.fr"
 collections:
-  petition:
+  petitions:
     output: true
     permalink: "/form/:title/"
   thanks:
