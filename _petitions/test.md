@@ -1,18 +1,18 @@
 ---
-title: ""
+title: lolololo
 contenu_petition:
   header:
-    titre: ""
+    titre: "test j'essaye"
     introduction: ""
     image_path: ""
   formulaire:
     introduction_formulaire: ""
     phrase_telephone: ""
     config_form:
-      nb_signataires:
+      nb_signataires: ""
       civility:
         visibility: false
-        required: false
+        required: true
       firstname:
         visibility: true
         required: false
@@ -23,7 +23,7 @@ contenu_petition:
         visibility: true
         required: true
       content:
-        titre:
+        titre: ""
   footer:
     titre: ""
     introduction: ""
