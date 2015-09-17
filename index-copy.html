@@ -17,6 +17,12 @@ introduction: blblablalalalalalalalalalalalalla
 		<script src="{{site.url}}/js/vendor/modernizr.js"></script>
 	</head>
 	<body>
+	    <ul class="staff">
+  {% for petition in site.petition %}
+    <li><a href="/form/{{petition.title}}/">/form/{{petition.title}}/</a></li>
+  {% endfor %}
+</div>
+
 		<div class="row full-width bg1">
 			<div class="row">
 				<div class="small-12 columns">
