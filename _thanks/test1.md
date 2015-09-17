@@ -1,33 +1,33 @@
 ---
 meta:
-  title: null
-  description: null
-  keywords: null
+  title: ""
+  description: ""
+  keywords: ""
 contenu:
   header:
-    image_path: null
+    image_path: ""
   equivalences:
-    //cid_iraiser: null
-    titre: null
-    introduction: null
+    //cid_iraiser: ""
+    titre: ""
+    introduction: ""
     activate_boutons_sociaux: true / false
     equivalence1:
-      montant: null
-      deduction: null
-      contenu: null
+      montant: ""
+      deduction: ""
+      contenu: ""
     equivalence2:
-      montant: null
-      deduction: null
-      contenu: null
+      montant: ""
+      deduction: ""
+      contenu: ""
     equivalence3:
-      montant: null
-      deduction: null
-      contenu: null
+      montant: ""
+      deduction: ""
+      contenu: ""
   footer:
-    titre: null
-    introduction: null
+    titre: ""
+    introduction: ""
     contenu:
-      left: null
-      mid: null
-      right: null
+      left: ""
+      mid: ""
+      right: ""
 ---
