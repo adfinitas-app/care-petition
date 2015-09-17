@@ -1,6 +1,6 @@
 url: "static"
 name: ADFINITAS Care Petition
-logo: lib/img/logo.png
+logo: static/img/logo.png
 permalink: "/:title"
 encoding: UTF-8
 woopra_id: carefrance.org
