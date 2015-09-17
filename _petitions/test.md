@@ -19,8 +19,7 @@ contenu_petition:
       phone:
         visibility: true
         required: true
-      content:
-        titre: "TITRE DE LA PÉTITION"
+    titre: "TITRE DE LA PÉTITION"
   footer:
     titre: "CARE se mobilise"
     introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté
