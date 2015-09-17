@@ -43,7 +43,7 @@
 					</div>
 
 					<form class="custom" action="index.html" method="post">
-						{% if page.contenu_petition.formulaire.config_form.lastname == false %}
+						{% if page.contenu_petition.formulaire.config_form.lastname.visibility == true %}
 						<div class="row">
 							<div class="medium-offset-2 medium-2 columns medium-text-right">
 								<label for="form-lastname" class="control-label" >Nom*</label>
@@ -53,7 +53,7 @@
 							</div>
 						</div>
 						{% endif %}
-						{% if page.contenu_petition.formulaire.config_form.firstname == true %}
+						{% if page.contenu_petition.formulaire.config_form.firstname.visibility == true %}
 						<div class="row">
 							<div class="medium-offset-2 medium-2 columns medium-text-right">
 								<label for="form-firstname" class="control-label">Prénom*</label>
@@ -80,7 +80,7 @@
 								</div>
 							</div>
 						</div>
-						{% if page.contenu_petition.formulaire.config_form.phone == true %}
+						{% if page.contenu_petition.formulaire.config_form.phone.visibility == true %}
 						<div class="row">
 							<div class="medium-offset-2 medium-2 columns medium-text-right">
 								<label for="form-phone" class="control-label">Téléphone*</label>
