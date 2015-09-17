@@ -1,5 +1,6 @@
 ---
 title: "1"
+image:
 contenu_petition:
   header:
     titre: "test j'essaye"
