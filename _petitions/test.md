@@ -22,12 +22,13 @@ contenu_petition:
       content:
         titre: "TITRE DE LA PÉTITION"
   footer:
-    titre: ""
-    introduction: ""
+    titre: "CARE se mobilise"
+    introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté
+et aux conséquences du changement climatique"
     contenu:
-      left: ""
-      mid: ""
-      right: ""
+      left: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+      mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+      right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
 ---
 Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsamende sit pelia dolorem con consequam dolupta tquaernati beriscidus et aut es uta consectecusa ventem volora consequid et voluptati tem velent endi berestrum volupta tibusam ipis et pro voloren delitius, te sum fugiatu reriossi doluptatur arum eseria audaecabo. Nequi ipsandem doles prate vid molut aut voluptatur ?
 
