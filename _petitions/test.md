@@ -21,12 +21,12 @@ contenu_petition:
         required: true
     content:
       titre: TITRE DE LA PÉTITION
-  footer:
-    titre: TITRE FOOTER
-    introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté et aux conséquences du changement climatique"
-    contenu:
-      left: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
-      mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
-      right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+footer:
+  titre: TITRE FOOTER
+  introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté et aux conséquences du changement climatique"
+  contenu:
+    left: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+    mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+    right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
 ---
 Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum et ipsandese aut aut ium quodio. Itas exped entiurescim expeles et que ped quae nonsedit porro voles a consed quae endam atint vendercipsam faccae maximi, sunt quo officto bla cusdam di cusa ea simoloribus debis eatis eaquae ex estia por as non esequia quo evendae cepratatiur a pore cusant ut min ped moluptia dero bererup tatecesti volorum faccae voluptatum volum ipit volupta simus, cus, omnis sitaquas es quis que deliqui omniendelit untum fugiation num eos.
