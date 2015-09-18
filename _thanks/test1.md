@@ -1,6 +1,6 @@
 ---
 meta:
-  title: Merci
+  title: merci
   description: Page de remerciment
   keywords: "merci, care, petition"
 contenu:
