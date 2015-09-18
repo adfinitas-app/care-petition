@@ -6,10 +6,10 @@ meta:
 contenu:
   header:
     image_path: /static/img/bg4.jpg
-  equivalences:
-    cid_iraiser: ""
     titre: "MERCI !"
     introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
+  equivalences:
+    cid_iraiser: ""
     activate_boutons_sociaux: true
     equivalence1:
       montant: "15"
