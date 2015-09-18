@@ -10,7 +10,7 @@ contenu:
     //cid_iraiser: ""
     titre: ""
     introduction: ""
-    activate_boutons_sociaux: true / false
+    activate_boutons_sociaux: true
     equivalence1:
       montant: ""
       deduction: ""
