@@ -44,14 +44,25 @@
 
 					<form class="custom" action="index.html" method="post">
 						{% if page.contenu_petition.formulaire.config_form.lastname.visibility == true %}
-						<div class="row">
-							<div class="medium-offset-2 medium-2 columns medium-text-right">
-								<label for="form-lastname" class="control-label" >Nom*</label>
-							</div>
-							<div class="medium-5 columns end">
-								<input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname" required aria-required="true" data-msg-required="Entrez votre nom"/>
-							</div>
-						</div>
+    						{% if page.contenu_petition.formulaire.config_form.lastname.required == true %}
+    						<div class="row">
+    							<div class="medium-offset-2 medium-2 columns medium-text-right">
+    								<label for="form-lastname" class="control-label" >Nom*</label>
+    							</div>
+    							<div class="medium-5 columns end">
+    								<input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname" required aria-required="true" data-msg-required="Entrez votre nom"/>
+    							</div>
+    						</div>
+                            {% else %}
+    						<div class="row">
+    							<div class="medium-offset-2 medium-2 columns medium-text-right">
+    								<label for="form-lastname" class="control-label" >Nom*</label>
+    							</div>
+    							<div class="medium-5 columns end">
+    								<input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname"/>
+    							</div>
+    						</div>
+    						{% endif %}
 						{% endif %}
 						{% if page.contenu_petition.formulaire.config_form.firstname.visibility == true %}
 						<div class="row">
