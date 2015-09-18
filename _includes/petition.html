@@ -56,7 +56,7 @@
                             {% else %}
     						<div class="row">
     							<div class="medium-offset-2 medium-2 columns medium-text-right">
-    								<label for="form-lastname" class="control-label" >Nom*</label>
+    								<label for="form-lastname" class="control-label" >Nom</label>
     							</div>
     							<div class="medium-5 columns end">
     								<input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname"/>
@@ -65,14 +65,25 @@
     						{% endif %}
 						{% endif %}
 						{% if page.contenu_petition.formulaire.config_form.firstname.visibility == true %}
-						<div class="row">
-							<div class="medium-offset-2 medium-2 columns medium-text-right">
-								<label for="form-firstname" class="control-label">Prénom*</label>
-							</div>
-							<div class="medium-5 columns end">
-								<input type="text" placeholder="Prénom" class="form-control" name="firstname" id="form-firstname" required aria-required="true" data-msg-required="Entrez votre prénom"/>
-							</div>
-						</div>
+    						{% if page.contenu_petition.formulaire.config_form.firstname.required == true %}
+    						<div class="row">
+    							<div class="medium-offset-2 medium-2 columns medium-text-right">
+    								<label for="form-firstname" class="control-label">Prénom*</label>
+    							</div>
+    							<div class="medium-5 columns end">
+    								<input type="text" placeholder="Prénom" class="form-control" name="firstname" id="form-firstname" required aria-required="true" data-msg-required="Entrez votre prénom"/>
+    							</div>
+    						</div>
+                            {% else %}
+    						<div class="row">
+    							<div class="medium-offset-2 medium-2 columns medium-text-right">
+    								<label for="form-firstname" class="control-label">Prénom</label>
+    							</div>
+    							<div class="medium-5 columns end">
+    								<input type="text" placeholder="Prénom" class="form-control" name="firstname" id="form-firstname"/>
+    							</div>
+    						</div>
+    						{% endif %}
 						{% endif %}
 						<div class="row">
 							<div class="medium-offset-2 medium-2 columns medium-text-right">
@@ -92,16 +103,29 @@
 							</div>
 						</div>
 						{% if page.contenu_petition.formulaire.config_form.phone.visibility == true %}
-						<div class="row">
-							<div class="medium-offset-2 medium-2 columns medium-text-right">
-								<label for="form-phone" class="control-label">Téléphone*</label>
-							</div>
-							<div class="medium-5 columns end">
-								<input type="tel" class="form-control" name="phone" id="form-phone" required aria-required="true" data-msg-required="Entrez votre téléphone"/>
-                                <!--<p id="phone-error" class="hide">Numéro incorrect</p>-->
-                                <!--<p id="phone-ok" class="hide">Numéro valide</p>-->
-							</div>
-						</div>
+    						{% if page.contenu_petition.formulaire.config_form.phone.required == true %}
+    						<div class="row">
+    							<div class="medium-offset-2 medium-2 columns medium-text-right">
+    								<label for="form-phone" class="control-label">Téléphone*</label>
+    							</div>
+    							<div class="medium-5 columns end">
+    								<input type="tel" class="form-control" name="phone" id="form-phone" required aria-required="true" data-msg-required="Entrez votre téléphone"/>
+                                    <!--<p id="phone-error" class="hide">Numéro incorrect</p>-->
+                                    <!--<p id="phone-ok" class="hide">Numéro valide</p>-->
+    							</div>
+    						</div>
+                            {% else %}
+    						<div class="row">
+    							<div class="medium-offset-2 medium-2 columns medium-text-right">
+    								<label for="form-phone" class="control-label">Téléphone</label>
+    							</div>
+    							<div class="medium-5 columns end">
+    								<input type="tel" class="form-control" name="phone" id="form-phone"/>
+                                    <!--<p id="phone-error" class="hide">Numéro incorrect</p>-->
+                                    <!--<p id="phone-ok" class="hide">Numéro valide</p>-->
+    							</div>
+    						</div>
+       						{% endif %}
 						{% endif %}
 						<div class="form-text text-center">
 							{{page.contenu_petition.formulaire.phrase_telephone}}
