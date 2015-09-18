@@ -23,12 +23,12 @@ contenu:
       montant: "45"
       deduction: xx
       contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
-  footer:
-    titre: CARE se mobilise
-    introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté et aux conséquences du changement climatique"
-    contenu:
-      left: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
-      mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
-      right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+footer:
+  titre: TITRE FOOTER
+  introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté et aux conséquences du changement climatique"
+  contenu:
+    left: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+    mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+    right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
 ---
 Pour aller plus loin avec CARE France
