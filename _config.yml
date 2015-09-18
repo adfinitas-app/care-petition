@@ -12,10 +12,3 @@ collections:
   thanks:
     output: true
     permalink: "/thanks/:title.html"
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "petitions"
-    values:
-      layout: "petition"
