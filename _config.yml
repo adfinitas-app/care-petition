@@ -11,7 +11,7 @@ collections:
     permalink: "/form/:title/"
   thanks:
     output: true
-    permalink: "/thanks/:title.html"
+    permalink: "/thanks/:title/"
 defaults:
   -
     scope:
@@ -21,7 +21,7 @@ defaults:
       layout: "merci"
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: ""
       type: "petitions"
     values:
       layout: "petition"
