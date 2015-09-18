@@ -19,3 +19,9 @@ defaults:
       type: "petitions"
     values:
       layout: "petition"
+  -
+    scope:
+      path: ""
+      type: "thanks"
+    values:
+      layout: "merci"
