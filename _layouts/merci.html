@@ -6,9 +6,9 @@
 		<title>{{page.meta.title}}</title>
 		<meta name="description" content="{{page.meta.description}}" />
 		<meta name="keywords" content="{{page.meta.keywords}}">
-		<link rel="stylesheet" href="{{site.url}}/css/foundation.css" />
-		<link rel="stylesheet" href="{{site.url}}/css/custom.css" />
-		<script src="{{site.url}}/js/vendor/modernizr.js"></script>
+		<link rel="stylesheet" href="/static/css/foundation.css" />
+		<link rel="stylesheet" href="{/static/css/custom.css" />
+		<script src="/static/js/vendor/modernizr.js"></script>
 	    {% include woopra.html %}
 	</head>
 	<body>
@@ -39,14 +39,14 @@
 					</div>
 
 					<div class="social text-center">
-						<a href="#" class="social-link"><img src="{{site.url}}/img/logo_fb2.png" onmouseover="this.src = '{{site.url}}/img/logo_fb2_on.png';" onmouseout="this.src = '{{site.url}}/img/logo_fb2.png';" /></a>
-						<a href="#" class="social-link"><img src="{{site.url}}/img/logo_tw2.png" onmouseover="this.src = '{{site.url}}/img/logo_tw2_on.png';" onmouseout="this.src = '{{site.url}}/img/logo_tw2.png';" /></a>
-						<a href="#" class="social-link"><img src="{{site.url}}/img/logo_gp2.png" onmouseover="this.src = '{{site.url}}/img/logo_gp2_on.png';" onmouseout="this.src = '{{site.url}}/img/logo_gp2.png';" /></a>
+						<a href="#" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
+						<a href="#" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+						<a href="#" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
 					</div>
 					{% endif %}
 					<div class="text semibold text-center">
 						Je soutiens CARE France<br />
-						<a href="#" class="parallelogram red btn-don"><span>Je fais un don <img src="{{site.url}}/img/arrow_don.png" /></span></a>
+						<a href="#" class="parallelogram red btn-don"><span>Je fais un don <img src="/static/img/arrow_don.png" /></span></a>
 					</div>
 
 					<div class="medium-4 columns don">
@@ -61,7 +61,7 @@
 							{{page.contenu.equivalances.equivalance1.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="{{site.url}}/img/arrow_don.png" /></span></a>
+							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
 					<div class="medium-4 columns don">
@@ -76,7 +76,7 @@
 							{{page.contenu.equivalances.equivalance2.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="{{site.url}}/img/arrow_don.png" /></span></a>
+							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
 					<div class="medium-4 columns don">
@@ -91,7 +91,7 @@
 							{{page.contenu.equivalances.equivalance3.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="{{site.url}}/img/arrow_don.png" /></span></a>
+							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
 				</div>
@@ -100,9 +100,9 @@
 
         {% include footer.html %}
 
-		<script src="{{site.url}}/js/vendor/jquery.js"></script>
-		<script src="{{site.url}}/js/foundation.min.js"></script>
-		<script src="{{site.url}}/js/custom.js"></script>
+		<script src="/static/js/vendor/jquery.js"></script>
+		<script src="/static/js/foundation.min.js"></script>
+		<script src="/static/js/custom.js"></script>
 		<script>
 			$(document).foundation();
 		</script>
