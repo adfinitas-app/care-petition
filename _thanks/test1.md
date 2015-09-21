@@ -20,7 +20,7 @@ contenu:
     link: "#"
   equivalences:
     activate_boutons_sociaux: true
-    show: true
+    show: false
     equivalence1:
       montant: "15"
       deduction: xx
