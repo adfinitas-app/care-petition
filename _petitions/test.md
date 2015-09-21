@@ -30,6 +30,7 @@ contenu_petition:
     button: Je signe la pétition
     titre: TITRE DE LA PÉTITION
 footer:
+  image_path: /static/img/bg3.jpg
   titre: TITRE FOOTER
   introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté et aux conséquences du changement climatique"
   contenu:
