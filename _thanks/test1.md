@@ -15,12 +15,12 @@ contenu:
     gp_link: "#"
     text_don: "Je soutient care france "
   don_simple:
-    visibility: true
+    visibility: false
     button: "Je fais un don "
     link: "#"
   equivalences:
     activate_boutons_sociaux: true
-    show: false
+    show: true
     equivalence1:
       montant: "15"
       deduction: xx
