@@ -50,7 +50,7 @@
 						<a href="{{page.contenu.header.don_simple.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
 					{% endif %}
 					</div>
-
+					{% if page.contenu.equivalences.show == true %}
 					<div class="medium-4 columns don">
 						<div class="price text-center">
 							{{page.contenu.equivalences.equivalence1.montant}}<sup>€</sup>
@@ -96,6 +96,7 @@
 							<a href="{{page.contenu.equivalences.equivalence3.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.button}}<img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
+					{% endif %}
 				</div>
 			</div>
 		</div>
