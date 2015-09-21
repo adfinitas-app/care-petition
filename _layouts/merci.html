@@ -39,14 +39,14 @@
 					</div>
 
 					<div class="social text-center">
-						<a href="#" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
-						<a href="#" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
-						<a href="#" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
+						<a href="{{page.contenu.header.fb_link}}" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
+						<a href="{{page.contenu.header.tw_link}}" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+						<a href="{{page.contenu.header.gp_link}}" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
 					</div>
 					{% endif %}
 					<div class="text semibold text-center">
-						Je soutiens CARE France<br />
-						<a href="#" class="parallelogram red btn-don"><span>Je fais un don <img src="/static/img/arrow_don.png" /></span></a>
+						{{page.contenu.header.text_don}}<br />
+						<a href="{{page.contenu.header.don_simple.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
 					</div>
 
 					<div class="medium-4 columns don">
