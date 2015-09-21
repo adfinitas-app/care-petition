@@ -15,6 +15,7 @@ contenu:
   don_simple:
     visibility: true
     button: Je fais un don
+    link: "#"
   equivalences:
     activate_boutons_sociaux: true
     equivalence1:
