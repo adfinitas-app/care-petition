@@ -13,10 +13,10 @@ contenu:
     fb_link: "#"
     tw_link: "#"
     gp_link: "#"
-    text_don: Je soutient care france
+    text_don: "Je soutient care france "
   don_simple:
     visibility: true
-    button: Je fais un don 
+    button: "Je fais un don "
     link: "#"
   equivalences:
     activate_boutons_sociaux: true
