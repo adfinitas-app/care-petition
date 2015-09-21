@@ -27,6 +27,7 @@ contenu_petition:
         required: true
       radio:
         visibility: false
+    button: Je signe la pétition
     titre: TITRE DE LA PÉTITION
 footer:
   titre: TITRE FOOTER
