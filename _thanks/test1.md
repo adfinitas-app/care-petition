@@ -11,7 +11,7 @@ contenu:
     fb_link: "#"
     tw_link: "#"
     gp_link: "#"
-    text_don
+    text_don: Je soutiens CARE France
   don_simple:
     visibility: true
   equivalences:
