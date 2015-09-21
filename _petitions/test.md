@@ -7,7 +7,8 @@ contenu_petition:
     image_path: /static/img/bg1.jpg
     image2_path: /static/img/bg2.jpg
   formulaire:
-    bg: f89e1e
+    bg1: f89e1e
+    bg2: aa1b4f
     introduction_formulaire: "Texte d'introduction à la pétition et phrase de mobilisation pour donner envie de signer la pétition en 3 ou 4 lignes. Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint ea dis et vent etur se conessit volorae perio."
     phrase_telephone: "En laissant mon numéro, j'accepte que CARE France me contacte pour m'informer de ses programmes en faveur des femmes."
     config_form:
