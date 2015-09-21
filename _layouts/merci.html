@@ -46,8 +46,8 @@
 					{% endif %}
 					<div class="text semibold text-center">
 						{{page.contenu.header.text_don}}<br />
-					{% if page.contenu.header.don_simple.visibility == true %}
-						<a href="{{page.contenu.header.don_simple.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
+					{% if page.contenu.don_simple.visibility == true %}
+						<a href="{{page.contenu.don_simple.link}}" class="parallelogram red btn-don"><span>{{page.contenu.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
 					{% endif %}
 					</div>
 					{% if page.contenu.equivalences.show == true %}
