@@ -27,7 +27,7 @@ contenu_petition:
         required: true
       radio:
         visibility: false
-    button: Je signe la pétition
+    button: Je signe
     titre: TITRE DE LA PÉTITION
 footer:
   image_path: /static/img/bg3.jpg
