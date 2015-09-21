@@ -46,7 +46,9 @@
 					{% endif %}
 					<div class="text semibold text-center">
 						{{page.contenu.header.text_don}}<br />
+					{% if page.contenu.header.don_simple.visibility == true %}
 						<a href="{{page.contenu.header.don_simple.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
+					{% endif %}
 					</div>
 
 					<div class="medium-4 columns don">
@@ -54,7 +56,7 @@
 							{{page.contenu.equivalences.equivalence1.montant}}<sup>€</sup>
 						</div>
 						<div class="price-after text-center">
-							<span class="price2">{{page.contenu.equivalences.equivalence1.deduction}}<sup>€</sup></span><br />
+							<span class="price2" id="reduc1">{{page.contenu.equivalences.equivalence1.deduction}}<sup>€</sup></span><br />
 							après déduction fiscale
 						</div>
 						<div class="text text-center">
@@ -69,7 +71,7 @@
 							{{page.contenu.equivalences.equivalence2.montant}}<sup>€</sup>
 						</div>
 						<div class="price-after text-center">
-							<span class="price2">{{page.contenu.equivalences.equivalence2.deduction}}<sup>€</sup></span><br />
+							<span class="price2" id="reduc2">{{page.contenu.equivalences.equivalence2.deduction}}<sup>€</sup></span><br />
 							après déduction fiscale
 						</div>
 						<div class="text text-center">
@@ -84,7 +86,7 @@
 							{{page.contenu.equivalences.equivalence3.montant}}<sup>€</sup>
 						</div>
 						<div class="price-after text-center">
-							<span class="price2">{{page.contenu.equivalences.equivelance3.deduction}}<sup>€</sup></span><br />
+							<span class="price2" id="reduc3">{{page.contenu.equivalences.equivelence3.deduction}}<sup>€</sup></span><br />
 							après déduction fiscale
 						</div>
 						<div class="text text-center">
