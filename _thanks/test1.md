@@ -11,6 +11,9 @@ contenu:
     fb_link: "#"
     tw_link: "#"
     gp_link: "#"
+    text_don
+  don_simple:
+    visibility: true
   equivalences:
     activate_boutons_sociaux: true
     equivalence1:
