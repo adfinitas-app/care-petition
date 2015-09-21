@@ -19,6 +19,8 @@ contenu_petition:
       phone:
         visibility: true
         required: true
+      radio:
+        visibility: false
     titre: TITRE DE LA PÉTITION
 footer:
   titre: TITRE FOOTER
