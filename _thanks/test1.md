@@ -8,6 +8,7 @@ contenu:
     image_path: /static/img/bg4.jpg
     titre: "MERCI !"
     button: Je donne
+    image_path: /static/img/bg4.jpg
     introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
     fb_link: "#"
     tw_link: "#"
