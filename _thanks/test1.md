@@ -12,7 +12,6 @@ contenu:
     tw_link: "#"
     gp_link: "#"
   equivalences:
-    cid_iraiser: ""
     activate_boutons_sociaux: true
     equivalence1:
       montant: "15"
