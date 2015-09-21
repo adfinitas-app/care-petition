@@ -17,9 +17,9 @@
 
 						<div>
 							<div class="inline-block">
-								<a href="#" class="parallelogram red"><span>Je signe la pétition</span></a>
+								<a href="#sign" class="parallelogram red"><span>Je signe la pétition</span></a>
 							</div><div class="inline-block">
-								<a href="#" class="parallelogram orange"><span>En savoir +</span></a>
+								<a href="#info" class="parallelogram orange"><span>En savoir +</span></a>
 							</div>
 						</div>
 					</div>
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		
-		<div class="row full-width bg-yellow">
+		<div class="row full-width bg-yellow" id="sign">
 			<div class="row">
 				<div class="small-12 columns end">
 					<div class="title text-center">
@@ -93,6 +93,7 @@
 								<input type="email" placeholder="Email" class="form-control" name="email" id="form-email" data-rule-required="true" data-rule-email="true" data-msg-email="Entrez une adresse email valide" data-msg-required="Entrez votre email"/>
 							</div>
 						</div>
+						{% if page.contenu_petition.formulaire.config_form.radio.visibility == true %}
 						<div class="row">
 							<div class="medium-offset-4 medium-7 columns end">
 								<div class="checkbox">
@@ -102,6 +103,7 @@
 								</div>
 							</div>
 						</div>
+						{% endif %}
 						{% if page.contenu_petition.formulaire.config_form.phone.visibility == true %}
     						{% if page.contenu_petition.formulaire.config_form.phone.required == true %}
     						<div class="row">
@@ -132,7 +134,7 @@
 						</div>
 						<div class="row">
 							<div class="medium-offset-4 medium-4 columns end text-center">
-								<button type="submit" class="btn btn-default parallelogram"><span>Je signe</span></button>
+								<button type="submit" class="btn btn-default parallelogram"><span>Je signe =========</span></button>
 							</div>
 						</div>
 						<div class="arrow text-center">
@@ -145,7 +147,7 @@
 		
 		<div class="row full-width bg2" id="bg2"></div>
 		
-		<div class="row full-width bg-beige">
+		<div class="row full-width bg-beige" id="info">
 			<div class="row">
 				<div class="small-12 columns end">
 					<div class="title text-center">
@@ -156,7 +158,7 @@
 					</div>
 
 					<div class="text-center">
-						<a href="#" class="parallelogram"><span>Je signe la pétition</span></a>
+						<a href="#" class="parallelogram"><span>Je signe la pétition ==============</span></a>
 					</div>
 				</div>
 			</div>
