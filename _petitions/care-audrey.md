@@ -31,16 +31,16 @@ contenu_petition:
     titre: "SI T'ES UN HOMME"
 footer:
   image_path: /static/img/bg3.jpg
-  titre: TITRE FOOTER
-  fb_link: "#"
-  tw_link: "#"
-  gp_link: "#"
-  site_link: "#"
-  introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté et aux conséquences du changement climatique"
+  titre: CARE SE MOBILISE
+  fb_link: "https://www.facebook.com/CARE.France"
+  tw_link: "https://twitter.com/CAREfrance"
+  gp_link: ""
+  site_link: "http://www.carefrance.org/"
+  introduction: "L’ONG CARE met les femmes au cœur de ses programmes et renforce leur autonomie en favorisant leur accès aux ressources, à l’éducation et à la santé."
   contenu:
-    left: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
-    mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
-    right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+    left: super
+    mid: trop cool
+    right: "on s'éclate !"
 ---
 Dans le monde, les femmes sont les premi&egrave;res victimes de la pauvret&eacute;, de la violence et des in&eacute;galit&eacute;s. Leurs droits sont souvent bafou&eacute;s et leurs perspectives d’avenir limit&eacute;es. Pourtant, lorsqu’elles ont le pouvoir d’agir, elles jouent un r&ocirc;le capital pour le bien-&ecirc;tre de leur famille et le d&eacute;veloppement de leur communaut&eacute;.
 
