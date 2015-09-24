@@ -7,7 +7,7 @@ contenu:
   header:
     image_path: /static/img/bg4.jpg
     titre: "MERCI !"
-    introduction: "Je soutien CARE"
+    introduction: Je soutien CARE
     bg_color: fcefcc
     activate_boutons_sociaux: true
     text_don: Je soutient care france
@@ -19,7 +19,7 @@ contenu:
     button: Je fais un don
     link: "#"
   equivalences:
-    show: false
+    show: true
     equivalence1:
       montant: "15"
       contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
@@ -45,4 +45,4 @@ footer:
     mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
     right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
 ---
-Pour aller plus loin avec CARE France
+Ceci est le main content
