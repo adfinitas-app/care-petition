@@ -8,7 +8,7 @@ contenu_petition:
     image_path: /static/img/bg1.jpg
     image2_path: /static/img/bg2.jpg
     img2:
-      visibility: true
+      visibility: false
   formulaire:
     bg1: f89e1e
     bg2: fcefcc
