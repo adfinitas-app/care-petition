@@ -19,7 +19,7 @@ contenu:
     button: Je fais un don
     link: "#"
   equivalences:
-    button: "Je donne"
+    button: Je donne
     show: true
     equivalence1:
       montant: "15"
