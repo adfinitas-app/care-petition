@@ -19,9 +19,9 @@
 				</div>
 				<div class="small-9 medium-6 columns end">
 					<h1>{{page.contenu.header.titre}}</h1>
-
+                        {{ content }}
 					<div class="text-small">
-						{{page.contenu.header.introduction}}
+						
 					</div>
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 			<div class="row">
 				<div class="small-12 columns end">
 					<div class="title2 text-center">
-						{{ content }}
+						{{page.contenu.header.introduction}}
 					</div>
 					{% if page.contenu.equivalences.activate_boutons_sociaux == true %}
 					<div class="text semibold text-center">
