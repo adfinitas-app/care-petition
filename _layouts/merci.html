@@ -67,7 +67,7 @@
 					</div>
 					<div class="medium-4 columns don">
 						<div class="price text-center">
-							{{page.contenu.equivalences.equivalence2.montant}}<sup>€</sup>
+							<span id="montant2">{{page.contenu.equivalences.equivalence2.montant}}</span><sup>€</sup>
 						</div>
 						<div class="price-after text-center">
 							<span class="price2" id="reduc2">{{page.contenu.equivalences.equivalence2.deduction}}<sup>€</sup></span><br />
@@ -82,7 +82,7 @@
 					</div>
 					<div class="medium-4 columns don">
 						<div class="price text-center">
-							{{page.contenu.equivalences.equivalence3.montant}}<sup>€</sup>
+							<span id="montant3">{{page.contenu.equivalences.equivalence3.montant}}</span><sup>€</sup>
 						</div>
 						<div class="price-after text-center">
 							<span class="price2" id="reduc3">{{page.contenu.equivalences.equivalence3.deduction}}<sup>€</sup></span><br />
@@ -125,7 +125,11 @@
         <script>
             $(function() {
               var equival1 = $( "#montant1" ).html();
-              $( "#equival1" ).text( equival1 );
+              $( "#reduc1" ).text( equival1 );
+              var equival2 = $( "#montant2" ).html();
+              $( "#reduc2" ).text( equival2 );
+              var equival3 = $( "#montant3" ).html();
+              $( "#reduc3" ).text( equival2 );
             });
         </script>
 	</body>
