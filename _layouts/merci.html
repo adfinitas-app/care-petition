@@ -125,11 +125,13 @@
         <script>
             $(function() {
               var equival1 = $( "#montant1" ).html();
-              
+              equival1 = parseInt(equival1) * 0.25;
               $( "#reduc1" ).text( equival1 );
               var equival2 = $( "#montant2" ).html();
+              equival2 = parseInt(equival1) * 0.25;
               $( "#reduc2" ).text( equival2 );
               var equival3 = $( "#montant3" ).html();
+              equival3 = parseInt(equival1) * 0.25;
               $( "#reduc3" ).text( equival2 );
             });
         </script>
