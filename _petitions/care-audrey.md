@@ -1,10 +1,10 @@
 ---
-title: Care Audrey
+title: "Si t'es un homme"
 contenu_petition:
   header:
-    titre: TITRE DE LA PÉTITION
+    titre: "Donne du pouvoir aux femmes  si t'es un homme"
     button: Je signe la pétition
-    introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
+    introduction: "Lutter contre les inégalités dans\nle monde, c'est l'affaire de tous.\nDans le monde, les femmes sont les premières victimes de la pauvreté, de la violence et des inégalités. Leurs droits sont souvent bafoués et leurs perspectives d’avenir limitées."
     image_path: /static/img/bg1.jpg
     image2_path: /static/img/bg2.jpg
     img2:
