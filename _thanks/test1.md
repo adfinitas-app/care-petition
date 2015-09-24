@@ -22,17 +22,14 @@ contenu:
     show: false
     equivalence1:
       montant: "15"
-      deduction: xx
       contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
       link: "#"
     equivalence2:
       montant: "30"
-      deduction: xx
       contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
       link: "#"
     equivalence3:
       montant: "45"
-      deduction: xx
       contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
       link: "#"
 footer:
