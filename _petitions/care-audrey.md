@@ -42,3 +42,6 @@ footer:
     mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
     right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
 ---
+Dans le monde, les femmes sont les premi&egrave;res victimes de la pauvret&eacute;, de la violence et des in&eacute;galit&eacute;s. Leurs droits sont souvent bafou&eacute;s et leurs perspectives d’avenir limit&eacute;es. Pourtant, lorsqu’elles ont le pouvoir d’agir, elles jouent un r&ocirc;le capital pour le bien-&ecirc;tre de leur famille et le d&eacute;veloppement de leur communaut&eacute;.
+
+En 2015, Les gouvernements se r&eacute;unissent &agrave; l’ONU pour prendre des engagements sur les droits des femmes et la lutte contre la pauvret&eacute;. L’ONG CARE sera pr&eacute;sente pour porter la voix de celles qui sont r&eacute;duites au silence dans le monde. Nous avons besoin de vous pour faire entendre ces revendications. Signez la p&eacute;tition !
