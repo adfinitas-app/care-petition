@@ -39,15 +39,15 @@
 					</div>
 
 					<div class="social text-center">
-						<a href="{{page.contenu.header.fb_link}}" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
-						<a href="{{page.contenu.header.tw_link}}" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
-						<a href="{{page.contenu.header.gp_link}}" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
+						<a href="{{page.contenu.header.fb_link}}" target="_blank" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
+						<a href="{{page.contenu.header.tw_link}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+						<a href="{{page.contenu.header.gp_link}}" target="_blank" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
 					</div>
 					{% endif %}
 					<div class="text semibold text-center">
 						{{page.contenu.header.text_don}}<br />
 					{% if page.contenu.don_simple.visibility == true %}
-						<a href="{{page.contenu.don_simple.link}}" class="parallelogram red btn-don"><span>{{page.contenu.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
+						<a href="{{page.contenu.don_simple.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
 					{% endif %}
 					</div>
 					{% if page.contenu.equivalences.show == true %}
@@ -63,7 +63,7 @@
 							{{page.contenu.equivalences.equivalence1.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="{{page.contenu.equivalences.equivalence1.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.button}}<img src="/static/img/arrow_don.png" /></span></a>
+							<a href="{{page.contenu.equivalences.equivalence1.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.header.button}}<img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
 					<div class="medium-4 columns don">
@@ -78,7 +78,7 @@
 							{{page.contenu.equivalences.equivalence2.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="{{page.contenu.equivalences.equivalence2.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.button}}<img src="/static/img/arrow_don.png" /></span></a>
+							<a href="{{page.contenu.equivalences.equivalence2.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.header.button}}<img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
 					<div class="medium-4 columns don">
@@ -93,7 +93,7 @@
 							{{page.contenu.equivalences.equivalence3.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="{{page.contenu.equivalences.equivalence3.link}}" class="parallelogram red btn-don"><span>{{page.contenu.header.button}}<img src="/static/img/arrow_don.png" /></span></a>
+							<a href="{{page.contenu.equivalences.equivalence3.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.header.button}}<img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
 					{% endif %}
