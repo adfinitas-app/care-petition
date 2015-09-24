@@ -6,15 +6,14 @@ meta:
 contenu_petition:
   header:
     titre: TITRE DE LA PÉTITION
+    titre_size: 30%
     button: Je signe la pétition
     introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
     image_path: /static/img/bg1.jpg
     image2_path: /static/img/bg2.jpg
-    img2:
-      visibility: true
   formulaire:
-    bg1: f89e1e
-    bg2: fcefcc
+    bg_form: f89e1e
+    bg_petition: fcefcc
     introduction_formulaire: "Texte d'introduction à la pétition et phrase de mobilisation pour donner envie de signer la pétition en 3 ou 4 lignes. Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint ea dis et vent etur se conessit volorae perio."
     phrase_telephone: "En laissant mon numéro, j'accepte que CARE France me contacte pour m'informer de ses programmes en faveur des femmes."
     config_form:
