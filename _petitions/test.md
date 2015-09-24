@@ -1,5 +1,8 @@
 ---
-title: Care
+meta:
+  title: Care
+  description: Page de remerciment
+  keywords: "merci, care, petition"
 contenu_petition:
   header:
     titre: TITRE DE LA PÉTITION
