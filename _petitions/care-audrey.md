@@ -10,12 +10,12 @@ contenu_petition:
     img2:
       visibility: false
   formulaire:
-    bg1: f89e1e
-    bg2: fcefcc
-    introduction_formulaire: "Texte d'introduction à la pétition et phrase de mobilisation pour donner envie de signer la pétition en 3 ou 4 lignes. Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint ea dis et vent etur se conessit volorae perio."
+    bg1: 40A497
+    bg2: 83CDC3
+    introduction_formulaire: CARE implique les hommes et les garçons dans ses actions afin de changer durablement les attitudes et les pratiques sociales à l’égard des femmes et des filles lorsque leurs droits sont bafoués.
     phrase_telephone: "En laissant mon numéro, j'accepte que CARE France me contacte pour m'informer de ses programmes en faveur des femmes."
     config_form:
-      nb_signataires: "42"
+      nb_signataires: 3 000
       firstname:
         visibility: true
         required: false
@@ -26,9 +26,9 @@ contenu_petition:
         visibility: true
         required: true
       radio:
-        visibility: false
-    button: Je signe
-    titre: TITRE DE LA PÉTITION
+        visibility: true
+    button: "Je m'engage"
+    titre: "SI T'ES UN HOMME"
 footer:
   image_path: /static/img/bg3.jpg
   titre: TITRE FOOTER
