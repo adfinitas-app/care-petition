@@ -7,13 +7,13 @@ contenu:
   header:
     image_path: /static/img/bg4.jpg
     titre: "MERCI !"
+    introduction: "Je soutien CARE"
     bg_color: fcefcc
     activate_boutons_sociaux: true
-    introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
+    text_don: Je soutient care france
     fb_link: "#"
     tw_link: "#"
     gp_link: "#"
-    text_don: Je soutient care france
   don_simple:
     visibility: true
     button: Je fais un don
