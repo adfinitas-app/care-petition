@@ -19,7 +19,6 @@ contenu:
     button: Je fais un don
     link: "#"
   equivalences:
-    button: Je donne
     show: true
     equivalence1:
       montant: "15"
@@ -33,6 +32,7 @@ contenu:
       montant: "45"
       contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
       link: "#"
+    button: Je donne
 footer:
   image_path: /static/img/bg3.jpg
   titre: TITRE FOOTER
