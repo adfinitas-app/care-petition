@@ -7,8 +7,8 @@ contenu:
   header:
     image_path: /static/img/bg4.jpg
     titre: "MERCI !"
-    introduction: Je soutien CARE
     bg_color: fcefcc
+    introduction: Je soutien CARE
     activate_boutons_sociaux: true
     text_don: Je soutient care france
     fb_link: "#"
