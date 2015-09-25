@@ -1,4 +1,5 @@
 url: "static"
+url_master: ""
 name: ADFINITAS Care Petition
 logo: /static/img/logo.png
 permalink: "/:title"
