@@ -7,8 +7,8 @@ contenu_petition:
   header:
     titre: TITRE DE LA PÉTITION
     titre_size: 30%
-    button: Je signe la pétition
     introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
+    button: Je signe la pétition
     image_path: /static/img/bg1.jpg
     image2_path: /static/img/bg2.jpg
   formulaire:
