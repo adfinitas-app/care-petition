@@ -15,9 +15,9 @@ contenu:
     gp_link: "#"
   don_simple:
     visibility: true
+    text_don: Je soutient care france
     button: Je fais un don
     link: "#"
-    text_don: Je soutient care france
   equivalences:
     button: Je donne
     show: true
