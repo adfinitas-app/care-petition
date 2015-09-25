@@ -1,5 +1,5 @@
 ---
-title: "Si t'es un homme"
+title: "si-tu-es-un-homme-collection"
 contenu_petition:
   header:
     titre: "Donne du pouvoir aux femmes  si t'es un homme"
