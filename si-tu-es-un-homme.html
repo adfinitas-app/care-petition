@@ -49,11 +49,9 @@ footer:
           <a href="{{site.url_master}}" target="_blank"><img src="{{site.logo}}" /></a>
         </div>
         <div class="medium-6 end">
-          <h1 class="editable">{{page.contenu_petition.header.titre}}</h1>
+          <h1 class="editable">Donne du pouvoir aux femmes si t&#39;es un homme</h1>
 
-          <div class="text-small editable">
-          {{page.contenu_petition.header.introduction}}
-          </div>
+          <div class="text-small editable"><p>Lutter e contre les in&eacute;galit&eacute;s dans le monde, c&#39;est l&#39;affaire de tous. Dans le monde, les femmes sont les premi&egrave;res victimes de la pauvret&eacute;, de la violence et des in&eacute;galit&eacute;s. Leurs droits sont souvent bafou&eacute;s et leurs perspectives d&rsquo;avenir limit&eacute;es.</p></div>
 
           <div class="signs text-center">
             Déjà {{page.contenu_petition.formulaire.config_form.nb_signataires}} signataires
@@ -91,19 +89,19 @@ footer:
               {% if page.contenu_petition.formulaire.config_form.lastname.required == true %}
               <div class="row">
                 <div class="medium-offset-2 medium-2 columns medium-text-right">
-                  <label for="form-lastname" class="control-label" >Nom*</label>
+                  <label for="form-lastname" class="control-label">Nom*</label>
                 </div>
                 <div class="medium-5 columns end">
-                  <input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname" required aria-required="true" data-msg-required="Entrez votre nom"/>
+                  <input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname" required aria-required="true" data-msg-required="Entrez votre nom" />
                 </div>
               </div>
                           {% else %}
               <div class="row">
                 <div class="medium-offset-2 medium-2 columns medium-text-right">
-                  <label for="form-lastname" class="control-label" >Nom</label>
+                  <label for="form-lastname" class="control-label">Nom</label>
                 </div>
                 <div class="medium-5 columns end">
-                  <input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname"/>
+                  <input type="text" placeholder="Nom" class="form-control" name="lastname" id="form-lastname" />
                 </div>
               </div>
               {% endif %}
@@ -115,7 +113,7 @@ footer:
                   <label for="form-firstname" class="control-label">Prénom*</label>
                 </div>
                 <div class="medium-5 columns end">
-                  <input type="text" placeholder="Prénom" class="form-control" name="firstname" id="form-firstname" required aria-required="true" data-msg-required="Entrez votre prénom"/>
+                  <input type="text" placeholder="Prénom" class="form-control" name="firstname" id="form-firstname" required aria-required="true" data-msg-required="Entrez votre prénom" />
                 </div>
               </div>
                           {% else %}
@@ -124,7 +122,7 @@ footer:
                   <label for="form-firstname" class="control-label">Prénom</label>
                 </div>
                 <div class="medium-5 columns end">
-                  <input type="text" placeholder="Prénom" class="form-control" name="firstname" id="form-firstname"/>
+                  <input type="text" placeholder="Prénom" class="form-control" name="firstname" id="form-firstname" />
                 </div>
               </div>
               {% endif %}
@@ -134,7 +132,7 @@ footer:
               <label for="form-email" class="control-label">E-mail*</label>
             </div>
             <div class="medium-5 columns end">
-              <input type="email" placeholder="Email" class="form-control" name="email" id="form-email" data-rule-required="true" data-rule-email="true" data-msg-email="Entrez une adresse email valide" data-msg-required="Entrez votre email"/>
+              <input type="email" placeholder="Email" class="form-control" name="email" id="form-email" data-rule-required="true" data-rule-email="true" data-msg-email="Entrez une adresse email valide" data-msg-required="Entrez votre email" />
             </div>
           </div>
           {% if page.contenu_petition.formulaire.config_form.radio.visibility == true %}
@@ -142,7 +140,7 @@ footer:
             <div class="medium-offset-4 medium-7 columns end">
               <div class="checkbox">
                 <label>
-                  <input type="checkbox" name="newsletter" id="form-newsletter"> Je souhaite recevoir la newsletter de CARE FRANCE
+                  <input type="checkbox" name="newsletter" id="form-newsletter" /> Je souhaite recevoir la newsletter de CARE FRANCE
                 </label>
               </div>
             </div>
@@ -155,7 +153,7 @@ footer:
                   <label for="form-phone" class="control-label">Téléphone*</label>
                 </div>
                 <div class="medium-5 columns end">
-                  <input type="tel" class="form-control" name="phone" id="form-phone" required aria-required="true" data-msg-required="Entrez votre téléphone"/>
+                  <input type="tel" class="form-control" name="phone" id="form-phone" required aria-required="true" data-msg-required="Entrez votre téléphone" />
                                   <!--<p id="phone-error" class="hide">Numéro incorrect</p>-->
                                   <!--<p id="phone-ok" class="hide">Numéro valide</p>-->
                 </div>
@@ -166,7 +164,7 @@ footer:
                   <label for="form-phone" class="control-label">Téléphone</label>
                 </div>
                 <div class="medium-5 columns end">
-                  <input type="tel" class="form-control" name="phone" id="form-phone"/>
+                  <input type="tel" class="form-control" name="phone" id="form-phone" />
                                   <!--<p id="phone-error" class="hide">Numéro incorrect</p>-->
                                   <!--<p id="phone-ok" class="hide">Numéro valide</p>-->
                 </div>
@@ -250,7 +248,7 @@ footer:
             <a href="http://www.carefrance.org/" target="_blank"><img src="/static/img/logo-bottom.png" /></a>
           </div>
           <div class="small-6 columns text-right">
-            <a href="http://www.comitecharte.org/" target="_blank" ><img src="/static/img/logo_confiance.png" /></a>
+            <a href="http://www.comitecharte.org/" target="_blank"><img src="/static/img/logo_confiance.png" /></a>
           </div>
           <div class="small-12 columns text text-center">
             Visitez<br />
@@ -267,7 +265,7 @@ footer:
         </div>
       </div>
     </div>
-  </div>
+  
 
   <div class="footer">
     <div class="row full-width">
