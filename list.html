@@ -1,5 +1,7 @@
 ---
 ---
+---
+---
 <html class="no-js" lang="fr">
 	<head>
 		<meta charset="utf-8" />
@@ -14,7 +16,7 @@
 	<body>
 	    <ul class="staff">
   {% for petition in site.petitions %}
-    <li><a href="/form/{{petition.title}}/">/form/{{petition.title}}/</a></li>
+    <li><a href="/form/{{petition.title}}/">{{site.url}}/form/{{petition.title}}/</a></li>
   {% endfor %}
   {% for merci in site.thanks %}
     <li><a href="/thanks/{{merci.title}}/">/thanks/{{merci.title}}/</a></li>
