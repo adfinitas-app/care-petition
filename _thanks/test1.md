@@ -10,7 +10,6 @@ contenu:
     bg_color: fcefcc
     introduction: Je soutien CARE
     activate_boutons_sociaux: true
-    text_don: Je soutient care france
     fb_link: "#"
     tw_link: "#"
     gp_link: "#"
@@ -18,6 +17,7 @@ contenu:
     visibility: true
     button: Je fais un don
     link: "#"
+    text_don: Je soutient care france
   equivalences:
     button: Je donne
     show: true
