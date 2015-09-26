@@ -1,67 +1,55 @@
 ---
 layout: petition
-contenu_petition:
+background:
   header:
-    titre: "Donne du pouvoir aux femmes  si t'es un homme"
-    button: Je signe la pétition
-    introduction: "Lutter contre les inégalités dans\nle monde, c'est l'affaire de tous.\nDans le monde, les femmes sont les premières victimes de la pauvreté, de la violence et des inégalités. Leurs droits sont souvent bafoués et leurs perspectives d’avenir limitées."
-    image_path: /static/img/bg1.jpg
-    image2_path: /static/img/bg2.jpg
-    img2:
-      visibility: false
-  formulaire:
-    bg1: 40A497
-    bg2: 83CDC3
-    introduction_formulaire: CARE implique les hommes et les garçons dans ses actions afin de changer durablement les attitudes et les pratiques sociales à l’égard des femmes et des filles lorsque leurs droits sont bafoués.
-    phrase_telephone: "En laissant mon numéro, j'accepte que CARE France me contacte pour m'informer de ses programmes en faveur des femmes."
-    config_form:
-      nb_signataires: 3 000
-      firstname:
-        visibility: true
-        required: false
-      lastname:
-        visibility: true
-        required: false
-      phone:
-        visibility: true
-        required: true
-      radio:
-        visibility: true
-    button: "Je m'engage"
-    titre: "SI T'ES UN HOMME"
+    image_path: "/static/img/bg1.jpg"
+    visibility: true
+  content:
+    image_path: "/static/img/bg2.jpg"
+    visibility: true
+  footer:
+    image_path: "/static/img/bg3.jpg"
+    visibility: true
+formulaire:
+  remerciement_path: ""
+  nb_signataires: 3000
+  phrase_telephone: "En laissant mon numéro, j'accepte que CARE France me contacte pour m'informer de ses programmes en faveur des femmes."
+  config_form:
+    firstname:
+      visibility: true
+      required: false
+    lastname:
+      visibility: true
+      required: false
+    phone:
+      visibility: true
+      required: true
+    radio:
+      visibility: true
+  button: "Je m'engage"
 footer:
-  image_path: /static/img/bg3.jpg
-  titre: CARE SE MOBILISE
-  fb_link: "https://www.facebook.com/CARE.France"
-  tw_link: "https://twitter.com/CAREfrance"
-  gp_link: ""
-  site_link: "http://www.carefrance.org/"
-  introduction: "L’ONG CARE met les femmes au cœur de ses programmes et renforce leur autonomie en favorisant leur accès aux ressources, à l’éducation et à la santé."
-  contenu:
-    left: super
-    mid: trop cool
-    right: "on s'éclate !"
+  - "blabla"
 ---
-<div class="row full-width bg1" style="	background: url('{{page.contenu_petition.header.image_path}}') no-repeat top center / auto 100%;">
+<div class="row full-width bg1" {% if page.background.header.visibility %} style="background: url('{{page.background.header.image_path}}') no-repeat top center / auto 100%;" {% endif %}>
     <div class="row">
       <div class="small-12 columns">
         <div class="logo">
           <a href="{{site.url_master}}" target="_blank"><img src="{{site.logo}}" /></a>
         </div>
         <div class="medium-6 end">
-          <h1 class="editable">Donne du pouvoir aux femmes si t&#39;es un homme</h1>
+          <h1 class="editable">{{site.default_data.titre}}</h1>
 
-          <div class="text-small editable"><p>Lutter e contre les in&eacute;galit&eacute;s dans le monde, c&#39;est l&#39;affaire de tous. Dans le monde, les femmes sont les premi&egrave;res victimes de la pauvret&eacute;, de la violence et des in&eacute;galit&eacute;s. Leurs droits sont souvent bafou&eacute;s et leurs perspectives d&rsquo;avenir limit&eacute;es.</p></div>
+          <div class="text-small editable">{{site.default_data.introduction}}</div>
 
           <div class="signs text-center">
-            Déjà {{page.contenu_petition.formulaire.config_form.nb_signataires}} signataires
+            Déjà {{page.formulaire.nb_signataires}} signataires
           </div>
 
           <div>
             <div class="inline-block">
-              <a href="#sign" class="parallelogram red"><span>{{page.contenu_petition.header.button}}</span></a>
+              <a href="#sign" class="parallelogram red"><span class="editable">{{site.default_data.button_sign}}</span></a>
             </div><div class="inline-block">
-              <a href="#info" class="parallelogram orange"><span>En savoir +</span></a>
+              <a href="#info" class="parallelogram orange"><span class="editable">{{site.default_data.button_more}}</span></a>
             </div>
           </div>
         </div>
@@ -69,56 +57,51 @@ footer:
     </div>
   </div>
 
-  <div class="row full-width bg-yellow" style="background: #{{page.contenu_petition.formulaire.bg_form}};" id="sign">
+  <div class="row full-width bg-yellow" id="sign">
     <div class="row">
       <div class="small-12 columns end">
         <div class="title text-center">
-          Déjà {{page.contenu_petition.formulaire.config_form.nb_signataires}} signataires
+          Déjà {{page.formulaire.nb_signataires}} signataires
         </div>
 
-        <div class="text text-center">
-          {{page.contenu_petition.formulaire.introduction_formulaire}}
+        <div class="text text-center editable">
+          {{site.default_data.form.introduction}}
         </div>
 
-        <div class="required text-center">
-          * champs obligatoires
+        <div class="required text-center editable">
+          {{site.default_data.form.mandatory}}
         </div>
         {% include form.html %}
       </div>
     </div>
   </div>
-  <div class="row full-width bg2" id="bg2" style="background: url('{{page.contenu_petition.header.image2_path}}') no-repeat scroll center center / auto 100%;"></div>
-  <div class="row full-width bg-beige" style="background: #{{page.contenu_petition.formulaire.bg_petition}};" id="info">
+  <div class="row full-width bg2" id="bg2" {% if page.background.content.visbility %} style="background: url('{{page.contenu_petition.header.image2_path}}') no-repeat scroll center center / auto 100%;" {% endif %}></div>
+  <div class="row full-width bg-beige" id="info">
     <div class="row">
       <div class="small-12 columns end">
-        <div class="title text-center">
-          {{page.contenu_petition.formulaire.titre}}
+        <div class="title text-center editable">
+          {{ site.default_data.content.titre }}
         </div>
-        <div class="text">
-          {{ content }}
+        <div class="text editable">
+          {{ site.default_data.content.introduction }}
         </div>
 
         <div class="text-center">
-          <a href="#sign" class="parallelogram"><span>{{page.contenu_petition.header.button}}</span></a>
+          <a href="#sign" class="parallelogram"><span class="editable">{{site.default_data.button_sign}}</span></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="row full-width bg3" style="background: url('{{page.footer.image_path}}') no-repeat center center / auto 100%;">
+  <div class="row full-width bg3" {% if page.background.footer.visbility %} style="background: url('{{page.background.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
     <div class="row padding">
         <div class="small-12 columns end">
-          <div class="title text-center">{{page.footer.titre}}</div>
-          <div class="subtitle text-center">{{page.footer.introduction}}</div>
-
-          <div class="large-4 columns text text-center">
-            {{page.footer.contenu.left}}
-          </div>
-          <div class="large-4 columns text text-center">
-            {{page.footer.contenu.mid}}
-          </div>
-          <div class="large-4 columns end text text-center">
-            {{page.footer.contenu.right}}
-          </div>
+          <div class="title text-center editable">{{site.default_data.footer.titre}}</div>
+          <div class="subtitle text-center editable">{{site.default_data.footer.introduction}}</div>
+          {% for content_bloc in page.footer %}
+            <div class="large-4 columns text text-center">
+              {{ content_bloc }}
+            </div>
+            {% endfor %}
         </div>
       </div>
       <div class="overlay show-for-large-only">
@@ -128,14 +111,14 @@ footer:
           </div>
           <div class="small-4 small-offset-1 columns text text-center">
             Visitez<br />
-            <a href="{{page.footer.site_link}}" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
+            <a href="{{site.default_data.footer.site_link}}" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
           </div>
           <div class="small-4 columns text text-center">
             Suivez-nous sur<br />
             <div class="follows">
-              <a href="{{page.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
-              <a href="{{page.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
-              <a href="{{page.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
+              <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
+              <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
+              <a href="{{site.default_data.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
             </div>
           </div>
           <div class="small-2 columns text-right">
@@ -153,14 +136,14 @@ footer:
           </div>
           <div class="small-12 columns text text-center">
             Visitez<br />
-            <a href="{{page.footer.site_link}}" target="_blank" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
+            <a href="{{site.default_data.footer.site_link}}" target="_blank" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
           </div>
           <div class="small-12 columns end text text-center">
             Suivez-nous sur<br />
             <div class="follows">
-              <a href="{{page.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
-              <a href="{{page.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
-              <a href="{{page.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
+              <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
+              <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
+              <a href="{{site.default_data.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
             </div>
           </div>
         </div>
