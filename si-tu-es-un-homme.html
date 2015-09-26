@@ -28,8 +28,10 @@ formulaire:
       visibility: true
   button: "Je m'engage"
 footer:
-  - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
-  - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
+  bloc_number: 3
+  content:
+    - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
+    - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
 ---
 <div class="row full-width bg1" {% if page.background.header.visibility %} style="background: url('{{page.background.header.image_path}}') no-repeat top center / auto 100%;" {% endif %}>
     <div class="row">
@@ -90,11 +92,11 @@ footer:
         <div class="small-12 columns end">
           <div class="title text-center editable">{{ site.default_data.footer.titre}}</div>
           <div class="subtitle text-center editable">{{ site.default_data.footer.introduction}}</div>
-          {% for content_bloc in page.footer %}
-            <div class="large-4 columns text text-center editable">
-              {{ content_bloc }}
-            </div>
-            {% endfor %}
+            <ul class="small-block-grid-1 medium-block-grid-{{page.footer.bloc_number}} large-block-grid-{{page.footer.bloc_number}}">
+              {% for content_bloc in page.footer.content %}
+              <li>{{ content_bloc }}</li>
+              {% endfor %}
+            </ul>
         </div>
       </div>
       <div class="overlay show-for-large-only">
@@ -148,7 +150,7 @@ footer:
     <div class="row full-width">
       <div cass="row">
         <div class="small-12 columns end text-center">
-          <a href="http://www.adfinitas.fr">Adfinitas</a>
+          <a href="http://www.adfinitas.fr">Réalisé avec adfinitas labs</a>
         </div>
       </div>
     </div>
