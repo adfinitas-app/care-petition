@@ -2,13 +2,13 @@
 layout: petition
 background:
   header:
-    image_path: "/static/img/bg1.jpg"
+    image_path: /static/img/bg1.jpg
     visibility: true
   content:
-    image_path: "/static/img/bg2.jpg"
+    image_path: /static/img/bg2.jpg
     visibility: true
   footer:
-    image_path: "/static/img/bg3.jpg"
+    image_path: /static/img/bg3.jpg
     visibility: true
 formulaire:
   remerciement_path: ""
@@ -28,7 +28,8 @@ formulaire:
       visibility: true
   button: "Je m'engage"
 footer:
-  - "blabla"
+  - blabla
+  - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
 ---
 <div class="row full-width bg1" {% if page.background.header.visibility %} style="background: url('{{page.background.header.image_path}}') no-repeat top center / auto 100%;" {% endif %}>
     <div class="row">
@@ -37,9 +38,9 @@ footer:
           <a href="{{site.url_master}}" target="_blank"><img src="{{site.logo}}" /></a>
         </div>
         <div class="medium-6 end">
-          <h1 class="editable">{{site.default_data.titre}}</h1>
+          <h1 class="editable">Integer a nibh fringilla, suscipit.</h1>
 
-          <div class="text-small editable">{{site.default_data.introduction}}</div>
+          <div class="text-small editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p></div>
 
           <div class="signs text-center">
             Déjà {{page.formulaire.nb_signataires}} signataires
@@ -47,9 +48,9 @@ footer:
 
           <div>
             <div class="inline-block">
-              <a href="#sign" class="parallelogram red"><span class="editable">{{site.default_data.button_sign}}</span></a>
+              <a href="#sign" class="parallelogram red"><span class="editable">Je signe la pétition</span></a>
             </div><div class="inline-block">
-              <a href="#info" class="parallelogram orange"><span class="editable">{{site.default_data.button_more}}</span></a>
+              <a href="#info" class="parallelogram orange"><span class="editable">En savoir +</span></a>
             </div>
           </div>
         </div>
@@ -64,13 +65,9 @@ footer:
           Déjà {{page.formulaire.nb_signataires}} signataires
         </div>
 
-        <div class="text text-center editable">
-          {{site.default_data.form.introduction}}
-        </div>
+        <div class="text text-center editable"><p>Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam.</p></div>
 
-        <div class="required text-center editable">
-          {{site.default_data.form.mandatory}}
-        </div>
+        <div class="required text-center editable"><p>* champs obligatoires</p></div>
         {% include form.html %}
       </div>
     </div>
@@ -79,15 +76,11 @@ footer:
   <div class="row full-width bg-beige" id="info">
     <div class="row">
       <div class="small-12 columns end">
-        <div class="title text-center editable">
-          {{ site.default_data.content.titre }}
-        </div>
-        <div class="text editable">
-          {{ site.default_data.content.introduction }}
-        </div>
+        <div class="title text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
+        <div class="text editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p></div>
 
         <div class="text-center">
-          <a href="#sign" class="parallelogram"><span class="editable">{{site.default_data.button_sign}}</span></a>
+          <a href="#sign" class="parallelogram"><span class="editable">Je signe la pétition</span></a>
         </div>
       </div>
     </div>
@@ -95,8 +88,8 @@ footer:
   <div class="row full-width bg3" {% if page.background.footer.visbility %} style="background: url('{{page.background.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
     <div class="row padding">
         <div class="small-12 columns end">
-          <div class="title text-center editable">{{site.default_data.footer.titre}}</div>
-          <div class="subtitle text-center editable">{{site.default_data.footer.introduction}}</div>
+          <div class="title text-center editable"><p>CARE SE MOBILISE</p></div>
+          <div class="subtitle text-center editable"><p>L&rsquo;ONG CARE met les femmes au c&oelig;ur de ses programmes et renforce leur autonomie en favorisant leur acc&egrave;s aux ressources, &agrave; l&rsquo;&eacute;ducation et &agrave; la sant&eacute;.</p></div>
           {% for content_bloc in page.footer %}
             <div class="large-4 columns text text-center">
               {{ content_bloc }}
