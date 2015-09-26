@@ -141,6 +141,75 @@ footer:
 				</div>
 			</div>
 		</div>
+    <div class="row full-width bg3" {% if page.background.footer.visibility %} style="background: url('{{page.background.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
+      <div class="row padding">
+          <div class="small-12 columns end">
+            <div class="title text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
+            <div class="subtitle text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
+              <ul class="small-block-grid-1 medium-block-grid-{{page.footer.bloc_number}} large-block-grid-{{page.footer.bloc_number}}">
+                {% for content_bloc in page.footer.content %}
+                  <li><p>{{ content_bloc }}</p></li>
+                {% endfor %}
+              </ul>
+          </div>
+        </div>
+        <div class="overlay show-for-large-only">
+          <div class="row">
+            <div class="small-1 columns">
+              <img src="/static/img/logo-bottom.png" />
+            </div>
+            <div class="small-4 small-offset-1 columns text text-center">
+              Visitez<br />
+              <a href="{{site.default_data.footer.site_link}}" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
+            </div>
+            <div class="small-4 columns text text-center">
+              Suivez-nous sur<br />
+              <div class="follows">
+                <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
+                <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
+                <a href="{{site.default_data.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
+              </div>
+            </div>
+            <div class="small-2 columns text-right">
+              <img href="http://www.comitecharte.org/" src="/static/img/logo_confiance.png" />
+            </div>
+          </div>
+        </div>
+        <div class="overlay hide-for-large-only">
+          <div class="row">
+            <div class="small-6 columns">
+              <a href="http://www.carefrance.org/" target="_blank"><img src="/static/img/logo-bottom.png" /></a>
+            </div>
+            <div class="small-6 columns text-right">
+              <a href="http://www.comitecharte.org/" target="_blank"><img src="/static/img/logo_confiance.png" /></a>
+            </div>
+            <div class="small-12 columns text text-center">
+              Visitez<br />
+              <a href="{{site.default_data.footer.site_link}}" target="_blank" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
+            </div>
+            <div class="small-12 columns end text text-center">
+              Suivez-nous sur<br />
+              <div class="follows">
+                <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
+                <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
+                <a href="{{site.default_data.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="footer">
+      <div class="row full-width">
+        <div cass="row">
+          <div class="small-12 columns end text-center">
+            <a href="http://www.adfinitas.fr">Réalisé avec adfinitas labs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     {% include footer.html %}
 	  <script>
