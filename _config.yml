@@ -28,3 +28,7 @@ bloc_numbers:
   - 2
   - 3
   - 4
+collections:
+  posts:
+    output: true
+    permalink: "/posts/:title/"
