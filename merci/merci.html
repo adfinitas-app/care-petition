@@ -1,34 +1,53 @@
 ---
 meta:
-  title: ""
-  description: ""
-  keywords: ""
+  title: merci
+  description: Page de remerciment
+  keywords: "merci, care, petition"
 contenu:
   header:
-    image_path: ""
+    image_path: /static/img/bg4.jpg
+    titre: "MERCI !"
+    button: "Je donne "
+    bg_color: fcefcc
+    introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
+    fb_link: "#"
+    tw_link: "#"
+    gp_link: "#"
+    text_don: "Je soutient care france "
+  don_simple:
+    visibility: true
+    button: "Je fais un don "
+    link: "#"
   equivalences:
-    titre: ""
-    introduction: ""
-    activate_boutons_sociaux: true / false
+    activate_boutons_sociaux: true
+    show: false
     equivalence1:
-      montant: ""
-      deduction: ""
-      contenu: ""
+      montant: "15"
+      deduction: xx
+      contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
+      link: "#"
     equivalence2:
-      montant: ""
-      deduction: ""
-      contenu: ""
+      montant: "30"
+      deduction: xx
+      contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
+      link: "#"
     equivalence3:
-      montant: ""
-      deduction: ""
-      contenu: ""
-  footer:
-    titre: ""
-    introduction: ""
-    contenu:
-      left: ""
-      mid: ""
-      right: ""
+      montant: "45"
+      deduction: xx
+      contenu: Permet par exemple de lorem ipsum dolor sic et nunc.
+      link: "#"
+footer:
+  image_path: /static/img/bg3.jpg
+  titre: TITRE FOOTER
+  fb_link: "#"
+  tw_link: "#"
+  gp_link: "#"
+  site_link: "#"
+  introduction: "L'association internationale CARE s'attaque aux causes profondes de l'extrême pauvreté et aux conséquences du changement climatique"
+  contenu:
+    left: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+    mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
+    right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
 ---
 <!doctype html>
 <html class="no-js" lang="fr">
@@ -38,103 +57,105 @@ contenu:
 		<title>{{page.meta.title}}</title>
 		<meta name="description" content="{{page.meta.description}}" />
 		<meta name="keywords" content="{{page.meta.keywords}}">
-		<link rel="stylesheet" href="{{site.url}}/css/foundation.css" />
-		<link rel="stylesheet" href="{{site.url}}/css/custom.css" />
-		<script src="{{site.url}}/js/vendor/modernizr.js"></script>
+		<link rel="stylesheet" href="/static/css/foundation.css" />
+		<link rel="stylesheet" href="/static/css/custom.css" />
+		<script src="/static/js/vendor/modernizr.js"></script>
 	    {% include woopra.html %}
 	</head>
 	<body>
-		<div class="row full-width bg4">
+		<div class="row full-width bg4" style="background: url('{{page.contenu.header.image_path}}') no-repeat center center / auto 100%;">
 			<div class="row">
 				<div class="logo">
-					<img src="{{page.contenu.header.image_path}}" />
+					<a href="http://www.carefrance.org/" target="_blank"><img src="{{site.logo}}" /></a>
 				</div>
 				<div class="small-9 medium-6 columns end">
-					<h1>{{page.contenu.equivalances.titre}}</h1>
-
+					<h1>{{page.contenu.header.titre}}</h1>
 					<div class="text-small">
-						{{page.contenu.equivalances.introduction}}
+                        {{ content }}
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<div class="row full-width bg-beige">
+
+		<div class="row full-width bg-beige" style="background: #{{page.contenu.header.bg_color}};">
 			<div class="row">
 				<div class="small-12 columns end">
 					<div class="title2 text-center">
-						Pour aller plus loin avec CARE France
+						{{page.contenu.header.introduction}}
 					</div>
-					{% if page.contenu.equivalances.activate_boutons_sociaux == true %}
+					{% if page.contenu.header.activate_boutons_sociaux == true %}
 					<div class="text semibold text-center">
 						Je partage cette pétition sur les réseaux sociaux
 					</div>
 
 					<div class="social text-center">
-						<a href="#" class="social-link"><img src="{{site.url}}/img/logo_fb2.png" onmouseover="this.src = '{{site.url}}/img/logo_fb2_on.png';" onmouseout="this.src = '{{site.url}}/img/logo_fb2.png';" /></a>
-						<a href="#" class="social-link"><img src="{{site.url}}/img/logo_tw2.png" onmouseover="this.src = '{{site.url}}/img/logo_tw2_on.png';" onmouseout="this.src = '{{site.url}}/img/logo_tw2.png';" /></a>
-						<a href="#" class="social-link"><img src="{{site.url}}/img/logo_gp2.png" onmouseover="this.src = '{{site.url}}/img/logo_gp2_on.png';" onmouseout="this.src = '{{site.url}}/img/logo_gp2.png';" /></a>
+						<a href="{{page.contenu.header.fb_link}}" target="_blank" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
+						<a href="{{page.contenu.header.tw_link}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+						<a href="{{page.contenu.header.gp_link}}" target="_blank" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
 					</div>
 					{% endif %}
 					<div class="text semibold text-center">
-						Je soutiens CARE France<br />
-						<a href="#" class="parallelogram red btn-don"><span>Je fais un don <img src="{{site.url}}/img/arrow_don.png" /></span></a>
+						{{page.contenu.don_simple.text_don}}<br />
+					{% if page.contenu.don_simple.visibility == true %}
+						<a href="{{page.contenu.don_simple.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
+					{% endif %}
 					</div>
-
+					{% if page.contenu.equivalences.show == true %}
 					<div class="medium-4 columns don">
 						<div class="price text-center">
-							{{page.contenu.equivalances.equivalance1.montant}}<sup>€</sup>
+							<span id="montant1">{{page.contenu.equivalences.equivalence1.montant}}</span><sup>€</sup>
 						</div>
 						<div class="price-after text-center">
-							<span class="price2">{{page.contenu.equivalances.equivalance1.deduction}}<sup>€</sup></span><br />
+							<span class="price2" id="reduc1">{{page.contenu.equivalences.equivalence1.deduction}}</span><sup>€</sup><br />
 							après déduction fiscale
 						</div>
 						<div class="text text-center">
-							{{page.contenu.equivalances.equivalance1.contenu}}
+							{{page.contenu.equivalences.equivalence1.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="{{site.url}}/img/arrow_don.png" /></span></a>
-						</div>
-					</div>
-					<div class="medium-4 columns don">
-						<div class="price text-center">
-							{{page.contenu.equivalances.equivalance2.montant}}<sup>€</sup>
-						</div>
-						<div class="price-after text-center">
-							<span class="price2">{{page.contenu.equivalances.equivalance2.deduction}}<sup>€</sup></span><br />
-							après déduction fiscale
-						</div>
-						<div class="text text-center">
-							{{page.contenu.equivalances.equivalance2.contenu}}
-						</div>
-						<div class="text-center">
-							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="{{site.url}}/img/arrow_don.png" /></span></a>
+							<a href="{{page.contenu.equivalences.equivalence1.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.equivalences.button}}<img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
 					<div class="medium-4 columns don">
 						<div class="price text-center">
-							{{page.contenu.equivalances.equivalance3.montant}}<sup>€</sup>
+							<span id="montant2">{{page.contenu.equivalences.equivalence2.montant}}</span><sup>€</sup>
 						</div>
 						<div class="price-after text-center">
-							<span class="price2">{{page.contenu.equivalances.equivalance3.deduction}}<sup>€</sup></span><br />
+							<span class="price2" id="reduc2">{{page.contenu.equivalences.equivalence2.deduction}}</span><sup>€</sup><br />
 							après déduction fiscale
 						</div>
 						<div class="text text-center">
-							{{page.contenu.equivalances.equivalance3.contenu}}
+							{{page.contenu.equivalences.equivalence2.contenu}}
 						</div>
 						<div class="text-center">
-							<a href="#" class="parallelogram red btn-don"><span>Je donne <img src="{{site.url}}/img/arrow_don.png" /></span></a>
+							<a href="{{page.contenu.equivalences.equivalence2.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.equivalences.button}}<img src="/static/img/arrow_don.png" /></span></a>
 						</div>
 					</div>
+					<div class="medium-4 columns don">
+						<div class="price text-center">
+							<span id="montant3">{{page.contenu.equivalences.equivalence3.montant}}</span><sup>€</sup>
+						</div>
+						<div class="price-after text-center">
+							<span class="price2" id="reduc3">{{page.contenu.equivalences.equivalence3.deduction}}</span><sup>€</sup><br />
+							après déduction fiscale
+						</div>
+						<div class="text text-center">
+							{{page.contenu.equivalences.equivalence3.contenu}}
+						</div>
+						<div class="text-center">
+							<a href="{{page.contenu.equivalences.equivalence3.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.equivalences.button}}<img src="/static/img/arrow_don.png" /></span></a>
+						</div>
+					</div>
+					{% endif %}
 				</div>
 			</div>
 		</div>
 
         {% include footer.html %}
 
-		<script src="{{site.url}}/js/vendor/jquery.js"></script>
-		<script src="{{site.url}}/js/foundation.min.js"></script>
-		<script src="{{site.url}}/js/custom.js"></script>
+		<script src="/static/js/vendor/jquery.js"></script>
+		<script src="/static/js/foundation.min.js"></script>
+		<script src="/static/js/custom.js"></script>
 		<script>
 			$(document).foundation();
 		</script>
@@ -152,6 +173,16 @@ contenu:
 	            campagne: p['campagne']
 	            });
 	    </script>
-
+        <script>
+              var equival1 = $( "#montant1" ).html();
+              equival1 = parseInt(equival1) * 0.25;
+              $( "#reduc1" ).text( equival1 );
+              var equival2 = $( "#montant2" ).html();
+              equival2 = parseInt(equival2) * 0.25;
+              $( "#reduc2" ).text( equival2 );
+              var equival3 = $( "#montant3" ).html();
+              equival3 = parseInt(equival3) * 0.25;
+              $( "#reduc3" ).text( equival3 );
+        </script>
 	</body>
 </html>

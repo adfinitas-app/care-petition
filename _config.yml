@@ -24,6 +24,11 @@ default_data:
     fb_link: "https://www.facebook.com/CARE.France"
     tw_link: "https://twitter.com/CAREfrance"
     gp_link: ""
+bloc_number:
+  - 1
+  - 2
+  - 3
+  - 4
 collections:
   petitions:
     output: true
