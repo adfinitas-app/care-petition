@@ -7,20 +7,20 @@ contenu:
   header:
     image_path: /static/img/bg4.jpg
     titre: "MERCI !"
-    button: "Je donne "
+    button: Je donne
     bg_color: fcefcc
     introduction: "Gendamus, il int. Sed quam dipsum et illitia eperferum re plitae pellatendus exceaquatus nobitiur ? Qui con nam auta id quia nonsequo mint andebitatus as aut ea dis et vent etur se conessit volorae perio blabo. Et ressit lit ipsa mende sit pelia dolorem con consequam."
     fb_link: "#"
     tw_link: "#"
     gp_link: "#"
-    text_don: "Je soutient care france "
+    text_don: Je soutient care france
   don_simple:
     visibility: true
-    button: "Je fais un don "
+    button: Je fais un don
     link: "#"
   equivalences:
     activate_boutons_sociaux: true
-    show: false
+    show: true
     equivalence1:
       montant: "15"
       deduction: xx
@@ -49,7 +49,7 @@ footer:
     mid: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
     right: "Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum."
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="fr">
   {% include head.html %}
 	<body>
@@ -60,9 +60,7 @@ footer:
 				</div>
 				<div class="small-9 medium-6 columns end">
 					<h1 class="editable">Integer a nibh fringilla, suscipit.</h1>
-					<div class="text-small editable">
-            <p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p>
-					</div>
+					<div class="text-small editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p></div>
 				</div>
 			</div>
 		</div>
@@ -70,9 +68,7 @@ footer:
 		<div class="row full-width bg-beige" style="background: #{{page.contenu.header.bg_color}};">
 			<div class="row">
 				<div class="small-12 columns end">
-					<div class="title2 text-center editable">
-						Integer a nibh fringilla, suscipit.
-					</div>
+					<div class="title2 text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
 
 					{% if page.contenu.header.activate_boutons_sociaux == true %}
 					<div class="text semibold text-center editable">
