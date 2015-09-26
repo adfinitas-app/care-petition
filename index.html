@@ -28,7 +28,7 @@ formulaire:
       visibility: true
   button: "Je m'engage"
 footer:
-  bloc_number:
+  bloc_number: "3"
   content:
     - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
     - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
@@ -91,8 +91,8 @@ footer:
   <div class="row full-width bg3" {% if page.background.footer.visibility %} style="background: url('{{page.background.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
     <div class="row padding">
         <div class="small-12 columns end">
-          <div class="title text-center editable">{{ site.default_data.footer.titre}}</div>
-          <div class="subtitle text-center editable">{{ site.default_data.footer.introduction}}</div>
+          <div class="title text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
+          <div class="subtitle text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
             <ul class="small-block-grid-1 medium-block-grid-{{page.footer.bloc_number}} large-block-grid-{{page.footer.bloc_number}}">
               {% for content_bloc in page.footer.content %}
               <li>{{ content_bloc }}</li>
