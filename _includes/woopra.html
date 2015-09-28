@@ -5,7 +5,7 @@
     })("woopra");
     
     woopra.config({
-        domain: '{{ page.campagne_id }}'
+        domain: '{{ page.meta.campagne_id }}'
     });
     woopra.track();
 </script>
