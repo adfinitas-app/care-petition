@@ -233,5 +233,20 @@ footer:
               equival3 = parseInt(equival3) * 0.25;
               $( "#reduc3" ).text( equival3 );
         </script>
+	    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+	    <script>
+	      var fb = new Firebase("https://care-petition.firebaseio.com/");
+	      fb.child('count').transaction(function(currentValue) {
+		return (currentValue||0) + 1;
+		}, function(err, committed, snapshot){
+		if (committed){
+		  //console.log('ok ');
+		Firebase.goOffline();
+	       }
+	       else {
+		 //console.log('Error in counter ! Maybe you are hacking me ?');
+	       }
+	      });
+	    </script>
 	</body>
 </html>

@@ -4,3 +4,17 @@
     <body>
     {{content}}
     {% include footer.html %}
+    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+    <script>
+      var fb = new Firebase("https://care-petition.firebaseio.com/");
+      fb.child("count").on("value", function(show) {
+	var base_nbr = 0;
+	{% if page.formulaire.nb_signataires %}
+	  var base_nbr = parseInt("{{ page.formulaire.nb_signataires }}");
+	{% endif %}
+	var base_nbr = base_nbr + show.val();
+	document.getElementById("nb_signatures_header").innerHTML = base_nbr;
+	document.getElementById("nb_signatures_content").innerHTML = base_nbr;
+	Firebase.goOffline();
+      });
+</script>
