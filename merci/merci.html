@@ -70,11 +70,13 @@ footer:
 					{% endif %}
 
 					<div class="text semibold text-center">
+					{% if page.contenu.show_don_simple == true %}
 					    <div class="editable">
 					    Je soutiens CARE
 					    </div>
 					    <br /><a target="_blank" class="parallelogram red btn-don" href=""><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
 					    </div>
+					{% endif %}
 					{% if page.contenu.show_equivalences == true %}
       					<div class="medium-4 columns don">
       						<div class="price text-center">
