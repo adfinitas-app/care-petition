@@ -15,7 +15,7 @@ background:
     image_path: /static/img/bg3.jpg
     visibility: true
 contenu:
-  mode_don: don_simple
+  mode_don: bouton
   product: beanie
   header:
     activate_boutons_sociaux: true
@@ -86,7 +86,7 @@ footer:
 
 					<div class="text semibold text-center">
 						{{page.contenu.don_simple.text_don}}<br />
-					{% if page.contenu.mode_don.don_simple == true %}
+					{% if page.contenu.mode_don == bouton %}
 						<a href="{{page.contenu.don_simple.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
 					{% endif %}
 					</div>
