@@ -17,16 +17,16 @@ background:
 contenu:
   mode_don: bouton
   product: beanie
+  show_equivalences: true
+  show_don_simple: true
   header:
     activate_boutons_sociaux: true
     fb_link: "#"
     tw_link: "#"
     gp_link: "#"
   don_simple:
-    visibility: true
     button: Je fais un don
   equivalences:
-    show: true
     button: Je donne
     equivalence1:
       montant: "15"
@@ -82,7 +82,7 @@ footer:
 
 					<div class="text semibold text-center">
 						<p class="editable">Texte de don</p><br />
-					{% if page.contenu.mode_don.bouton == true %}
+					{% if page.contenu.show_don_simple == true %}
 						<a href="{{page.contenu.don_simple.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
 					{% endif %}
 					</div>
