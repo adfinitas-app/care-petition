@@ -5,7 +5,7 @@ name: "CAREfrance - Signez une pétition"
 logo: /static/img/logo.png
 encoding: UTF-8
 woopra_id: carefrance.org
-mode_don:
+mode_dons:
   - don_simple
   - equivalence
 default_data:
