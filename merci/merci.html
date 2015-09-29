@@ -1,9 +1,10 @@
 ---
+campagne_id: fakeid001
+code_campagne: petition
 meta:
   title: merci
   description: Page de remerciment
   keywords: "merci, care, petition"
-  campagne_id: fakeid001
 background:
   header:
     image_path: /static/img/bg4.jpg
@@ -214,10 +215,10 @@ footer:
 	        	lastname:  p['lastname'],
 	            name:      p['firstname'] + ' ' + p['lastname'],
 	    	});
-	    woopra.track('petition', {
+	    woopra.track(page.code_campagne, {
 	    	    url:   document.location.href,
 	            title: document.title,
-	            campagne: {{page.meta.campagne_id}}
+	            campagne: {{page.campagne_id}}
 	            });
 	    </script>
         <script>
