@@ -82,7 +82,7 @@ footer:
 
 					<div class="text semibold text-center">
 						<p class="editable">Texte de don</p><br />
-					{% if page.contenu.mode_don == bouton %}
+					{% if page.contenu.mode_don.bouton == true %}
 						<a href="{{page.contenu.don_simple.link}}" target="_blank" class="parallelogram red btn-don"><span>{{page.contenu.don_simple.button}}<img src="/static/img/arrow_don.png" /></span></a>
 					{% endif %}
 					</div>
