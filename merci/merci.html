@@ -16,16 +16,16 @@ background:
     visibility: true
 contenu:
   mode_don: bouton
-  activate_boutons_sociaux: true
+  reseaux:
+    activate_boutons_sociaux: true
+    fb_link: "#"
+    tw_link: "#"
+    gp_link: "#"
   show_equivalences: true
   show_don_simple: true
   equivalence1_montant: "15"
   equivalence2_montant: "30"
   equivalence3_montant: "45"
-  header:
-    fb_link: "#"
-    tw_link: "#"
-    gp_link: "#"
 footer:
   fb_link: "#"
   tw_link: "#"
@@ -58,14 +58,14 @@ footer:
 				<div class="small-12 columns end">
 					<div class="title2 text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
 
-					{% if page.contenu.activate_boutons_sociaux == true %}
+					{% if page.contenu.reseaux.activate_boutons_sociaux == true %}
 					<div class="text semibold text-center editable">
 						Je partage cette pétition sur les réseaux sociaux
 					</div>
 					<div class="social text-center">
-						<a href="{{page.contenu.header.fb_link}}" target="_blank" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
-						<a href="{{page.contenu.header.tw_link}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
-						<a href="{{page.contenu.header.gp_link}}" target="_blank" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
+						<a href="{{page.contenu.reseaux.fb_link}}" target="_blank" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
+						<a href="{{page.contenu.reseaux.tw_link}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+						<a href="{{page.contenu.reseaux.gp_link}}" target="_blank" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
 					</div>
 					{% endif %}
 
