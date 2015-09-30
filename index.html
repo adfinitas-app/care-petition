@@ -2,6 +2,7 @@
 layout: petition
 remerciement_path: /merci/merci.html
 header:
+  activate_background: true
   image_path: /static/img/bg1.jpg
   activate_title: true
   activate_counter: true
@@ -36,30 +37,30 @@ meta:
   description: In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.
   keywords: "In, a eros, vel lorem, finibus semper."
 ---
-<div class="row full-width bg1" {% if page.background.header.visibility %} style="background: url('{{page.background.header.image_path}}') no-repeat top center / auto 100%;" {% endif %}>
+<div class="row full-width bg1" {% if page.header.activate_background %} style="background: url('{{page.header.image_path}}') no-repeat top center / auto 100%;" {% endif %}>
     <div class="row">
       <div class="small-12 columns">
         <div class="logo">
           <a href="{{site.url_master}}" target="_blank"><img src="{{site.logo}}" /></a>
         </div>
         <div class="medium-5 end">
-        {% if page.activate_title == true %}
+        {% if page.activate_title %}
           <h1 class="editable">Integer a nibh fringilla, suscipit.</h1>
         {% endif %}
           <div class="text-small editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p></div>
 
-          {% if page.activate_counter == true %}
+          {% if page.activate_counter %}
           <div class="signs text-center">
 	        <span class="editable">Déjà</span> <span id="nb_signatures_header">{{page.formulaire.nb_signataires}}</span> <span class="editable">signataires</span>
           </div>
         {% endif %}
           <div class="text-center">
-              {% if page.activate_sign_button == true %}
+              {% if page.activate_sign_button %}
             <div class="inline-block">
               <a href="#sign" class="parallelogram red"><span class="editable">Je signe la pétition</span></a>
             </div>
             {% endif %}
-            {% if page.activate_more_button == true %}
+            {% if page.activate_more_button %}
             <div class="inline-block">
               <a href="#info" class="parallelogram orange"><span class="editable">En savoir +</span></a>
             </div>
