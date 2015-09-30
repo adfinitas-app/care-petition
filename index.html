@@ -85,7 +85,9 @@ meta:
       </div>
     </div>
   </div>
-  <div class="row full-width bg2" id="bg2" {% if page.content.visibility %} style="background: url('{{page.background.content.image_path}}') no-repeat scroll center center / auto 100%;" {% endif %}></div>
+  {% if page.content.activate %}
+  <div class="row full-width bg2" id="bg2" style="background: url('{{page.content.image_path}}') no-repeat scroll center center / auto 100%;"}></div>
+  {% endif %
   <div class="row full-width bg-beige" id="info">
     <div class="row">
       <div class="small-12 columns end">
