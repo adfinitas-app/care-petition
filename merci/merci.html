@@ -31,11 +31,8 @@ footer:
   tw_link: "#"
   gp_link: "#"
   site_link: "#"
-  bloc_number: "3"
-  content:
-    - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
-    - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
-    - "Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam."
+  bloc: "3"
+
 ---
 <!DOCTYPE html>
 <html class="no-js" lang="fr">
@@ -132,11 +129,30 @@ footer:
           <div class="small-12 columns end">
             <div class="title text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
             <div class="subtitle text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
-              <ul class="small-block-grid-1 medium-block-grid-{{page.footer.bloc_number}} large-block-grid-{{page.footer.bloc_number}}">
-                {% for content_bloc in page.footer.content %}
-                  <li><p>{{ content_bloc }}</p></li>
-                {% endfor %}
-              </ul>
+              {% case page.footer.bloc %}
+            
+            {% when '3' %}
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns end text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            
+            {% when '2' %}
+            <div class="large-6 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-6 columns text text-center editable"><p>Blabla Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.</p></div>
+            
+            {% else %}
+            <div class="large-1 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            {% endcase %}
           </div>
         </div>
         <div class="overlay show-for-large-only">
