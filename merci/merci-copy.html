@@ -1,0 +1,255 @@
+---
+iraiser_campaign_id: fakeid001
+code_campagne: petition
+background:
+  header:
+    image_path: /static/img/bg4.jpg
+    visibility: true
+  content:
+    color: FF0000
+  footer:
+    image_path: /static/img/bg3.jpg
+    visibility: true
+contenu:
+  mode_don: bouton
+  show_equivalences: true
+  show_don_simple: true
+  equivalence1_montant: "15"
+  equivalence2_montant: "30"
+  equivalence3_montant: "45"
+  reseaux:
+    activate_boutons_sociaux: true
+    fb_link: "#"
+    tw_link: "#"
+    gp_link: "#"
+footer:
+  fb_link: "#"
+  tw_link: "#"
+  gp_link: "#"
+  site_link: "#"
+  bloc: "3"
+meta:
+  title: merci
+  description: Page de remerciment
+  keywords: "merci, care, petition"
+---
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+  {% include head.html %}
+	<body>
+		<div class="row full-width bg4" style="background: url('{{page.background.header.image_path}}') no-repeat center center / auto 100%;">
+			<div class="row">
+				<div class="logo">
+					<a href="http://www.carefrance.org/" target="_blank"><img src="{{site.logo}}" /></a>
+				</div>
+				<div class="small-9 medium-6 columns end">
+					<h1 class="editable">Integer a nibh fringilla, suscipit.</h1>
+					<div class="text-small editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row full-width bg-beige" style="background: #{{page.background.content.color}};">
+			<div class="row">
+				<div class="small-12 columns end">
+					<div class="title2 text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
+
+					{% if page.contenu.reseaux.activate_boutons_sociaux == true %}
+					<div class="text semibold text-center editable">
+						Je partage cette pétition sur les réseaux sociaux
+					</div>
+					<div class="social text-center">
+						<a href="{{page.contenu.reseaux.fb_link}}" target="_blank" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
+						<a href="{{page.contenu.reseaux.tw_link}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+						<a href="{{page.contenu.reseaux.gp_link}}" target="_blank" class="social-link"><img src="/static/img/logo_gp2.png" onmouseover="this.src = '/static/img/logo_gp2_on.png';" onmouseout="this.src = '/static/img/logo_gp2.png';" /></a>
+					</div>
+					{% endif %}
+
+					<div class="text semibold text-center">
+					{% if page.contenu.show_don_simple == true %}
+					    <div class="editable">
+					    Je soutiens CARE
+					    </div>
+					    <br /><a target="_blank" class="parallelogram red btn-don" href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+					    </div>
+					{% endif %}
+					{% if page.contenu.show_equivalences == true %}
+      					<div class="medium-4 columns don">
+      						<div class="price text-center">
+      							<span id="montant1">{{page.contenu.equivalence1_montant}}</span><sup>€</sup>
+      						</div>
+      						<div class="price-after text-center">
+      							<span class="price2" id="reduc1"></span><sup>€</sup><br />
+      							<span class="editable">après déduction fiscale</span>
+      						</div>
+      						<div class="text text-center editable">
+                                Permet de ...
+      						</div>
+      						<div class="text-center">
+      							<a href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.content.equivalence1_montant}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      						</div>
+      					</div>
+      					<div class="medium-4 columns don">
+      						<div class="price text-center">
+      							<span id="montant2">{{page.contenu.equivalence2_montant}}</span><sup>€</sup>
+      						</div>
+      						<div class="price-after text-center">
+      							<span class="price2" id="reduc2"></span><sup>€</sup><br />
+      							<span class="editable">après déduction fiscale</span>
+      						</div>
+      						<div class="text text-center editable">
+                                Permet de ...
+      						</div>
+      						<div class="text-center">
+      							<a href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.content.equivalence2_montant}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      						</div>
+      					</div>
+      					<div class="medium-4 columns don">
+      						<div class="price text-center">
+      							<span id="montant3">{{page.contenu.equivalence3_montant}}</span><sup>€</sup>
+      						</div>
+      						<div class="price-after text-center">
+      							<span class="price2" id="reduc3"></span><sup>€</sup><br />
+      							<span class="editable">après déduction fiscale</span>
+      						</div>
+      						<div class="text text-center editable">
+                                Permet de ...
+      						</div>
+      						<div class="text-center">
+      							<a href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.content.equivalence3_montant}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      						</div>
+      					</div>
+          {% endif %}
+				</div>
+			</div>
+		</div>
+    <div class="row full-width bg3" {% if page.background.footer.visibility %} style="background: url('{{page.background.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
+      <div class="row padding">
+          <div class="small-12 columns end">
+            <div class="title text-center editable"><p>Integer a nibh fringilla, suscipit.</p></div>
+            <div class="subtitle text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
+              {% case page.footer.bloc %}
+            
+            {% when '3' %}
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns end text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            
+            {% when '2' %}
+            <div class="large-6 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-6 columns text text-center editable"><p>Blabla Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.</p></div>
+            
+            {% else %}
+            <div class="large-1 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            {% endcase %}
+          </div>
+        </div>
+        <div class="overlay show-for-large-only">
+          <div class="row">
+            <div class="small-1 columns">
+              <img src="/static/img/logo-bottom.png" />
+            </div>
+            <div class="small-4 small-offset-1 columns text text-center">
+              Visitez<br />
+              <a href="{{site.default_data.footer.site_link}}" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
+            </div>
+            <div class="small-4 columns text text-center">
+              Suivez-nous sur<br />
+              <div class="follows">
+                <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
+                <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
+                <a href="{{site.default_data.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
+              </div>
+            </div>
+            <div class="small-2 columns text-right">
+              <img href="http://www.comitecharte.org/" src="/static/img/logo_confiance.png" />
+            </div>
+          </div>
+        </div>
+        <div class="overlay hide-for-large-only">
+          <div class="row">
+            <div class="small-6 columns">
+              <a href="http://www.carefrance.org/" target="_blank"><img src="/static/img/logo-bottom.png" /></a>
+            </div>
+            <div class="small-6 columns text-right">
+              <a href="http://www.comitecharte.org/" target="_blank"><img src="/static/img/logo_confiance.png" /></a>
+            </div>
+            <div class="small-12 columns text text-center">
+              Visitez<br />
+              <a href="{{site.default_data.footer.site_link}}" target="_blank" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
+            </div>
+            <div class="small-12 columns end text text-center">
+              Suivez-nous sur<br />
+              <div class="follows">
+                <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
+                <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
+                <a href="{{site.default_data.footer.gp_link}}" target="_blank" class="follow"><img src="/static/img/logo_gp.png" onmouseover="this.src = '/static/img/logo_gp_on.png';" onmouseout="this.src = '/static/img/logo_gp.png';" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer">
+      <div class="row full-width">
+        <div cass="row">
+          <div class="small-12 columns end text-center">
+            <a href="http://www.adfinitas.fr">Réalisé avec adfinitas labs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+	  <script>
+		woopra.identify({
+	        	email:     p['email'],
+	        	phone:     p['phone'],
+	        	firstname: p['firstname'],
+	        	lastname:  p['lastname'],
+	            name:      p['firstname'] + ' ' + p['lastname'],
+	    	});
+	    woopra.track(page.code_campagne, {
+	    	    url:   document.location.href,
+	            title: document.title,
+	            campagne: {{page.code_campagne}}
+	            });
+	    </script>
+        <script>
+              var equival1 = $( "#montant1" ).html();
+              equival1 = parseInt(equival1) * 0.25;
+              $( "#reduc1" ).text( equival1 );
+              var equival2 = $( "#montant2" ).html();
+              equival2 = parseInt(equival2) * 0.25;
+              $( "#reduc2" ).text( equival2 );
+              var equival3 = $( "#montant3" ).html();
+              equival3 = parseInt(equival3) * 0.25;
+              $( "#reduc3" ).text( equival3 );
+        </script>
+	    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+	    <script>
+	      var fb = new Firebase("https://care-petition.firebaseio.com/");
+	      fb.child('count').transaction(function(currentValue) {
+		return (currentValue||0) + 1;
+		}, function(err, committed, snapshot){
+		if (committed){
+		  //console.log('ok ');
+		Firebase.goOffline();
+	       }
+	       else {
+		 //console.log('Error in counter ! Maybe you are hacking me ?');
+	       }
+	      });
+	    </script>
+	</body>
+</html>
