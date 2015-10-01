@@ -1,5 +1,5 @@
 ---
-campagne_id: fakeid001
+iraiser_campaign_id: fakeid001
 code_campagne: petition
 background:
   header:
@@ -11,6 +11,7 @@ background:
     image_path: /static/img/bg3.jpg
     visibility: true
 contenu:
+  mode_don: bouton
   show_equivalences: true
   show_don_simple: true
   equivalence1_montant: "15"
@@ -69,7 +70,7 @@ meta:
 					    <div class="editable">
 					    Je soutiens CARE
 					    </div>
-					    <br /><a target="_blank" class="parallelogram red btn-don" href=""><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+					    <br /><a target="_blank" class="parallelogram red btn-don" href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
 					    </div>
 					{% endif %}
 					{% if page.contenu.show_equivalences == true %}
@@ -85,7 +86,7 @@ meta:
                                 Permet de ...
       						</div>
       						<div class="text-center">
-      							<a href="{{page.contenu.equivalences.equivalence1.link}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      							<a href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.content.equivalence1_montant}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
       						</div>
       					</div>
       					<div class="medium-4 columns don">
@@ -221,7 +222,7 @@ meta:
 	    woopra.track(page.code_campagne, {
 	    	    url:   document.location.href,
 	            title: document.title,
-	            campagne: {{page.campagne_id}}
+	            campagne: {{page.code_campagne}}
 	            });
 	    </script>
         <script>
