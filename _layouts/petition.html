@@ -4,5 +4,10 @@
     <body>
         {{content}}
 	    {% include footer.html %}
+	    {% if page.marketing_automation %}
+	        {% include woopra_track.html %}
+	        {% include threads_track.html %}
+	    {% endif %}
+	    {% include footer.html %}
 	</body>
 </html>
