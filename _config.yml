@@ -5,6 +5,7 @@ name: CAREfrance - Signez une pétition
 logo: /static/img/logo.png
 encoding: UTF-8
 woopra_id: carefrance.org
+threads_id: LEFMVr
 mode_dons:
   - bouton
   - equivalence
