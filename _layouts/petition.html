@@ -3,11 +3,11 @@
     {% include head.html %}
     <body>
         {{content}}
+        {% include credits.html %}
 	    {% include footer.html %}
 	    {% if page.marketing_automation %}
 	        {% include woopra_track.html %}
 	        {% include threads_track.html %}
 	    {% endif %}
-	    {% include footer.html %}
 	</body>
 </html>
