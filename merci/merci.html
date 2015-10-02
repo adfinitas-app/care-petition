@@ -15,15 +15,10 @@ contenu:
   equivalence1_montant: "15"
   equivalence2_montant: "30"
   equivalence3_montant: "45"
-  reseaux:
-    activate_boutons_sociaux: true
-    fb_link: "#"
-    tw_link: "#"
-    gp_link: "#"
+  activate_boutons_sociaux: true
 footer:
   fb_link: "#"
   tw_link: "#"
-  gp_link: "#"
   site_link: "#"
   bloc: "3"
 meta:
@@ -52,7 +47,7 @@ meta:
 				<div class="small-12 columns end">
 					<div class="title2 text-center editable"><h2>Integer a nibh fringilla, suscipit.</h2></div>
 
-					{% if page.contenu.reseaux.activate_boutons_sociaux == true %}
+					{% if page.contenu.activate_boutons_sociaux == true %}
 					<div class="text semibold text-center editable">
 						Je partage cette pétition sur les réseaux sociaux
 					</div>
