@@ -218,7 +218,7 @@ meta:
 	        	lastname:  p['lastname'],
 	            name:      p['firstname'] + ' ' + p['lastname'],
 	    	});
-	    woopra.track(page.code_campagne, {
+	    woopra.track('petition', {
 	    	    url:   document.location.href,
 	            title: document.title,
 	            campagne: {{page.code_campagne}}
