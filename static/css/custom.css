@@ -42,6 +42,10 @@
 	font-style: normal;
 }
 
+h2 {
+    color: #FFFFFF;
+}
+
 .row {
 	max-width: 963px;
 	width: 100%;
