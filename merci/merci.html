@@ -1,4 +1,5 @@
 ---
+layout: petition
 iraiser_campaign_id: fakeid001
 code_campagne: petition
 background:
@@ -26,10 +27,6 @@ meta:
   description: Page de remerciment
   keywords: "merci, care, petition"
 ---
-<!DOCTYPE html>
-<html class="no-js" lang="fr">
-  {% include head.html %}
-	<body>
 		<div class="row full-width bg4" style="background: url('{{page.background.header.image_path}}') no-repeat center center / auto 100%;">
 			<div class="row">
 				<div class="logo">
@@ -115,7 +112,7 @@ meta:
 				</div>
 			</div>
 		</div>
-    <div class="row full-width bg3" {% if page.background.footer.visibility %} style="background: url('{{page.background.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
+        <div class="row full-width bg3" {% if page.background.footer.visibility %} style="background: url('{{page.background.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
       <div class="row padding">
           <div class="small-12 columns end">
             <div class="title text-center editable"><h2 style="color: white">Integer a nibh fringilla, suscipit.</h2></div>
@@ -189,9 +186,6 @@ meta:
           </div>
         </div>
       </div>
-
-
-    {% include footer.html %}
         <script>
               var equival1 = $( "#montant1" ).html();
               equival1 = parseInt(equival1) * 0.25;
@@ -218,5 +212,3 @@ meta:
 	       }
 	      });
 	    </script>
-	</body>
-</html>
