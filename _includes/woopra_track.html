@@ -1,0 +1,14 @@
+<script>
+woopra.identify({
+    	email:     p['email'],
+    	phone:     p['phone'],
+    	firstname: p['firstname'],
+    	lastname:  p['lastname'],
+        name:      p['firstname'] + ' ' + p['lastname'],
+	});
+woopra.track('petition', {
+	    url:   document.location.href,
+        title: document.title,
+        campagne: {{page.code_campagne}}
+        });
+</script>
