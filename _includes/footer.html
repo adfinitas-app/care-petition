@@ -8,30 +8,3 @@
 	<script>
 			$(document).foundation();
 	</script>
-	<script>
-			$(document).ready(function(){
-				 if ("email" in p){
-						 $("input[name='email']").val(p["email"]);
-				 }
-				 if ("firstname" in p){
-						 $("input[name='firstname']").val(p["firstname"]);
-				 }
-				 if ("lastname" in p){
-						 $("input[name='lastname']").val(p["lastname"]);
-				 }
-			});
-	</script>   
-    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
-    <script>
-      var fb = new Firebase("{{site.fire_base_url}}");
-      fb.child("count").on("value", function(show) {
-	var base_nbr = 0;
-	{% if page.formulaire.nb_signataires %}
-	  var base_nbr = parseInt("{{ page.formulaire.nb_signataires }}");
-	{% endif %}
-	var base_nbr = base_nbr + show.val();
-	document.getElementById("nb_signatures_header").innerHTML = base_nbr;
-	document.getElementById("nb_signatures_content").innerHTML = base_nbr;
-	Firebase.goOffline();
-      });
-    </script>
