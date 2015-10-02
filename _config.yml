@@ -8,6 +8,7 @@ woopra_id: carefrance.org
 mode_dons:
   - bouton
   - equivalence
+fire_base_url: https://care-petition.firebaseio.com/
 blocs:
   - "1"
   - "2"
