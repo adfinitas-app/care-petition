@@ -144,48 +144,7 @@ meta:
             {% endcase %}
           </div>
         </div>
-        <div class="overlay show-for-large-only">
-          <div class="row">
-            <div class="small-1 columns">
-              <img src="/static/img/logo-bottom.png" />
-            </div>
-            <div class="small-4 small-offset-1 columns text text-center">
-              Visitez<br />
-              <a href="{{site.default_data.footer.site_link}}" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
-            </div>
-            <div class="small-4 columns text text-center">
-              Suivez-nous sur<br />
-              <div class="follows">
-                <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
-                <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
-              </div>
-            </div>
-            <div class="small-2 columns text-right">
-              <img href="http://www.comitecharte.org/" src="/static/img/logo_confiance.png" />
-            </div>
-          </div>
-        </div>
-        <div class="overlay hide-for-large-only">
-          <div class="row">
-            <div class="small-6 columns">
-              <a href="http://www.carefrance.org/" target="_blank"><img src="/static/img/logo-bottom.png" /></a>
-            </div>
-            <div class="small-6 columns text-right">
-              <a href="http://www.comitecharte.org/" target="_blank"><img src="/static/img/logo_confiance.png" /></a>
-            </div>
-            <div class="small-12 columns text text-center">
-              Visitez<br />
-              <a href="{{site.default_data.footer.site_link}}" target="_blank" class="visit">carefrance.org <img src="/static/img/arrow2.png" /></a>
-            </div>
-            <div class="small-12 columns end text text-center">
-              Suivez-nous sur<br />
-              <div class="follows">
-                <a href="{{site.default_data.footer.fb_link}}" target="_blank" class="follow"><img src="/static/img/logo_fb.png" onmouseover="this.src = '/static/img/logo_fb_on.png';" onmouseout="this.src = '/static/img/logo_fb.png';" /></a>
-                <a href="{{site.default_data.footer.tw_link}}" target="_blank" class="follow"><img src="/static/img/logo_tw.png" onmouseover="this.src = '/static/img/logo_tw_on.png';" onmouseout="this.src = '/static/img/logo_tw.png';" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% include t_footer_care.html %}
       </div>
         <script>
               var equival1 = $( "#montant1" ).html();
