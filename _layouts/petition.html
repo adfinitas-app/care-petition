@@ -6,7 +6,7 @@
     {% include footer.html %}
     <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
     <script>
-      var fb = new Firebase("{{page.fire_base_url}}");
+      var fb = new Firebase("{{site.fire_base_url}}");
       fb.child("count").on("value", function(show) {
 	var base_nbr = 0;
 	{% if page.formulaire.nb_signataires %}
