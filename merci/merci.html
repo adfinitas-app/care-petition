@@ -7,6 +7,7 @@ header:
   image_path: /static/img/bg4.jpg
   visibility: true
 contenu:
+  activate_boutons_sociaux: true
   mode_don: bouton
   equivalence1_montant: "15"
   equivalence2_montant: "30"
@@ -30,7 +31,7 @@ facebook:
 twitter:
   url: merci
 ---
-		<div class="row full-width bg4" style="background: url('{{page.background.header.image_path}}') no-repeat center center / auto 100%;">
+		<div class="row full-width bg4" style="background: url('{{page.header.image_path}}') no-repeat center center / auto 100%;">
 			<div class="row">
 				<div class="logo">
 					<a href="http://www.carefrance.org/" target="_blank"><img src="{{site.logo}}" /></a>
@@ -58,14 +59,16 @@ twitter:
 					{% endif %}
 
 					<div class="text semibold text-center">
-					{% if page.contenu.mode_don == "bouton" %}
+					
+					{% case page.contenu.mode_don %}
+					{% when "bouton" %}
 					    <div class="editable">
 					    Je soutiens CARE
 					    </div>
 					    <br /><a target="_blank" class="parallelogram red btn-don" href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | plus : 15 | times:100}}"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
 					    </div>
-					{% endif %}
-					{% if page.contenu.show_equivalences == true %}
+					    
+					{% when  "equivalences" %}
       					<div class="medium-4 columns don">
       						<div class="price text-center">
       							<span id="montant1">{{page.contenu.equivalence1_montant}}</span><sup>€</sup>
