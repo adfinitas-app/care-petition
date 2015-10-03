@@ -12,4 +12,8 @@
         {% include extractparam.html %}
         {% include woopra.html %}
         {% include threads.html %}
+        {% if page.track_event %}
+	        {% include woopra_track.html %}
+	        {% include threads_track.html %}
+	    {% endif %}
     </head>
