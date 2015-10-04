@@ -12,15 +12,12 @@
         <title>{{ page.meta.title }}</title>
     	<meta name="description" content="{{page.meta.description}}" />
     	<meta name="keywords" content="{{page.meta.keywords}}">
-    	{% if page.activate_boutons_sociaux %}
-        	<meta property="og:title" content="{{page.facebook.title}}" />
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="{{site.url}}{{page.facebook.petition_path}}" />
-            <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
-            <meta property="og:description" content="{{page.facebook.description}}" />
-            <meta property="og:site_name" content="{{page.facebook.site_name}}" />
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        {% endif %}
+    	<meta property="og:title" content="{{page.facebook.title}}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{site.url}}{{page.facebook.petition_path}}" />
+        <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
+        <meta property="og:description" content="{{page.facebook.description}}" />
+        <meta property="og:site_name" content="{{page.facebook.site_name}}" />
         <link rel="stylesheet" href="/static/css/foundation.css" />
     	<link rel="stylesheet" href="/static/css/custom.css" />
     	<link rel="stylesheet" href="/static/css/intlTelInput.css" />
