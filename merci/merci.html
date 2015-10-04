@@ -31,7 +31,7 @@ facebook:
   image_path: "/statics/texte.jpg"
   petition_path: ""
 twitter:
-  url: merci
+  petition_path: "merci"
 ---
 		<div class="row full-width bg4" style="background: url('{{page.header.image_path}}') no-repeat center center / auto 100%;">
 			<div class="row">
@@ -56,7 +56,7 @@ twitter:
 					</div>
 					<div class="social text-center">
 						<a href="{{page.contenu.reseaux.fb_link}}" target="_blank" class="social-link"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
-						<a href="{{page.contenu.reseaux.tw_link}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+						<a href="https://twitter.com/share" target="_blank" class="social-link twitter-share-button" data-url={{page.twitter.petition_path}} data-text={{page.twitter.texte}} data-count="none"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
 					</div>
 					{% endif %}
 
