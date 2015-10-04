@@ -2,13 +2,6 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{{ page.meta.title }}</title>
-    		<meta name="description" content="{{page.meta.description}}" />
-    		<meta name="keywords" content="{{page.meta.keywords}}">
-    		<link rel="stylesheet" href="/static/css/foundation.css" />
-    		<link rel="stylesheet" href="/static/css/custom.css" />
-    		<link rel="stylesheet" href="/static/css/intlTelInput.css" />
-    		<script src="/static/js/vendor/modernizr.js"></script>
         {% include extractparam.html %}
         {% include woopra.html %}
         {% include threads.html %}
@@ -16,4 +9,19 @@
 	        {% include woopra_track.html %}
 	        {% include threads_track.html %}
 	    {% endif %}
+        <title>{{ page.meta.title }}</title>
+    	<meta name="description" content="{{page.meta.description}}" />
+    	<meta name="keywords" content="{{page.meta.keywords}}">
+    	{% if page.activate_boutons_sociaux %}
+        	<meta property="og:title" content="{{page.facebook.title}}" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="{{site.url}}{{page.facebook.petition_path}}" />
+            <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
+            <meta property="og:description" content="{{page.facebook.description}}" />
+            <meta property="og:site_name" content="{{page.facebook.site_name}}" />
+        {% endif %}
+        <link rel="stylesheet" href="/static/css/foundation.css" />
+    	<link rel="stylesheet" href="/static/css/custom.css" />
+    	<link rel="stylesheet" href="/static/css/intlTelInput.css" />
+    	<script src="/static/js/vendor/modernizr.js"></script>
     </head>
