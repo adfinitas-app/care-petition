@@ -6,6 +6,8 @@ logo: /static/img/logo.png
 encoding: UTF-8
 woopra_id: carefrance.org
 threads_id: LEFMVr
+fb_link: "https://fr-fr.facebook.com/CARE.France"
+tw_link: "https://twitter.com/carefrance"
 mode_dons:
   - bouton
   - equivalence
