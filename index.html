@@ -27,7 +27,7 @@ formulaire:
       visibility: true
   button: "Je m'engage"
 content:
-  activate: true
+  show: true
   image_path: /static/img/bg2.jpg
 footer:
   activate: true
@@ -93,7 +93,7 @@ facebook:
       </div>
     </div>
   </div>
-  {% if page.content.activate %}
+  {% if page.content.show %}
   <div class="row full-width bg2" id="bg2" style="background: url('{{page.content.image_path}}') no-repeat scroll center center / auto 100%;"></div>
   {% endif %}
   <div class="row full-width bg-beige" id="info">
