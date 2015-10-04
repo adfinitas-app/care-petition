@@ -45,6 +45,10 @@ facebook:
   site_name: Signez une pétition avec Care France
   image_path: /static/img/logo-bottom.png
 ---
+  {% if page.content.show %}
+  <div class="row full-width bg2" id="bg2" style="background: url('{{page.content.image_path}}') no-repeat scroll center center / auto 100%;"></div>
+  {% endif %}
+  
 <div class="row full-width bg1" {% if page.header.activate_background %} style="background: url('{{page.header.image_path}}') no-repeat top center / auto 100%;" {% endif %}>
     <div class="row">
       <div class="small-12 columns">
@@ -93,9 +97,7 @@ facebook:
       </div>
     </div>
   </div>
-  {% if page.content.show %}
-  <div class="row full-width bg2" id="bg2" style="background: url('{{page.content.image_path}}') no-repeat scroll center center / auto 100%;"></div>
-  {% endif %}
+
   <div class="row full-width bg-beige" id="info">
     <div class="row">
       <div class="small-12 columns end">
