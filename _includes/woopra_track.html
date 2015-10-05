@@ -16,4 +16,16 @@ woopra.track('petition', {
     	lastname:  p['lastname'],
         campagne: '{{page.code_campagne}}'
         });
+    if (p['optin'] == "on")
+        {
+            woopra.track('inscription', {
+            	    url:   document.location.href,
+                    title: document.title,
+                    email:     p['email'],
+                	phone:     p['phone'].replace(/\+/g, ''),
+                	firstname: p['firstname'],
+                	lastname:  p['lastname'],
+                    campagne: '{{page.code_campagne}}'
+                    });
+        }
 </script>
