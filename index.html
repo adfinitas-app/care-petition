@@ -165,8 +165,7 @@ facebook:
         {% if page.code_campagne != nill and page.code_campagne != empty %}
         var counter_name = "counter" + "-" + "{{ page.code_campagne }}";
         {% else %}
-        console.log("Compteur par défaut...");
-        var count_name = "counter";
+        console.log("No counter name");
         {% endif %}
       var fb = new Firebase("{{site.fire_base_url}}");
       fb.child(counter_name).on("value", function(show) {
