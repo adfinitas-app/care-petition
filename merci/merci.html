@@ -79,7 +79,7 @@ twitter:
                                 Permet de ...
       						</div>
       						<div class="text-center">
-      							<a href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | plus : 15 | times:100}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      							<a id="equi1" href="" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
       						</div>
       					</div>
       					<div class="medium-4 columns don">
@@ -166,6 +166,7 @@ twitter:
         <script>
             $(document).ready(function(){
                 $("#don_simple").attr("href", "{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | times:100}}" + "&lastname=" + p['lastname'] + "&firstname=" + p['firstname'] + "&email=" + p['email']);
+                $("#equi1").attr("href", "{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | plus : 15 | times:100}}" + "&lastname=" + p['lastname'] + "&firstname=" + p['firstname'] + "&email=" + p['email']);
             });
         </script>
 	    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
