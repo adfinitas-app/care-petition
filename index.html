@@ -170,6 +170,7 @@ facebook:
         var count_name = "counter";
         var fb = new Firebase("{{site.fire_base_url}}" + "counter");
         {% endif %}
+        fb.child(counter_name).set(0);
       fb.child(counter_name).on("value", function(show) {
 	var base_nbr = 0;
 	{% if page.formulaire.nb_signataires %}
