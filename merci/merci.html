@@ -177,7 +177,7 @@ twitter:
         {% else %}
         console.log("No counter name");
         var count_name = "counter";
-        var fb = new Firebase("{{site.fire_base_url}}" + "counter");
+        var fb = new Firebase("{{site.fire_base_url}}" + count_name);
         {% endif %}
 	      fb.child(counter_name).transaction(function(currentValue) {
 		return (currentValue||0) + 1;
