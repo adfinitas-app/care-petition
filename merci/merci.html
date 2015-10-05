@@ -179,7 +179,7 @@ twitter:
         var count_name = "counter";
         var fb = new Firebase("{{site.fire_base_url}}" + "counter");
         {% endif %}
-        fb.child(counter_name).on("value", function(show) {
+	      fb.child(counter_name).transaction(function(currentValue) {
 		return (currentValue||0) + 1;
 		}, function(err, committed, snapshot){
 		if (committed){
