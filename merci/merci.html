@@ -3,6 +3,7 @@ layout: charte-2015
 iraiser_campaign_id: 1
 code_campagne: petition
 track_event: true
+firebase_count_name: count
 header:
   image_path: /static/img/bg4.jpg
   visibility: true
@@ -171,7 +172,7 @@ twitter:
 	    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
 	    <script>
 	      var fb = new Firebase("https://care-petition.firebaseio.com/");
-	      fb.child('count').transaction(function(currentValue) {
+	      fb.child('{{page.firebase_count_name}}').transaction(function(currentValue) {
 		return (currentValue||0) + 1;
 		}, function(err, committed, snapshot){
 		if (committed){
