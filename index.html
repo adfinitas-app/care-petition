@@ -163,7 +163,7 @@ facebook:
     <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
     <script>
       var fb = new Firebase("{{site.fire_base_url}}");
-      fb.child("count").on("value", function(show) {
+      fb.child("{{page.firebase_count_name}}").on("value", function(show) {
 	var base_nbr = 0;
 	{% if page.formulaire.nb_signataires %}
 	  var base_nbr = parseInt("{{ page.formulaire.nb_signataires }}");
