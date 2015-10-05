@@ -163,8 +163,14 @@ facebook:
 	</script>   
     <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
     <script>
+        {% if page.code_campagne != nill and page.code_campagne != empty %}
+        var counter_name = "counter" + "-" + "{{ page.code_campagne }}";
+        {% else %}
+        console.log("Compteur par défaut...");
+        var count_name = "counter";
+        {% endif %}
       var fb = new Firebase("{{site.fire_base_url}}");
-      fb.child("{{page.firebase_count_name}}").on("value", function(show) {
+      fb.child(counter_name).on("value", function(show) {
 	var base_nbr = 0;
 	{% if page.formulaire.nb_signataires %}
 	  var base_nbr = parseInt("{{ page.formulaire.nb_signataires }}");
