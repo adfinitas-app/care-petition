@@ -171,8 +171,14 @@ twitter:
         </script>
 	    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
 	    <script>
+        {% if page.code_campagne != nill and page.code_campagne != empty %}
+        var counter_name = "counter" + "-" + "{{ page.code_campagne }}";
+        {% else %}
+        console.log("Compteur par défaut...");
+        var count_name = "counter";
+        {% endif %}
 	      var fb = new Firebase("https://care-petition.firebaseio.com/");
-	      fb.child('{{page.firebase_count_name}}').transaction(function(currentValue) {
+	      fb.child(counter_name).transaction(function(currentValue) {
 		return (currentValue||0) + 1;
 		}, function(err, committed, snapshot){
 		if (committed){
