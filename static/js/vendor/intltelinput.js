@@ -39,7 +39,7 @@ https://github.com/Bluefieldscom/intl-tel-input.git
         // the countries at the top of the list. defaults to united states and united kingdom
         preferredCountries: [],
         // specify the path to the libphonenumber script to enable validation/formatting
-        utilsScript: "./tel-input/lib/libphonenumber/build/utils.js"
+        utilsScript: "./utils.js"
     }, keys = {
         UP: 38,
         DOWN: 40,
