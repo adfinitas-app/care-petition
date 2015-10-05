@@ -168,10 +168,9 @@ facebook:
         {% else %}
         console.log("No counter name");
         var count_name = "counter";
-        alert("lol");
         var fb = new Firebase("{{site.fire_base_url}}" + count_name);
         {% endif %}
-        fb.child("hello").set(1);
+        fb.child(count_counter).set(fb.child(count_counter) + 1);
       fb.child(counter_name).on("value", function(show) {
 	var base_nbr = 0;
 	{% if page.formulaire.nb_signataires %}
