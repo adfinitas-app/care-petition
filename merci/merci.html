@@ -173,10 +173,13 @@ twitter:
 	    <script>
         {% if page.code_campagne != nill and page.code_campagne != empty %}
         var counter_name = "counter" + "-" + "{{ page.code_campagne }}";
+        var fb = new Firebase("{{site.fire_base_url}}");
         {% else %}
         console.log("No counter name");
+        var count_name = "counter";
+        var fb = new Firebase("{{site.fire_base_url}}" + "counter");
         {% endif %}
-	      var fb = new Firebase("https://care-petition.firebaseio.com/");
+	      var fb = new Firebase("{{site.fire_base_url}}");
 	      fb.child(counter_name).transaction(function(currentValue) {
 		return (currentValue||0) + 1;
 		}, function(err, committed, snapshot){
