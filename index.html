@@ -164,7 +164,6 @@ facebook:
     <script>
       var fb = new Firebase("{{site.fire_base_url}}");
       fb.child("count").on("value", function(show) {
-    fb.push({ 'user_id': 'fred', 'text': 'Yabba Dabba Doo!' });
 	var base_nbr = 0;
 	{% if page.formulaire.nb_signataires %}
 	  var base_nbr = parseInt("{{ page.formulaire.nb_signataires }}");
