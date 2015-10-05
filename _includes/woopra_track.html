@@ -11,7 +11,7 @@ woopra.track('petition', {
         title: document.title,
         optin: p['optin'],
         email:     p['email'],
-    	phone:     "+" p['phone'].replace(/\+/g, ''),
+    	phone:     "+" +  p['phone'].replace(/\+/g, ''),
     	firstname: p['firstname'],
     	lastname:  p['lastname'],
         campagne: '{{page.code_campagne}}'
