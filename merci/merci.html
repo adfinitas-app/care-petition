@@ -63,7 +63,7 @@ twitter:
 					    <div class="editable">
 					    Je soutiens CARE
 					    </div>
-					    <br /><a target="_blank" class="parallelogram red btn-don" href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | times:100}}"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+					    <br /><a target="_blank" id="don_simple" class="parallelogram red btn-don" href=""><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
 					    </div>
 					    
 					{% when "equivalence" %}
@@ -162,6 +162,11 @@ twitter:
               var equival3 = $( "#montant3" ).html();
               equival3 = parseInt(equival3) * 0.25;
               $( "#reduc3" ).text( equival3 );
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#don_simple").attr("href", "{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | times:100}}" + "&emial=tech2@adfinitas.fr");
+            });
         </script>
 	    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
 	    <script>
