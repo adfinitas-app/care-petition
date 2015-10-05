@@ -11,6 +11,10 @@ woopra.track('petition', {
         title: document.title,
         optin: p['optin'],
         email:     p['email'],
+        if (p['phone'][0] == '+')
+        {
+    	phone:     "+" p['phone'].replace(/\+/g, ''),
+        }
     	phone:     p['phone'].replace(/\+/g, ''),
     	firstname: p['firstname'],
     	lastname:  p['lastname'],
