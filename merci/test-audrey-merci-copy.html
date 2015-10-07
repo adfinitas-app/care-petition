@@ -1,0 +1,192 @@
+---
+layout: charte-2015
+iraiser_campaign_id: 3
+code_campagne: P1-testaudrey-10-15
+track_event: true
+header:
+  image_path: /static/img/steve-mccurry-india-photography-3.jpg
+  visibility: true
+contenu:
+  activate_boutons_sociaux: true
+  mode_don: equivalence
+  equivalence1_montant: '100'
+  equivalence2_montant: '150'
+  equivalence3_montant: '300'
+footer:
+  visibility: true
+  image_path: /static/img/steve-mccurry-india-photography-15.jpg
+  bloc: '3'
+meta:
+  title: merci
+  description: Page de remerciment
+  keywords: 'merci, care, petition, inde, adfinitas, test, audrey'
+facebook:
+  petition_path: /test-audrey-home.html
+twitter:
+  petition_path: /test-audrey-home.html
+  texte: "Ma pétition care sur l'inde est top !"
+---
+		<div class="row full-width bg4" style="background: url('{{page.header.image_path}}') no-repeat center center / auto 100%;">
+			<div class="row">
+				<div class="logo">
+					<a href="http://www.carefrance.org/" target="_blank"><img src="{{site.logo}}" /></a>
+				</div>
+				<div class="small-9 medium-6 columns end">
+					<h1 class="editable">MERCI BIEN</h1>
+					<div class="text-small editable"><p>Merci pour ce tr&egrave;s beau geste de signature</p></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row full-width bg-beige">
+			<div class="row">
+				<div class="small-12 columns end">
+					<div class="title2 text-center editable"><h2>Integer a nibh fringilla, suscipit.</h2></div>
+
+					{% if page.contenu.activate_boutons_sociaux == true %}
+					<div class="text semibold text-center editable">
+						Je partage cette pétition sur les réseaux sociaux
+					</div>
+					<div class="social text-center">
+						<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.facebook.petition_path}}" target="_blank" class="social-link fb-share-button"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
+						<a href="https://twitter.com/intent/tweet?text={{page.twitter.texte}}&url={{site.url}}{{page.twitter.petition_path}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
+					</div>
+					{% endif %}
+
+					<div class="text semibold text-center">
+					
+					{% case page.contenu.mode_don %}
+					{% when "bouton" %}
+					    <div class="editable">
+					    Je soutiens CARE
+					    </div>
+					    <br /><a target="_blank" id="don_simple" class="parallelogram red btn-don" href=""><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+					    </div>
+					    
+					{% when "equivalence" %}
+      					<div class="medium-4 columns don">
+      						<div class="price text-center">
+      							<span id="montant1">{{page.contenu.equivalence1_montant}}</span><sup>€</sup>
+      						</div>
+      						<div class="price-after text-center">
+      							<span class="price2" id="reduc1"></span><sup>€</sup><br />
+      							<span class="editable">après déduction fiscale</span>
+      						</div>
+      						<div class="text text-center editable">
+                                Permet de ...
+      						</div>
+      						<div class="text-center">
+      							<a id="equi1" href="" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      						</div>
+      					</div>
+      					<div class="medium-4 columns don">
+      						<div class="price text-center">
+      							<span id="montant2">{{page.contenu.equivalence2_montant}}</span><sup>€</sup>
+      						</div>
+      						<div class="price-after text-center">
+      							<span class="price2" id="reduc2"></span><sup>€</sup><br />
+      							<span class="editable">après déduction fiscale</span>
+      						</div>
+      						<div class="text text-center editable">
+                                Permet de ...
+      						</div>
+      						<div class="text-center">
+      							<a id="equi2" href="" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      						</div>
+      					</div>
+      					<div class="medium-4 columns don">
+      						<div class="price text-center">
+      							<span id="montant3">{{page.contenu.equivalence3_montant}}</span><sup>€</sup>
+      						</div>
+      						<div class="price-after text-center">
+      							<span class="price2" id="reduc3"></span><sup>€</sup><br />
+      							<span class="editable">après déduction fiscale</span>
+      						</div>
+      						<div class="text text-center editable">
+                                Permet de ...
+      						</div>
+      						<div class="text-center">
+      							<a href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence3_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | plus : 15 | times:100}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
+      						</div>
+      					</div>
+                    {% endcase %}
+          
+				</div>
+			</div>
+		</div>
+        <div class="row full-width bg3" {% if page.footer.visibility %} style="background: url('{{page.footer.image_path}}') no-repeat center center / auto 100%;" {% endif %}>
+      <div class="row padding">
+          <div class="small-12 columns end">
+            <div class="title text-center editable"><h2 style="color: white">Integer a nibh fringilla, suscipit.</h2></div>
+            <div class="subtitle text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
+              {% case page.footer.bloc %}
+            
+            {% when '3' %}
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns end text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            
+            {% when '2' %}
+            <div class="large-6 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-6 columns text text-center editable"><p>Blabla Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.</p></div>
+            
+            {% else %}
+            <div class="large-1 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            {% endcase %}
+          </div>
+        </div>
+        {% include t_footer_care.html %}
+      </div>
+        {% include credits.html %}
+        {% include foundation.html %}
+        <script>
+              var equival1 = $( "#montant1" ).html();
+              equival1 = parseInt(equival1) * 0.25;
+              $( "#reduc1" ).text( equival1 );
+              var equival2 = $( "#montant2" ).html();
+              equival2 = parseInt(equival2) * 0.25;
+              $( "#reduc2" ).text( equival2 );
+              var equival3 = $( "#montant3" ).html();
+              equival3 = parseInt(equival3) * 0.25;
+              $( "#reduc3" ).text( equival3 );
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#don_simple").attr("href", "{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | times:100}}" + "&lastname=" + p['lastname'] + "&firstname=" + p['firstname'] + "&email=" + p['email']);
+                $("#equi1").attr("href", "{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | times:100}}&once_grid[]={{page.contenu.equivalence1_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence1_montant | plus : 15 | times:100}}" + "&lastname=" + p['lastname'] + "&firstname=" + p['firstname'] + "&email=" + p['email']);
+                $("#equi2").attr("href", "{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | times:100}}&once_grid[]={{page.contenu.equivalence2_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence2_montant | plus : 15 | times:100}}" + "&lastname=" + p['lastname'] + "&firstname=" + p['firstname'] + "&email=" + p['email']);
+                $("#equi3").attr("href", "{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence3_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | plus : 15 | times:100}}" + "&lastname=" + p['lastname'] + "&firstname=" + p['firstname'] + "&email=" + p['email']);
+            });
+        </script>
+	    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+	    <script>
+        {% if page.code_campagne != nill and page.code_campagne != empty %}
+        var counter_name = "counter" + "-" + "{{ page.code_campagne }}";
+        var fb = new Firebase("{{site.fire_base_url}}");
+        {% else %}
+        console.log("No counter name");
+        var count_name = "counter";
+        var fb = new Firebase("{{site.fire_base_url}}" + count_name);
+        {% endif %}
+	      fb.child(counter_name).transaction(function(currentValue) {
+		return (currentValue||0) + 1;
+		}, function(err, committed, snapshot){
+		if (committed){
+		  //console.log('ok ');
+		Firebase.goOffline();
+	       }
+	       else {
+		 //console.log('Error in counter ! Maybe you are hacking me ?');
+	       }
+	      });
+	    </script>
