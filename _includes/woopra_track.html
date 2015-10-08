@@ -5,6 +5,8 @@ woopra.identify({
     	firstname: p['firstname'],
     	lastname:  p['lastname'],
         name:      p['firstname'] + ' ' + p['lastname'],
+        campagne:  '{{page.code_campagne}}'
+        optin:     p['optin'],
 	});
 woopra.track('petition', {
 	    url:   document.location.href,
