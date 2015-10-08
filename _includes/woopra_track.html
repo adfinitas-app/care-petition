@@ -15,4 +15,10 @@ woopra.track('petition', {
         name:      p['firstname'] + ' ' + p['lastname'],
         campagne: '{{page.code_campagne}}'
         });
+woopra.track('inscription', {
+	    url:   document.location.href,
+        title: "{{page.meta.title}}",
+        optin: p['optin'],
+        campagne: '{{page.code_campagne}}'
+        });
 </script>
