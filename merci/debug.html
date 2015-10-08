@@ -53,10 +53,9 @@ twitter:
 					</div>
 					{% endif %}
 
-					<div class="text semibold text-center">
-					
 					{% case page.contenu.mode_don %}
 					{% when "bouton" %}
+					<div class="text semibold text-center">
 					    <div class="editable">
 					    Je soutiens CARE
 					    </div>
@@ -109,7 +108,6 @@ twitter:
       							<a href="{{site.url_iraiser}}?cid={{page.iraiser_campaign_id}}&amount={{page.contenu.equivalence3_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | times:100}}&once_grid[]={{page.contenu.equivalence3_montant plus : 5 | times:100}}&once_grid[]={{page.contenu.equivalence3_montant | plus : 15 | times:100}}" target="_blank" class="parallelogram red btn-don"><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
       						</div>
       					</div>
-      				</div>
                     {% endcase %}
           
 				</div>
