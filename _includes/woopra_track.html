@@ -1,14 +1,12 @@
 <script>
 woopra.identify({
     	email:     p['email'],
-    	phone:     "+" + p['phone'].replace(/\+/g, ''),
     	firstname: p['firstname'],
     	lastname:  p['lastname'],
-        name:      p['firstname'] + ' ' + p['lastname'],
 	});
 woopra.track('petition', {
 	    url:   document.location.href,
-        title: document.title,
+        title: {{page.meta.title}},
         optin: p['optin'],
         email:     p['email'],
     	phone:     "+" + p['phone'].replace(/\+/g, ''),
