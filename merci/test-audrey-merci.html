@@ -143,13 +143,15 @@ twitter:
             <div class="large-6 columns text text-center editable"><p>Blabla Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.</p></div>
             
             {% else %}
-            <div class="large-12 columns text text-center editable">
-	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
-            </div>
+            <div class="large-12 columns text text-center editable"><p>Blabla Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.</p></div>
             {% endcase %}
         </div>
         {% endif %}
       </div>
+        {% include t_footer_care.html %}
+      </div>
+        {% include credits.html %}
+        {% include foundation.html %}
         <script>
               var equival1 = $( "#montant1" ).html();
               equival1 = parseInt(equival1) * 0.25;
