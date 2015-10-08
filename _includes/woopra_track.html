@@ -6,7 +6,7 @@ woopra.identify({
 	});
 woopra.track('petition', {
 	    url:   document.location.href,
-        title: {{page.meta.title}},
+        title: "{{page.meta.title}}",
         optin: p['optin'],
         email:     p['email'],
     	phone:     "+" + p['phone'].replace(/\+/g, ''),
