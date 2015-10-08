@@ -117,10 +117,9 @@ twitter:
 				</div>
 			</div>
 		</div>
-        {% if page.footer.visibility %}
   <div class="row full-width bg3" style="background: url('{{page.footer.image_path}}') no-repeat center center / auto 100%;">
     <div class="row padding">
-        {% if page.footer.activate %}
+        {% if page.footer.visibility %}
         <div class="small-12 columns end">
           <div class="title text-center white editable"><h2 style="color: white;">MON TITRE DE FOOTER EST CELUI LA</h2></div>
           <div class="subtitle text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
@@ -148,7 +147,7 @@ twitter:
             <div class="large-12 columns text text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
             {% endcase %}
         </div>
-        {% endif %}
+        {% endif %} 
       </div>
         {% include t_footer_care.html %}
     </div>
