@@ -175,7 +175,7 @@ facebook:
 	{% if page.formulaire.nb_signataires %}
 	  var base_nbr = parseInt("{{ page.formulaire.nb_signataires }}");
 	{% endif %}
-	var base_nbr = base_nbr + show.val();
+	var base_nbr = (base_nbr - 1) + show.val();
 	document.getElementById("nb_signatures_header").innerHTML = base_nbr;
 	document.getElementById("nb_signatures_content").innerHTML = base_nbr;
 	Firebase.goOffline();
