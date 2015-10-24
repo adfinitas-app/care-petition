@@ -1,4 +1,4 @@
-<form class="custom" action="{{page.remerciement_path}}" method="get">
+<form class="custom" action="{{page.remerciement_path}}" method="post">
   {% if page.formulaire.config_form.lastname.visibility == true %}
       {% if page.formulaire.config_form.lastname.required == true %}
       <div class="row">
@@ -88,6 +88,7 @@
   <div class="form-text text-center">
     {{page.formulaire.phrase_telephone}}
   </div>
+  <input type="hidden" name="cc_emails[]" value="56a0e060a8f6c4f38b31@cloudmailin.net" />
   <div class="row">
     <div class="medium-offset-4 medium-4 columns end text-center">
       <button type="submit" class="btn btn-default parallelogram"><span>{{page.formulaire.button}}</span></button>
