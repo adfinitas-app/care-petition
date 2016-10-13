@@ -13,7 +13,7 @@ contenu:
   equivalence2_montant: '30'
   equivalence3_montant: '45'
 footer:
-  visibility: true
+  visibility: false
   image_path: /static/img/bg3.jpg
   bloc: '3'
 meta:
@@ -41,12 +41,10 @@ twitter:
 		<div class="row full-width bg-beige">
 			<div class="row">
 				<div class="small-12 columns end">
-					<div class="title2 text-center editable"><h2>Integer a nibh fringilla, suscipit.</h2></div>
+					<div class="title2 text-center editable"><h2>Partagez la p&eacute;tition &agrave; vos amis</h2></div>
 
 					{% if page.contenu.activate_boutons_sociaux == true %}
-					<div class="text semibold text-center editable">
-						Je partage cette pétition sur les réseaux sociaux
-					</div>
+					<div class="text semibold text-center editable"></div>
 					<div class="social text-center">
 						<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.facebook.petition_path}}" target="_blank" class="social-link fb-share-button"><img src="/static/img/logo_fb2.png" onmouseover="this.src = '/static/img/logo_fb2_on.png';" onmouseout="this.src = '/static/img/logo_fb2.png';" /></a>
 						<a href="https://twitter.com/intent/tweet?text={{page.twitter.texte}}&url={{site.url}}{{page.twitter.petition_path}}" target="_blank" class="social-link"><img src="/static/img/logo_tw2.png" onmouseover="this.src = '/static/img/logo_tw2_on.png';" onmouseout="this.src = '/static/img/logo_tw2.png';" /></a>
@@ -57,9 +55,7 @@ twitter:
 					{% when "bouton" %}
 					<div class="text semibold text-center">
 					
-					    <div class="editable">
-					    Je soutiens CARE
-					    </div>
+					    <div class="editable"><h2>Soutenez les actions de CARE&nbsp;</h2></div>
 					    <br /><a target="_blank" id="don_simple" class="parallelogram red btn-don" href=""><span class="editable">Je fais un don&nbsp;<img src="/static/img/arrow_don.png" /></span></a>
 					    </div>
 					    
