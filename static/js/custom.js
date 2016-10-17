@@ -60,9 +60,9 @@ $(document).ready(function() {
   jQuery.validator.addMethod('validatePhone', function () {
     if ($("#form-phone").intlTelInput("isValidNumber")) {
       return true;
+console.log("hey");
     }
     else {
-        console.log("hey");
       return false;
     }
   }, "Numéro incorrect");
