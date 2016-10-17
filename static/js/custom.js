@@ -69,8 +69,8 @@ $(document).ready(function() {
   $('form.custom').validate({
     rules: {
       phone:{
-          required: false,
-          validatePhone: false
+          required: true,
+          validatePhone: true
       }
     }
   });
