@@ -65,4 +65,13 @@ $(document).ready(function() {
       return false;
     }
   }, "Numéro incorrect");
+
+  $('form.custom').validate({
+    rules: {
+      phone:{
+          required: true,
+          validatePhone: true
+      }
+    }
+  });
 });
