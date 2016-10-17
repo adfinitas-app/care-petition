@@ -60,7 +60,6 @@ $(document).ready(function() {
   jQuery.validator.addMethod('validatePhone', function () {
     if ($("#form-phone").intlTelInput("isValidNumber")) {
       return true;
-    console.log("hey");
     }
     else {
       return false;
