@@ -70,7 +70,7 @@ $(document).ready(function() {
     rules: {
       phone:{
           required: false,
-          validatePhone: true
+          validatePhone: false
       }
     }
   });
