@@ -62,6 +62,7 @@ $(document).ready(function() {
       return true;
     }
     else {
+        console.log("hey");
       return false;
     }
   }, "Numéro incorrect");
