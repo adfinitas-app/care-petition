@@ -69,7 +69,7 @@ $(document).ready(function() {
   $('form.custom').validate({
     rules: {
       phone:{
-          required: true,
+          required: false,
           validatePhone: true
       }
     }
