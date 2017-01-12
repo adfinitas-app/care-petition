@@ -22,44 +22,7 @@ $(document).ready(function() {
 		else {
 			$('.bg1, .bg2, .bg3, .bg4').css('height', 'auto');
 		}
-	});
-
-  (function formToDb() {
-    function pureField(string) {
-      return (string.replace(/'/g, "%27").replace(/"/g, "&quot;"));
-    }
-    var $form = $('form.custom');
-    $form.on('submit', function(e) {
-      e.preventDefault();
-      if ($form.valid() === true) {
-	var optin = 'non';
-	if ($form.find('#form-newsletter').is(':checked')) { optin = 'oui' }
-	var now = new Date();
-	var data = {
-	  "schema": "care_petition",
-	  "db": {
-	    "campaign_code": $form.data('campaign'),
-	    "signin_date": now.toString(),
-	    "firstname": pureField($form.find('#form-firstname').val()),
-	    "lastname": pureField($form.find('#form-lastname').val()),
-	    "email": pureField($form.find('#form-email').val()),
-	    "optin": optin,
-	    "phone": pureField($form.find('#form-phone').intlTelInput('getNumber'))
-	  }
-	};
-	var params = {
-	  "firstname": data.db.firstname,
-	  "lastname": data.db.lastname,
-	  "email": data.db.email,
-	  "optin": data.db.optin
-	};
-	var success = function() {
-	  window.location = $form.attr('action') + '?' + $.param(params);
-	};
-	makeCorsRequest(data, success);
-      }
-    });
-  })();
+	})
 
   var phoneInput = $("#form-phone"),
     phoneError = $("#phone-error"),
