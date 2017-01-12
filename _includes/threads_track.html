@@ -1,0 +1,14 @@
+<script>
+        if ('email' in p && p['email'] != "" && p['email'] != null) {
+            threads.identify(p['email'], {
+			  	email: p['email'],
+            	phone: p['phone'],
+            	firstname: p['firstname'],
+            	lastname: p['name'],
+                name: p['firstname'] + ' ' + p['name'],
+			});
+			threads.track('petition', {
+                campaign: '{{page.code_campagne}}'
+            });
+        };
+</script>

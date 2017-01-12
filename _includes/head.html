@@ -1,0 +1,29 @@
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {% include extractparam.html %}
+        {% include woopra.html %}
+        {% include threads.html %}
+        {% if page.track_event %}
+	        {% include woopra_track.html %}
+	        {% include threads_track.html %}
+	    {% endif %}
+        <title>{{ page.meta.title }}</title>
+    	<meta name="description" content="{{page.meta.description}}" />
+    	<meta name="keywords" content="{{page.meta.keywords}}">
+    	<meta property="og:title" content="{{page.facebook.title}}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{site.url}}{{page.facebook.petition_path}}" />
+        <meta property="og:image" content="{{site.url}}{{page.facebook.image_path}}" />
+        <meta property="og:description" content="{{page.facebook.description}}" />
+        <meta property="og:site_name" content="{{page.facebook.site_name}}" />
+    	<link rel="canonical" href="{{site.url}}{{page.facebook.canonical}}">
+        <link rel="stylesheet" href="/static/css/foundation.css" />
+    	<link rel="stylesheet" href="/static/css/custom.css" />
+    	<link rel="stylesheet" href="/static/css/intlTelInput.css" />
+    	<link rel="canonical" href="{{site.url}}{{page.facebook.canonical}}">
+    	<script src="/static/js/vendor/modernizr.js"></script>
+    </head>
+
+

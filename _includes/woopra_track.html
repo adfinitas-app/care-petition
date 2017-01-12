@@ -1,0 +1,24 @@
+<script>
+woopra.identify({
+    	email:     p['email'],
+    	firstname: p['firstname'],
+    	lastname:  p['lastname'],
+	});
+woopra.track('petition', {
+	    url:   document.location.href,
+        title: "{{page.meta.title}}",
+        optin: p['optin'],
+        email:     p['email'],
+    	phone:     "+" + p['phone'].replace(/\+/g, ''),
+    	firstname: p['firstname'],
+    	lastname:  p['lastname'],
+        name:      p['firstname'] + ' ' + p['lastname'],
+        campagne: '{{page.code_campagne}}'
+        });
+woopra.track('inscription', {
+	    url:   document.location.href,
+        title: "{{page.meta.title}}",
+        optin: p['optin'],
+        campagne: '{{page.code_campagne}}'
+        });
+</script>

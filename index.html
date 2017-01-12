@@ -1,340 +1,187 @@
 ---
-layout: default
-meta:
-  title: A DEFINIR
-  description: A DEFINIR
+layout: charte-2015
+remerciement_path: /merci/merci.html
+code_campagne: petition
 header:
-  image_path: /img/filles-garcons.jpg
-  bouton: '3'
-fond_dotation_panel:
-  bouton: '2'
-actualites:
-  - titre: TÉMOIGNAGE DE marc
-    affichage_image: true
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/temoignage/marc-roanne-1956/'
-    image_path: /img/1934.jpg
-    texte: formation
-    couleur: jaune
-  - titre: Prix de la vaillance
-    affichage_image: true
-    image_path: /uploads/PrixVaillance7.png
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/2016/11/28/la-vaillance-est-en-toi-.html'
-    texte:
-    couleur: rouge
-  - titre: "Rien d'impossible !"
-    affichage_image: true
-    image_path: /uploads/francoise_vintro4 .jpg
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/2016/11/27/de-nouveau-rien-dimpossible-.html'
-    texte:
-    couleur: bleu
-  - titre: Vos images
-    affichage_image: true
-    image_path: /uploads/photo2_V2.png
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/image/coeurs-vaillants-de-lyon/'
-    texte:
-    couleur: rouge
-  - titre: Témoignage de Marie-Louise
-    affichage_image: true
-    image_path: /uploads/Photo_MarieLouise4.jpg
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/temoignage/marie-louise-saint-cyr-l-ecole-1946/'
-    texte:
-    couleur: bleu
-  - titre: 'Pour Noël, faites un don !'
-    affichage_image: true
-    image_path: /Enfants_vaillance.png
-    lien_path: 'https://coeursvaillants-amesvaillantes.iraiser.eu/b/mon-don'
-    texte:
-    couleur: jaune
-  - titre: 'Pour vos témoignages, vos photos, vos messages'
-    affichage_image: true
-    image_path: /uploads/Merci.jpg
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/2016/03/02/notre-campagne-bat-son-plein-.html'
-    texte: 'Copains, camps, magazines, amis Cœurs Vaillants et Âmes Vaillantes, partageons nos souvenirs de jeunesse et nos émotions. Témoignages, anecdotes et grands moments, photos, faisons découvrir à la nouvelle génération ce qui nous anime.'
-    couleur: bleu
-  - titre: Les Coeurs Vaillants et Âmes Vaillantes sont sur RCF
-    affichage_image: true
-    image_path: /img/logo rcf2.png
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/2016/03/04/les-coeurs-vaillants-et-ames-vaillantes-sont-sur-rcf.html'
-    texte:
-    couleur: jaune
-  - titre: Des refrains
-    affichage_image: true
-    image_path: /uploads/photocarnetcvav_chant3.jpg
-    lien_path: 'http://coeursvaillants-amesvaillantes.org/retrouvons-nous/tous-les-temoignages.html'
-    texte:
-    couleur: rouge
+  activate_background: true
+  image_path: /static/img/bg1.jpg
+  activate_title: true
+  activate_counter: true
+  activate_more_button: true
+  activate_sign_button: false
+formulaire:
+  nb_signataires: 3000
+  activate_counter: true
+  phrase_telephone: "En laissant mon numéro, j'accepte que CARE France me contacte pour m'informer de ses programmes en faveur des femmes."
+  config_form:
+    firstname:
+      visibility: true
+      required: true
+    lastname:
+      visibility: true
+      required: false
+    phone:
+      visibility: true
+      required: true
+    radio:
+      visibility: true
+  button: "Je m'engage"
+contenu:
+  activate: true
+  image_path: /static/img/bg2.jpg
+footer:
+  activate: true
+  image_path: /static/img/bg3.jpg
+  bloc: "3"
+meta:
+  title: "Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est."
+  description: In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.
+  keywords: "In, a eros, vel lorem, finibus semper."
+  site_name: PETITION CARE
+  image_path: /static/img/logo-bottom.png
+facebook:
+  petition_path: /petition-refugies.html
+  title: "Signez la pétition pour un accueil plus digne des réfugiés !"
+  description: "Il est urgent d’agir pour que les pays de l’UE apportent enfin une réponse à la hauteur des besoins, en accueillant plus de réfugiés dans de meilleures conditions."
+  site_name: "CARE FRANCE"
+  image_path: /static/img/siteicon_sharefb.png
 ---
-<nav class="menu-mobile row">
-            <div class=" bkg-white">
-                <div class="large-6 medium-6 small-6 columns"><div class="logo-mobile"><a href="#"><img src="img/logo-mobile.png" /></a></div></div>
-                <div class="large-6 medium-6 small-6 columns"><div class="burger"><img src="img/burger.png" /></div></div>
-            <div class="menu-list columns large-12 medium-12 small-12">
-                    <ul>
-                    {% for menu in site.data.menu.principal %}
-                        <li><a href="{{menu.url_path}}">{{menu.nom}}</a></li>
-                    {% endfor %}
-                    </ul>
-                    <form action="#" method="post">
-                        <div id="search" class="large-12 column">
-                            <input type="text" placeholder="Recherche" />
-                        </div>
-                    </form>
-                    <div class="large-12 column ">
-                      <div class="don-button full-btn">
-                        <p>
-                          <span class="align-midlle"><a href="{{site.url_iraiser_donner}}">Je fais un don</a></span>
-                        </p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-</nav>
-
-<div class="menu-homepage bkg-red">
-      <nav class="row">
-        <div class="large-10 columns">
-            <ul>
-              {% for menu in site.data.menu.principal %}
-                <li>
-                  <a href="{{menu.url_path}}">{{menu.nom}}</a>
-                </li>
-                <li class="divider">|</li>
-              {% endfor %}
-            </ul>
+<div class="row full-width bg1" {% if page.header.activate_background %} style="background: url('{{page.header.image_path}}') no-repeat top center / auto 100%;" {% endif %}>
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="logo">
+          <a href="{{site.url_master}}" target="_blank"><img src="{{site.logo}}" /></a>
         </div>
-        <div class="large-2 columns">
-            <a href="{{ site.url_iraiser }}"><div class="don-button">Je fais un don</div></a>
-        </div>
-      </nav>
-</div>
+        <div class="medium-5 end">
+        {% if page.header.activate_title %}
+          <h1 class="editable">Integer a nibh fringilla, suscipit.</h1>
+        {% endif %}
+          <div class="text-small editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p></div>
 
-<div id="header" class="full-width" style="background-image: url({{page.header.image_path}})">
-    <div class="angle"><img src="img/angle.png" alt="{{site.name}}" /></div>
-    <header class="header-home">
-        <div class="row">
-          <div class="large-offset-1 large-7 columns end">
-              <h2><img src="img/accroche.png" alt="Revivre Coeurs Vaillant" class="editable" /></h2>
+          {% if page.header.activate_counter %}
+          <div class="signs text-center">
+	        <span class="editable">Déjà</span> <span id="nb_signatures_header">{{page.formulaire.nb_signataires}}</span> <span class="editable">signataires</span>
           </div>
-        </div>
-        <div class="row">
-            <div class="large-offset-1 large-10 end columns">
-                <p class="caption-header editable">Vous avez &eacute;t&eacute; lecteurs des journaux C&oelig;urs Vaillants et &Acirc;mes Vaillantes, vous avez particip&eacute; aux activit&eacute;s C&oelig;urs Vaillants et &Acirc;mes Vaillantes sur votre paroisse...<br />Vous aviez entre 7 et 18 ans &agrave; l&rsquo;&eacute;poque... <b>De nouveau rien d&rsquo;impossible !</b></p>
+        {% endif %}
+          <div class="text-center">
+              {% if page.header.activate_sign_button %}
+            <div class="inline-block">
+              <a href="#sign" class="parallelogram red"><span class="editable">Je signe la pétition</span></a>
             </div>
-        </div>
-        <div class="row">
-            <div class="large-12 large-offset-0 medium-offset-3 medium-6 columns">
-              {% case page.header.bouton %}
-                {% when '1' %}
-                <div class="large-12 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem ipsum</span></p></a></div>
-                </div>
-                {% when '2' %}
-                <div class="large-6 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem ipsum</span></p></a></div>
-                </div>
-                <div class="large-6 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem ipsum</span></p></a></div>
-                </div>
-                {% when '3' %}
-                <div class="large-4 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="/retrouvons-nous/dites-nous-qui-vous-etes.html"><p><span class="align-middle">Vivre l'aventure</span></p></a></div>
-                </div>
-                <div class="large-4 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="/projets/tous-les-projets.html"><p><span class="align-middle">Découvrez nos projets</span></p></a></div>
-                </div>
-                <div class="large-4 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="/retrouvons-nous/dites-nous-qui-vous-etes.html"><p><span class="align-middle">Retrouvons-nous</span></p></a></div>
-                </div>
-                {% when '4' %}
-                <div class="large-3 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem ipsum</span></p></a></div>
-                </div>
-                <div class="large-3 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem ipsum</span></p></a></div>
-                </div>
-                <div class="large-3 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem ipsum</span></p></a></div>
-                </div>
-                <div class="large-3 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem ipsum</span></p></a></div>
-                </div>
-                {% else %}
-                <div class="large-4 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem Ipsum default</span></p></a></div>
-                </div>
-                <div class="large-4 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem Ipsum default</span></p></a></div>
-                </div>
-                <div class="large-4 medium-12 small-12 columns editable">
-                    <div class="empty-btn"><a href="#"><p><span class="align-middle">Lorem Ipsum default</span></p></a></div>
-                </div>
-                {% endcase %}
-            </div>
-        </div>
-    </header>
-</div>
-
-<div class="bkg-red padder-40">
-    <div id="newsletter-home" class="row newsletter">
-        <div class="large-4 medium-5 small-12 columns text-center editable">Suivre la campagne </div>
-        <form action="{{site.data.newsletter.page_remerciement}}" method="post" data-abide id="footer_mod">
-            <div class="large-6 medium-5 small-10  columns ">
-              <input required class="mail" type="email" placeholder="votre adresse email" name="email" />
-              <small class="error">Vous devez renseigner votre email</small>
-              <input type="hidden" name="nom_formulaire" value="inscription_newsletter" />
-            	<input type="hidden" name="cc_emails[]" value="{{site.data.newsletter.destinataire}}" />
-            </div>
-            <div class="large-2 medium-2 small-2  columns"><div class="valide-nl">
-              <input type="image" src="/img/valide-newsletter.png" alt="Submit Form" />
-            </div>
-          </div>
-        </form>
-        <div class="large-4 medium-5 small-12 columns text-center editable">Retrouvez nous sur </div>
-        <div class="large-8 medium-7 small-12 columns small-only-text-center" style="padding-left:0;"><a href="https://www.facebook.com/revivrecoeursvaillants/" target="_blank"><img src="/img/icons/facebook-logo.png" height="48" width="48" /></a></div>
-    </div>
-</div>
-<script>
-var nl = 1;
-</script>
-
-<div id="grandir" class="bkg-blue padder-120 ">
-  <div class="row editable">
-    <h2>un fonds de dotation pour grandir</h2>
-    <p class="padder-60">Pour donner confiance aux enfants qui sont des créateurs de projets<br />Pour permettre aux enfants et aux jeunes de se construire en citoyens attentifs, ouverts et généreux<br />Pour transmettre l’esprit Coeurs Vaillants Âmes Vaillantes.</p>
-  </div>
-  <!-- to-do editable buttons list -->
-  <div class="row">
-    {% case page.fond_dotation_panel.bouton %}
-    {% when '1' %}
-      <div class="large-12 medium-12 columns">
-        <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum dolomet</span></a></p></div>
-      </div>
-    {% when '2' %}
-      <div class="large-3 medium-4 large-offset-2 medium-offset-1 columns">
-        <div class="full-btn"><p class="editable"><a href="/qui-sommes-nous/pourquoi-un-fond-de-dotation.html"><span class="align-middle">Pourquoi <br />un fonds de dotation ?</span></a></p></div>
-      </div>
-      <div class="large-2 medium-2 columns">&nbsp;</div>
-      <div class="large-3 medium-4 columns end">
-          <div class="full-btn"><p class="editable"><a href="/projets/tous-les-projets.html"><span class="align-middle">D&eacute;couvrir<br />les projets &agrave; financer</span></a></p></div>
-      </div>
-    {% when '3' %}
-      <div class="large-4 medium-12 columns">
-        <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum set dolomet</span></a></p></div>
-      </div>
-      <div class="large-4 medium-12 columns end">
-          <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum set dolomet</span></a></p></div>
-      </div>
-      <div class="large-4 medium-12 columns end">
-          <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum set dolomet</span></a></p></div>
-      </div>
-    {% when '4' %}
-      <div class="large-3 medium-12 columns">
-        <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum set dolomet</span></a></p></div>
-      </div>
-      <div class="large-3 medium-12 columns end">
-        <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum set dolomet</span></a></p></div>
-      </div>
-      <div class="large-3 medium-12 columns end">
-        <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum set dolomet</span></a></p></div>
-      </div>
-      <div class="large-3 medium-12 columns end">
-        <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Lorem ipsum set dolomet</span></a></p>
-      </div>
-    {% else %}
-    <div class="large-3 medium-4 large-offset-2 medium-offset-1 columns">
-      <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Pourquoi <br />un fonds de dotation ?</span></a></p></div>
-    </div>
-    <div class="large-2 medium-2 columns">&nbsp;</div>
-    <div class="large-3 medium-4 columns end">
-        <div class="full-btn"><p class="editable"><a href="#"><span class="align-middle">Découvrir <br />les projets à financer</span></a></p></div>
-    </div>
-
-    {% endcase %}
-  </div>
-</div>
-
-<div id="retrouvons" class="bkg-white">
-  <div class="row editable">
-    <h2>Retrouvons-nous</h2>
-    <p class="padder-60 baseline">Copains, camps, magazines, les Cœurs Vaillants et les Âmes Vaillantes <br />vous invitent à voyager dans le temps. Actualité, témoignages, photos d’hier et d’aujourd’hui… <br />Partagez ici vos souvenirs et vos émotions.</p>
-  </div>
-  <div class="row editable"><div class="large-4 medium-4 columns"><p class="bold">Dites nous qui vous &ecirc;tes</p><div class="center-img"><p><a href="/retrouvons-nous/dites-nous-qui-vous-etes.html"><img alt="" src="img/picto-qui.png" /></a></p></div><p class="desc">Faites-vous conna&icirc;tre<br />et retrouvez<br />d&rsquo;anciens camarades.</p></div><div class="large-4 medium-4 columns"><p class="bold">Votre t&eacute;moignage</p><div class="center-img"><p><a href="/retrouvons-nous/tous-les-temoignages.html"><img alt="" src="img/picto-temoin.png" /></a></p></div><p class="desc">Racontez-nous un souvenir<br />de votre exp&eacute;rience C&oelig;urs<br />Vaillants ou &Acirc;mes Vaillantes.</p></div><div class="large-4 medium-4 columns"><p class="bold">Vos images</p><div class="center-img"><p><a href="/retrouvons-nous/toutes-les-images.html"><img alt="" src="img/picto-images.png" /></a></p></div><p class="desc">En noir et blanc, en s&eacute;pia<br />ou en couleurs, publiez ici<br />vos photos souvenirs.</p></div></div>
-  <!-- to-do editable bloc -->
-  <div class="row blocs">
-    {% for post in page.actualites %}
-    <div class="large-4 medium-6 columns ">
-        <div {% if post.couleur == 'bleu' %}class="bkg-marine bloc"{% elsif post.couleur == 'jaune' %}class="bkg-yellow bloc"{% else %}class="bkg-red bloc"{% endif %} >
-            <h3>{{post.titre}}</h3>
-            {% if post.affichage_image %}
-            <div class="center-img">
-              <a href="{{post.lien_path}}">
-                <img src="{{post.image_path}}" alt="" />
-              </a>
-            </div>
-            {% else %}
-            <p>
-              <a href="{{post.lien_path}}">{{ post.texte }}</a>
-            </p>
             {% endif %}
-            <a href="{{post.lien_path}}"><div class="bloc-plus"></div></a>
-        </div>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="row padder-100">
-    <div class="large-offset-4 large-4 medium-offset-4 medium-4 small-12 end columns">
-      <a href="/actualites/toutes-les-actualites.html">
-        <div class="full-btn">
-          <p>
-            <span class="align-middle">Toute l’actualité</span>
-          </p>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<footer class="bkg-red">
-            <div class="row">
-                <div class="large-4 medium-4  small-12 columns address editable" itemscope="" itemtype="http://schema.org/Organization">
-                    <p>
-                      <span itemprop="name">Fonds Cœurs Vaillants-Âmes Vaillantes</span>
-                      <br />
-                      <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">63 avenue de la République</span>
-                        <br />
-                        <span itemprop="postalCode">92120</span>
-                        <span itemprop="addressLocality">Montrouge</span>
-                      </span>
-                    </p>
-                </div>
-
-                <div id="show-trigger" class="large-8 medium-8  small-12 columns" style="display: none;">
-                    <p style="text-align: center; font-size: 16px;">En partenariat avec :</p>
-                    <ul class="inline-mobile">
-                        <!-- Wooppra Trigger showing logos at the bottom of page -->
-                        <style>
-                        #show-trigger {
-                            text-align: center;   
-                        }
-                        #show-trigger img {
-                            margin-bottom: 20px;
-                        }
-                        </style>
-                        <a target="_blank" href="https://www.fleuruspresse.com/" title="Fleurus Presse"><img style="height: 70px" src="/img/trigger/fleurus_presse.png" alt="Fleurus Presse" /></a>
-                        <a target="_blank" href="http://www.micheletaugustin.com/" title="Michel & Augustin"><img style="height: 70px" src="/img/trigger/michel_augustin.jpeg" alt="Michel & Augustin" /></a>
-                        <a target="_blank" href="https://rcf.fr/" title="RCF"><img style="height: 70px" src="/img/trigger/rcf.png" alt="RCF" /></a><br/>
-                       <a target="_blank" href="http://www.leparisien.fr/" title="le Parisien"><img style="height: 34px" src="/img/trigger/le-parisien.gif" alt="Le Parisien" /></a>
-                       <a target="_blank" href="http://www.lavie.fr/" title="La Vie"><img style="height: 70px" src="/img/trigger/la-vie.png" alt="La Vie" /></a>
-                       <a target="_blank" href="http://www.la-croix.com/" title="La Croix"><img src="/img/trigger/la-croix.png" alt="La Croix" /></a>
-                        {% comment %}
-                      {% for link in site.data.menu_footer.categories %}
-                        <li><a href="{{link.nom_path}}">{{link.nom}}</a></li>
-                        <li>|</li>
-                      {% endfor %}
-                      {% endcomment %}
-                    </ul>
-                </div>
+            {% if page.header.activate_more_button %}
+            <div class="inline-block">
+              <a href="#info" class="parallelogram orange"><span class="editable">En savoir +</span></a>
             </div>
-        </footer>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
+
+  <div class="row full-width bg-yellow" id="sign">
+    <div class="row">
+      <div class="small-12 columns end">
+        <div class="title text-center">
+	  <span class="editable">Déjà</span> <span id="nb_signatures_content">{{page.formulaire.nb_signataires}}</span> <span class="editable">signataires</span>
+        </div>
+
+        <div class="text text-center editable"><p>Praesent ullamcorper vel mauris at pretium. Fusce efficitur urna id enim ultrices lacinia. Cras quam enim, blandit in urna et, accumsan maximus libero. Nullam aliquam dui in ante pulvinar, sit amet ullamcorper est fermentum. Cras ullamcorper egestas sodales. Vivamus venenatis est in elementum feugiat. Maecenas porta mauris vestibulum, interdum turpis in, dictum nisi. Morbi porta erat vel pulvinar suscipit. Sed volutpat metus vehicula, suscipit nibh a, pharetra elit. Phasellus felis odio, viverra eu sodales a, porttitor sit amet diam.</p></div>
+
+        <div class="required text-center editable"><p>* champs obligatoires</p></div>
+        {% include form.html %}
+      </div>
+    </div>
+  </div>
+  {% if page.contenu.activate %}
+  <div class="row full-width bg2" id="bg2" style="background: url('{{page.contenu.image_path}}') no-repeat scroll center center / auto 100%;"></div>
+  {% endif %}
+  <div class="row full-width bg-beige" id="info">
+    <div class="row">
+      <div class="small-12 columns end">
+        <div class="title text-center editable"><h2>Integer a nibh fringilla, suscipit.</h2></div>
+        <div class="text editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus. Vestibulum posuere magna vitae posuere euismod.</p></div>
+
+        <div class="text-center">
+          <a href="#sign" class="parallelogram"><span class="editable">Je signe la pétition</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div class="row full-width bg3" style="background: url('{{page.footer.image_path}}') no-repeat center center / auto 100%;">
+    <div class="row padding">
+        {% if page.footer.activate %}
+        <div class="small-12 columns end">
+          <div class="title text-center white editable"><h2 style="color: white;">Integer a nibh fringilla, suscipit.</h2></div>
+          <div class="subtitle text-center editable"><p>Etiam eget velit erat. Aenean diam sem, interdum a sapien id, hendrerit cursus est. Praesent cursus mi massa, nec finibus dolor volutpat euismod. In a eros vel lorem finibus semper. In hac habitasse platea dictumst. Morbi congue at risus non lobortis. Duis consectetur lobortis luctus.</p></div>
+          
+            {% case page.footer.bloc %}
+            
+            {% when '3' %}
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-4 columns end text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            
+            {% when '2' %}
+            <div class="large-6 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            <div class="large-6 columns text text-center editable"><p>Blabla Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.</p></div>
+            
+            {% else %}
+            <div class="large-12 columns text text-center editable">
+	Lorerro quiandipsam, que nonecustis sin cus, untium auda volore commolorum ulparis erro quiae nonsedis adit, qui consequame seque dolendam atqui dolor sum.
+            </div>
+            {% endcase %}
+        </div>
+        {% endif %}
+      </div>
+        {% include t_footer_care.html %}
+      </div>
+        {% include credits.html %}
+        {% include foundation.html %}
+    <script>
+			$(document).ready(function(){
+				 if ("email" in p){
+						 $("input[name='email']").val(p["email"]);
+				 }
+				 if ("firstname" in p){
+						 $("input[name='firstname']").val(p["firstname"]);
+				 }
+				 if ("lastname" in p){
+						 $("input[name='lastname']").val(p["lastname"]);
+				 }
+			});
+	</script>   
+    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+    <script>
+        {% if page.code_campagne != nill and page.code_campagne != empty %}
+        var counter_name = "counter" + "-" + "{{ page.code_campagne }}";
+        var fb = new Firebase("{{site.fire_base_url}}");
+        {% else %}
+        console.log("No counter name");
+        var count_name = "counter";
+        var fb = new Firebase("{{site.fire_base_url}}" + count_name);
+        {% endif %}
+      fb.child(counter_name).on("value", function(show) {
+	var base_nbr = 0;
+	{% if page.formulaire.nb_signataires %}
+	  var base_nbr = parseInt("{{ page.formulaire.nb_signataires }}");
+	{% endif %}
+	var base_nbr = (base_nbr - 1) + show.val();
+	document.getElementById("nb_signatures_header").innerHTML = base_nbr;
+	document.getElementById("nb_signatures_content").innerHTML = base_nbr;
+	Firebase.goOffline();
+      });
+    </script>
+
+
+
