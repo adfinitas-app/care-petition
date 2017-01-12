@@ -1,26 +1,87 @@
-url: "http://petition.carefrance.org/"
-url_master: "http://www.carefrance.org"
-url_iraiser: "https://donner.carefrance.org"
-name: CARE France - Signez une pétition
-logo: /static/img/logo.png
-encoding: UTF-8
-woopra_id: carefrance.org
-threads_id: LEFMVr
-fb_link: "https://fr-fr.facebook.com/CARE.France"
-tw_link: "https://twitter.com/carefrance"
-mode_dons:
-  - bouton
-  - equivalence
-fire_base_url: https://care-petition.firebaseio.com/
-blocs:
+url: 'http://famous-squash.cloudvent.net'
+url_iraiser: 'https://coeursvaillants-amesvaillantes.iraiser.eu'
+iraiser_counter_user_api: ucoeursvaillantsapi
+iraiser_counter_user_pass: hTJTazsx
+author: adfinitas
+header:
+  lang: fr
+collections:
+  projets:
+    output: true
+    permalink: /projet/:title/
+  temoignages:
+    output: true
+    permalink: /temoignage/:title/
+  images:
+    output: true
+    permalink: /image/:title/
+  evenements:
+    output: true
+    permalink: /evenement/:title/
+  liste_projets:
+    output: true
+    permalink: /liste/:title/
+defaults:
+  - scope:
+      path: ""
+      type: "temoignages"
+    values:
+      layout: "collection"
+      my_collect: "temoignages"
+  - scope:
+      path: ""
+      type: "images"
+    values:
+      layout: "collection"
+      my_collect: "images"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "collection"
+      my_collect: "posts"
+  - scope:
+      path: ""
+      type: "evenements"
+    values:
+      layout: "collection"
+      my_collect: "evenements"
+  - scope:
+      path: ""
+      type: "projets"
+    values:
+      layout: "collection"
+      my_collect: "projets"
+  - scope:
+      path: ""
+      type: "liste_projets"
+    values:
+      layout: "collection"
+type_de_dons:
+  - once
+  - regular
+reductions:
+  - '75%'
+  - '66%'
+calculatrice:
+  reduction: '75%'
+  plafond: 529
+  message_depassement_plafond: 'La réduction de don est de 75 % dans la limite de 529 € (plafond 2015). Au-delà, la réduction d’impôt est de 66 % dans la limite de 20 % de votre revenu imposable.'
+types:
+  - rouge
+  - transparent
+couleurs:
+  - bleu
+  - rouge
+  - jaune
+blocs_equivalences:
   - "1"
   - "2"
   - "3"
-default_data:
-    site_link: "http://www.carefrance.org"
-    fb_link: "https://www.facebook.com/CARE.France"
-    tw_link: "https://twitter.com/CAREfrance"
-collections:
-  posts:
-    output: true
-    permalink: "/posts/:title/"
+  - "4"
+#boutons:
+#  - "0"
+#  - "1"
+#  - "2"
+#  - "3"
+#  - "4"

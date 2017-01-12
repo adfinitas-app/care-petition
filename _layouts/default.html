@@ -1,0 +1,173 @@
+---
+---
+<!doctype html>
+<html class="no-js" lang="{{ site.header.lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page.title}}</title>
+    <meta name="description" content="{% if page.introduction %}{{ page.introduction }}{% else %}{{ page.meta.description }}{% endif %}" />
+    <link href='//fonts.googleapis.com/css?family=Work+Sans:400,100,500,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/foundation.min.css" />
+    <link rel="stylesheet" href="/css/own.css" />
+    <script src="/js/vendor/modernizr.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <!-- Woopra Tracker CVAV -->
+<script>
+	!function(){var a,b,c,d=window,e=document,f=arguments,g="script",h=["config","track","trackForm","trackClick","identify","visit","push","call"],i=function(){var a,b=this,c=function(a){b[a]=function(){return b._e.push([a].concat(Array.prototype.slice.call(arguments,0))),b}};for(b._e=[],a=0;a<h.length;a++)c(h[a])};for(d.__woo=d.__woo||{},a=0;a<f.length;a++)d.__woo[f[a]]=d[f[a]]=d[f[a]]||new i;b=e.createElement(g),b.async=1,b.src="//static.woopra.com/js/w.js",c=e.getElementsByTagName(g)[0],c.parentNode.insertBefore(b,c)}("woopra");
+
+	function extractUrlParams(){
+		var t = document.location.search.substring(1).split('&'); var f = [];
+		for (var i=0; i<t.length; i++){
+			var x = t[ i ].split('=');
+			f[x[0]]=decodeURIComponent(x[1]);
+		}
+		return f;
+	};
+
+	var p = extractUrlParams();
+	if ('email' in p) {
+		if ('lastname' in p && 'firstname' in p) {
+			woopra.identify({
+				email: p['email'],
+				name: p['firstname'] + ' ' + p['lastname'],
+				lastname: p['lastname'],
+				firstname: p['firstname'],
+			});
+		} else {
+			woopra.identify({email: p['email']})
+		}
+	}
+
+	woopra.config({
+		domain: "coeursvaillants-amesvaillantes.org",
+		cookie_domaine: ".coeursvaillants-amesvaillantes.org" 
+	});
+	woopra.track();
+</script>
+  </head>
+  <body>
+    {{ content }}
+
+    {% assign module=site.footer %}
+
+    /* Default JS include */
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script src="/js/list.js"></script>
+    <script src="/js/list.pagination.min.js"></script>
+    <script type="text/javascript" src="http://api.filepicker.io/v2/filepicker.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      $(document).foundation({
+        equalizer : {
+          // Specify if Equalizer should make elements equal height once they become stacked.
+          equalize_on_stack: true
+        }
+      });
+    </script>
+
+    <script>
+      if (typeof id == 'undefined') {
+        var id = 0;
+      }
+      var id = id + 1;
+      var options = {
+        valueNames: [ ],
+        page: 1,
+        plugins: [
+        ListPagination({})
+        ]
+      };
+      $("#listId").attr("id", "listId" + id);
+      var listObj = new List('listId' + id, options);
+    </script>
+    <!-- Calculatrice impot -->
+    <script>
+  if (typeof clac_impot_reduc != 'undefined' && clac_impot_reduc == 1) {
+    $(document).ready(function(){
+          {% assign pourcentage="66%" %}
+          $('#calc-input, #calc-inter').keyup(function() {
+            var impot = Math.trunc($("#calc-input").val());
+            var value = parseInt($("#calc-inter").val());
+            var pourcentage = "{{ pourcentage }}";
+            var plafond = impot * 0.20;
+            var reduction;
+
+            if (value > 0 && impot > 0) {
+                if (plafond >= value) {
+            	    reduction = Math.trunc(value * (66/100));
+                    $('#calc-result').html(impot - reduction);
+                  }
+                else {
+                    reduction = impot - plafond;
+                    $('#calc-result').html(reduction);
+                }
+            $('#don').html(value);
+              var init_link = $("#module_calculatrice_link").attr("href");
+              url = "{{ site.url_iraiser }}" + "?cid=" + "{{ page.module_calculatrice.id_campagne_iraiser }}" + "&amount=" + value * 100 + "&frequency=" + "{{ page.module_calculatrice.type_de_don }}" + "&once_grid[]=" + value * 100 + "&once_grid[]=" + (value + 20) * 100 + "&once_grid[]=" + (value + 35) * 100;
+              $("#module_calculatrice_link").attr("href", url);
+            }
+          });
+    });
+  }
+    </script>
+
+    /* Calculatrice utils */
+    <script>
+      if (typeof calculatrice != 'undefined' && calculatrice == 1) {
+    	$('#calc-input').keyup(function() {
+    	  var value = Math.trunc($("#calc-input").val());
+    	  {% if site.calculatrice.reduction == "75%" %}
+    	    var reduction = Math.trunc(value * (75/100));
+    	  {% elsif site.calculatrice.reduction == "66%" %}
+    	    var reduction = Math.trunc(value * (66/100));
+    	  {% endif %}
+    	  if ((reduction <= {{ site.calculatrice.plafond }} && "{{ site.calculatrice.reduction }}" == "75%") || "{{ site.calculatrice.reduction }}" == "66%")
+    	  {$
+    	    $('#calc-inter').html(reduction);
+    	    $('#calc-result').html(value - reduction);
+    	    } else {
+    	    $('#calc-inter').html("529");
+    	    $('#calc-result').html(value - 529);
+    	  }
+    	  if (value > 0) {
+    	    var init_link = $("#module_calculatrice_link").attr("href");
+    	    url = "{{ site.url_iraiser }}" + "?cid=" + "{{ page.module_calculatrice.id_campagne_iraiser }}" + "&amount=" + value * 100 + "&frequency=" + "{{ page.module_calculatrice.type_de_don }}" + "&once_grid[]=" + value * 100 + "&once_grid[]=" + (value + 20) * 100 + "&once_grid[]=" + (value + 35) * 100;
+    	    $("#module_calculatrice_link").attr("href", url);
+    	  }
+    	});
+      }
+    </script>
+
+    /* Progessbar utils */
+    <script>
+      if (typeof progressbar != 'undefined' && progressbar == 1) {
+    	   $.get( "{{site.url_iraiser}}/api/counter/get?user_api={{site.iraiser_counter_user_api}}&pwd_api={{site.iraiser_counter_user_pass}}&campaigns[]={{page.iraiser_campaign_id}}", function( data ) {
+      	  data = data.substr(data.indexOf("|") + 1);
+      	  number_euro = (parseFloat(data) / 100) + parseFloat({{ page.module_progressbar.montant_a_ajouter }});
+      	  goal_euro = parseFloat({{ page.module_progressbar.objectif }});
+      	  percent_data = (number_euro / goal_euro) * 100;
+          setTimeout(function() {
+          	  $("#number").html(number_euro + " €");
+          }, 1750);
+      	  moveProgressBar(percent_data);
+      	});
+    	 function moveProgressBar(percent_data) {
+    	  var animationLength = 2500;
+    	  // .stop() used to prevent animation queueing
+    	  $('.meter').stop().animate({
+    	    width: percent_data + "%"
+    	  }, animationLength);
+    	  $('.avancement').stop().animate({
+    	    left: percent_data + '%'
+    	  }, animationLength);
+    	  //$('.meter').width(percent_data + "%");
+    	}
+      }
+    </script>
+    {% include swiftype.html %}
+    {% include tracking.html %}
+    {% include iraiser.html %}
+  </body>
+</html>

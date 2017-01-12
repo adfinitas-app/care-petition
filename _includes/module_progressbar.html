@@ -1,0 +1,43 @@
+<div class="module full-size">
+  <div class="row" style="background-color:#4c9fae;padding: 2rem 0 5rem 0;">
+    <div class="large-12 columns">
+      <div class="row">
+	<div class="large-12 columns text-center">
+	  <div class="fleche-progressbar"><img src="/lib/img/fleche-progressbar.png" /></div>
+	  <p class="titre-progressbar">FINANCER CETTE CAMPAGNE</p>
+	</div>
+      </div>
+      <div class="row" style="padding: 1rem 0 2rem;">
+	<div class="large-1 columns hide-for-small-only">&nbsp;</div>
+	<div class="large-10 medium-12 small-12 columns">
+	  <div class="row">
+	    <div class="large-8 medium-12 small-12 columns">
+	      <div class="row" style="padding-top: 0.3rem;">
+		<div class="progress small-12 large-12 radius round" style="margin-bottom:0">
+		  <span class="meter" style="width: 0%"></span>
+		</div>
+		<div class="small-12 large-12 collecte text-left">
+		  <span class="avancement" id="number">0 €</span>
+		</div>
+	      </div>
+	    </div>
+	    <div class="large-4 medium-12 small-12 columns text-center">
+	      <span class="objectif">OBJECTIF  </span>
+	      <span class="montant-objectif">{{ page.module_progressbar.objectif }} €</span>
+	    </div>
+	  </div>
+	</div>
+	<div class="large-1 columns hide-for-small-only">&nbsp;</div>
+      </div>
+      {% include create_iraiser_url.html cid=page.module_progressbar.id_campaign_iraiser amount=page.module_progressbar.montant frequency="once" %}
+      <div class="row">
+	<div class="large-12 columns don-progressbar text-center">
+	  <a href="{{ url }}" class="button don radius">
+	    {{ page.module_progressbar.titre_bouton_don }}
+	  </a>
+	</div>
+      </div>
+    </div>
+  </div>
+  <script>var progressbar = 1;</script>
+</div>

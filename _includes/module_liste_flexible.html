@@ -1,0 +1,65 @@
+<div class="module grey-bg">
+{% assign module=page.module_liste_flexible[include.liste] %}
+{% if list_count %}
+  {% assign list_count=list_count | plus:1 %}
+{% else %}
+  {% assign list_count=0 %}
+{% endif %}
+{% capture id_name %}liste_{{ list_count }}{% endcapture %}
+<div class="row">
+  <div class="large-12 columns">
+    {% include title.html title=module.titre pictogram=module.pictogram description=module.description id=id_name %}
+    <div class="row">
+      <div class="large-12 columns ">
+	<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equalizer>
+	  {% assign blocs=module.blocs %} 
+	  {% for current in blocs %}
+
+	  <li>
+	    <a href="{{ current.url }}" title="{{ titre }}" class="actu" data-equalizer-watch>
+	      {% if current.titre and current.titre != empty %}
+	      <h3>{{ current.titre }}</h3>
+	      {% endif %}
+	      {% if current.background_image_path != nill and current.background_image_path != empty %}
+	      <img alt="actualites" src="{{ current.background_image_path }}" />
+	      {% else %}
+	      <div class="text">
+		{{ current.description }}
+	      </div>
+	      {% endif %}
+	      {% if current.button != "Télécharger" %}
+	      <img class="btn-actu" src="{{ site.buttons[current.button].image }}">
+	    {% else %}
+	      <img class="btn-actu" src="{{ site.buttons[current.button].image }}">
+	    {% endif %}
+	    </a>
+
+	  </li>
+
+	  {% comment %}
+	    <li class="liste-item">
+	    {% assign image=site.buttons[current.button].image %}
+	    {% assign alt=site.buttons[current.button].alt %}
+
+	    <div class="panel centered bloc" style="background-image: url({{ current.background_image_path | uri_escape }}); background-size: cover;" data-equalizer-watch>
+	      <h2 class="title_bloc">{{ current.titre }}</h2>
+	      <p class="description_bloc">{{ current.description }}</p>
+	      <p class="sub-description_bloc">{{ current.sous_description }}</p>
+	      {% if current.button != "Télécharger" %}
+	      <a class="cta-button" href="{{ current.url }}"><img class="bottom" src="{{ site.buttons[current.button].image }}"></a>
+	    {% else %}
+	      <a class="cta-button" target="_blank" href="{{ current.url }}"><img class="bottom" src="{{ site.buttons[current.button].image }}"></a>
+	    {% endif %}
+	      <div style="height: 40px;"></div>
+	    </div>
+
+	    </li>
+	    {% endcomment %}
+
+	  {% endfor %}
+	</ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

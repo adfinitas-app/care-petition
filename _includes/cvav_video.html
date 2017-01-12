@@ -1,0 +1,14 @@
+{% if page.video.actif %}
+  <div class="module full-size">
+    <div class="flex-video">
+      {{ page.video.code_embed_de_la_video }}
+    </div>
+    {% if page.video.legende %}
+      <div class="row">
+        <div class="large-12 columns">
+  	       {{ page.video.legende }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,18 @@
+---
+title: 'Michel (Paris, 1937)'
+introduction: "Avec l'occupation les mouvements de jeunes ont été dissous, les scellés posés sur sur les accès aux sièges des mouvements. Pierre a remarqué qu'une porte de service avait été oubliée, il a pu ainsi pendant toute l'occupation accéder aux archives du mouvement et dans la mesure des moyens de l'époque entretenir avec d'autres une certaine animation de groupes qui se réunissaient..."
+meta:
+  title: 'null'
+  description: 'null'
+configuration_liste:
+  affichage_image: false
+  image_path:
+  blocTexte:
+  publication: true
+  texte:
+  couleur: bleu
+module_images:
+---
+
+
+<div><p>Jusqu'&agrave; l'&acirc;ge de vingt ans. J'ai habit&eacute; Paris sur la paroisse Saint Michel des Batignolles, il y avait une amicale regroupant tous les mouvements de jeunes de la paroisse et notamment un patronage dont l'animateur &eacute;tait Pierre V.</p><p>En 1937, j'avais sept ans, lors de la f&ecirc;te annuelle de l'amicale, il a annonc&eacute; l'adh&eacute;sion du patronage au mouvement C&oelig;urs Vaillants avec pr&eacute;sentation d'un gar&ccedil;on en uniforme. Pierre &eacute;tait professeur au lyc&eacute;e Massillon, tr&egrave;s vite il est devenu Dirigeant National.</p><p>Avec l'occupation les mouvements de jeunes ont &eacute;t&eacute; dissous, les scell&eacute;s pos&eacute;s sur sur les acc&egrave;s aux si&egrave;ges des mouvements. Pierre a remarqu&eacute; qu'une porte de service avait &eacute;t&eacute; oubli&eacute;e, il a pu ainsi pendant toute l'occupation acc&eacute;der aux archives du mouvement et dans la mesure des moyens de l'&eacute;poque entretenir avec d'autres une certaine animation de groupes qui se r&eacute;unissaient sous forme de cat&eacute;ch&egrave;se.</p><p>En juillet 1944, j'ai rencontr&eacute; dans la rue un ancien camarade de classe, il m'a propos&eacute; de me joindre &agrave; un groupe qui montait une pi&egrave;ce de th&eacute;&acirc;tre. Comme il n'y avait gu&egrave;re de distraction &agrave; l'&eacute;poque j'ai dit d'accord. Apr&egrave;s la Lib&eacute;ration les groupes C&oelig;urs Vaillants se sont reconstitu&eacute;s et j'ai accompagn&eacute; les jeunes qui allaient jouer leur pi&egrave;ce de th&eacute;&acirc;tre lors de f&ecirc;tes d'autres groupes. C'est ainsi que je suis devenu Dirigeant C&oelig;urs Vaillants. J'ai fait ma promesse &agrave; Lourdes au pied de la Vierge &agrave; l'entr&eacute;e de l'esplanade au cours d'un p&egrave;lerinage de Fraternel.</p><p>Nous &eacute;tions trois &agrave; nous r&eacute;partir les t&acirc;ches, l'animation des groupes, C&oelig;urs d'or, Ardents, Entra&icirc;neurs. L'&eacute;t&eacute; c'&eacute;tait la colo, au Lac Sauvin, pr&egrave;s d'Arcy sur Cure dans l'Yonne.</p><p>J'ignore ce que sont devenus Pierre R. et Georges K. Ils ont continu&eacute;, pour moi j'ai du quitter Paris en octobre 1948.</p><p>Jusqu'&agrave; mon adh&eacute;sion au mouvement j'&eacute;tais catholique pratiquant, sans plus. La rencontre avec d'autres animateurs Scouts, d'autres patronages m'a fait r&eacute;fl&eacute;chir. Je faisais passer les &eacute;preuves de croix bleues, croix vertes, croix vermeilles. Je me suis dit et toi que fais-tu ? Les C&oelig;urs Vaillants ont &eacute;t&eacute; pour moi le d&eacute;but d'une grande aventure, dans l'Eglise.</p><p>Action Catholique G&eacute;n&eacute;rale des Hommes, &eacute;quipes Notre-Dame, aum&ocirc;nerie des lyc&eacute;es et coll&egrave;ges, paroisses, ainsi que dans la soci&eacute;t&eacute; civile, comit&eacute; des f&ecirc;tes, comit&eacute; de quartier, clubs sportifs, et d'autres engagements. Merci les C&oelig;urs Vaillants !</p></div>

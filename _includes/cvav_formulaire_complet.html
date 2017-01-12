@@ -1,0 +1,137 @@
+<div id="form-info" class="row bkg-blue">
+    <div class="large-10 large-offset-1 end columns">
+        <form action="/remerciement/temoignage_image.html" method="post" data-abide>
+              <div class="row">
+                  <div class="large-12 columns editable"><h2>DÉPOSEZ VOTRE TÉMOIGNAGE</h2></div>
+              </div>
+              <div class="row description">
+                <div class="large-12 columns editable text-left"></div>
+              </div>
+
+              <div class="row">
+                <div class="large-6 columns">
+                  <input type="hidden" name="nom_formulaire" value="depot_temoignage_image" />
+                  <input required class="form-field" type="text" name="firstname" placeholder="VOTRE PRÉNOM*" />
+                  <small class="error">Vous devez renseigner votre prénom</small>
+                </div>
+                <div class="large-6 columns">
+                  <input required class="form-field" type="text" name="lastname" placeholder="VOTRE NOM*" />
+                  <small class="error">Vous devez renseigner votre nom</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <input required class="form-field" type="text" name="address" placeholder="ADRESSE" />
+                  <small class="error">Vous devez renseigner votre adresse</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <input class="form-field" required type="text" name="postcode" placeholder="CODE POSTAL" />
+                  <small class="error">Vous devez renseigner votre code postal</small>
+                </div>
+                <div class="large-6 columns">
+                  <input class="form-field" type="text" name="city" placeholder="VILLE" required />
+                  <small class="error">Vous devez renseigner votre ville</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <input class="form-field" type="text" name="phone" placeholder="TÉLÉPHONE" />
+                </div>
+                <div class="large-6 columns">
+                  <input required class="form-field" type="email" name="email" placeholder="EMAIL*" />
+                  <small class="error">Vous devez renseigner votre email</small>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-3 columns">
+                  <label class="left inline">COEUR VAILLANT DE : </label>
+                </div>
+                <div class="large-4 columns">
+                <input class="form-field" type="number" name="coeurvaillant_de" placeholder="ANNEE" />
+                </div>
+                <div class="large-1 columns">
+                  <label class="left inline">À :</label>
+                </div>
+                <div class="large-4 columns end">
+                <input class="form-field" type="number" name="coeur_vaillant_a" placeholder="ANNEE" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-3 columns">
+                  <label class="left inline">ÂME VAILLANTE DE : </label>
+                </div>
+                <div class="large-4 columns">
+                  <input class="form-field" type="number" name="ame_vaillantes_de" placeholder="ANNEE" />
+                </div>
+                <div class="large-1 columns">
+                  <label class="left inline">À :</label>
+                </div>
+                <div class="large-4 columns end">
+                  <input class="form-field" type="number" name="ame_vaillantes_a" placeholder="ANNEE" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                <input class="form-field" type="text" name="paroisse" placeholder="PAROISSE / COMMUNE" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <textarea rows="4" class="form-field" name="message" placeholder="VOTRE MESSAGE"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <textarea rows="8" required class="form-field" name="message" placeholder="VOTRE TEMOIGNAGE*"></textarea>
+                  <small class="error">Vous devez renseigner un témoignage</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="input-group trigger-file">
+                    <div class="row">
+                      <div class="large-3 columns left">
+                        <label class="inline">
+                          PHOTO : <em style="font-size:70%">(4MO maximum)</em>
+                        </label>
+                      </div>
+                      <div class="large-4 columns left">
+                          <a href="#" class="input-group-button button" style="background-color:#cc3628;">Choisissez un fichier</a>
+                      </div>
+                      <div class="large-5 columns left">
+                        <input name="photo1" class="input-group-field" type="url" placeholder="AUCUN FICHIER CHOISI" disabled />
+                        <input name="photo-1" type="hidden" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <p class="text-right">*Champs obligatoires</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns margin">
+                  <input id="checkbox1" type="checkbox" /><label class="native-color" for="checkbox1">J’autorise Coeurs Vaillants Ames Vaillantes à publier mon témoignage ou l'image que j'envoie</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <button type="submit">Envoyer</button>
+                  <input type="hidden" name="cc_emails[]" value="{{site.data.configuration.formulaire_temoignage_destinataire}}" />
+                </div>
+              </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="http://api.filepicker.io/v2/filepicker.js"></script>

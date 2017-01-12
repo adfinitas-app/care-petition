@@ -1,0 +1,22 @@
+{% include cvav_t2_newsletter.html %}
+<div class="row">
+  <footer class="bkg-red large-12 medium-12 small-12 columns">
+    <div class="row">
+        <div class="large-offset-1 large-4 columns address" itemscope="" itemtype="http://schema.org/Organization">
+            <p class="editable"><span itemprop="name">Fonds C&oelig;urs Vaillants - &Acirc;mes Vaillantes</span><br /><span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address"> <span itemprop="streetAddress">63 avenue de la R&eacute;publique</span><br /><span itemprop="postalCode">92120</span> <span itemprop="addressLocality">Montrouge</span> </span></p>
+        </div>
+        <div class="large-1 columns"></div>
+        <div class="large-6 columns footer-align">
+            <ul>
+              {% for link in site.data.menu.footer %}
+                <li><a href="{{link.url_path}}">{{link.nom}}</a></li>
+                <li>|</li>
+              {% endfor %}
+            </ul>
+        </div>
+      </div>
+  </footer>
+</div>
+<script>
+var nl = 1;
+</script>

@@ -1,0 +1,12 @@
+{% if page.banniere.actif %}
+<div class="module">
+  <img class="module_img" src="{{ page.banniere.image_path }}" alt="{{ page.banniere.alt }}" />
+  {% if page.banniere.legende != empty %}
+    <div class="row">
+      <div class="large-12 columns">
+        <p class="legende paraph-blue text-left">sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc id arcu varius augue posuere commodo. Donec sodales a arcu quis imperdiet.</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
+{% endif %}

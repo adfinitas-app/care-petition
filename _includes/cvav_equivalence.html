@@ -1,0 +1,45 @@
+{% if page.module_equivalence_don.actif %}
+<!-- MODULE EQUIVALENCE-->
+  <div class="module">
+    <div class="row" {% if page.module_equivalence_don.background_bleu %} style="background-color: #66a5cc" {% endif %}>
+        <div class="large-12 medium-10 small-10 columns">
+
+          <div class="row">
+            <div class="large-12 columns editable">
+                <h2 {% if page.module_equivalence_don.background_bleu == false %} style="color: #005583" {% endif %}>Titre</h2>
+            </div>
+          </div>
+
+          {% for bloc in page.module_equivalence_don.equivalences %}
+          <div class="row equivalence-don" style="margin-bottom:1rem">
+            <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-4 medium-12 small-12 columns text-center" style="padding:1.5rem 0;">
+                      <span class="amount">{{bloc.montant_equivalence}}</span>
+                  </div>
+                  <div class="large-8 medium-12 small-12 columns">
+                      <div class="row">
+                          <div class="large-12 columns text-left">
+                             <p class="equivalence-text" {% if page.module_equivalence_don.background_bleu == false %} style="color: #cc3628" {% endif %}>
+                               <span class="editable">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc id arcu varius augue posuere commodo. Donec sodales a arcu quis imperdiet. Ut et nulla rhoncus, tincidunt velit nec, bibendum nulla. Vivamus ac elementum sapien. Pellentesque habitant morbi tristique senectus</span>
+                             </p>
+                          </div>
+                          <div class="large-3 end columns text-left">
+                              <a target="_blank" href="{{ site.url_iraiser }}/?cid={{page.id_campaign_iraiser}}&once_grid[]={{bloc.montant_equivalence | times : 100}}&once_grid[]={{bloc.montant_equivalence | times : 150}}&once_grid[]={{bloc.montant_equivalence | times : 200}}&amount={{bloc.montant_equivalence | times : 100}}&frequency={{module.type_de_don}}">
+                                <div class="full-btn align-center">
+                                  <p class="footer">
+                                    <span class="align-middle">Faire un don</span>
+                                  </p>
+                                </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+  </div>
+<!-- /MODULE EQUIVALENCE-->
+{% endif %}

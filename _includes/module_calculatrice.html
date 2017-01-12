@@ -1,0 +1,45 @@
+<div class="module">
+  {% assign module=page.module_calculatrice %}
+  {% include title.html title=module.titre pictogram=module.pictogram description=module.description class_title="cyan" %}
+  <div class="form-calc">
+    <div class="row">
+      <div class="small-8 columns">
+	<label for="calc-input" class="right inline calc-text">Montant de votre don</label>
+      </div>
+      <div class="small-4 columns">
+	<div class="row collapse">
+	  <div class="small-9 columns">
+	    <input class="input-value" id="calc-input" type="number" name="amount">
+	  </div>
+	  <div class="small-3 columns">
+	    <span class="postfix">€</span>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns inline-form">
+	<p class="calc-text middle">Votre déduction fiscale</p>
+	<p class="calc-amount-inter">-<span id="calc-inter">0</span>€</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns inline-form">
+	<p class="calc-text-result">Montant de votre don après déduction fiscale</p>
+	<p class="calc-amount-result"><span id="calc-result">0</span>€</p>
+      </div>
+    </div>
+  </div>
+  <div id="msg-limit"  class="row">
+    <div class="large-12 columns">
+      {{ site.calculatrice.message_depassement_plafond }}
+    </div>
+  </div>
+  {% include create_iraiser_url.html cid=page.module_calculatrice.id_campagne_iraiser amount=page.module_calculatrice.montant frequency=page.module_calculatrice.type_de_don %}
+  <div class="row">
+    <div class="large-12 columns">
+      <a id="module_calculatrice_link" class="button long cyan-btn" target="_blank" href="{{ url }}">{{ page.module_calculatrice.texte_bouton_de_don }}</a>
+    </div>
+  </div>
+</div>
+<script>var calculatrice = 1;</script>

@@ -1,0 +1,66 @@
+---
+layout: t2
+---
+<header id="titre" class="large-12 columns">
+  <div class="flecheG">
+      <a href="/nous-soutenir/le-legs-et-la-donation.html"><img src="/img/flecheG.png" alt="" /></a>
+  </div>
+  <h1 class="editable">Nous soutenir</h1>
+      <div class="large-offset-1 large-10 editable">
+          <p>Plusieurs moyens existent pour nous soutenir. Quel que soit le montant ou la fréquence de votre don, votre générosité favorise la poursuite de notre mission.</p>
+      </div>
+</header>
+{% include cvav_menu_nous_soutenir.html %}
+<div id="contenu-tab" class="tabs-content large-12 columns">
+  <section class="content active" id="avantageFiscaux">
+      <div class="row padder-bottom">
+          <div class="large-8 end large-offset-2 text-left editable">
+              <h2>Les avantages Fiscaux</h2>
+              <p class="paraph-blue">Si vous êtes assujetti(e) à l’Impôt sur le revenu, vous pouvez déduire jusqu’à 66 % des sommes versées à notre fond de dotation de votre déclaration d’impôt. Et ce, dans la limite de 20% de votre revenu imposable.</p>
+              <p class="hightligth">Ainsi par exemple, un don de 100€ ne vous revient qu’à 34€ après déduction fiscale.</p>
+              <p class="paraph-blue"> Vous recevez un reçu fiscal justifiant l’ensemble de vos dons.</p>
+              <p class="paraph-blue"> Lorsque le montant de vos dons dépasse la limite de 20 % de votre revenu imposable, l'excédent est reporté sur les 5 années suivantes et ouvre droit <br>à la réduction d'impôt dans les mêmes conditions.</p>
+              <p class="paraph-blue"><strong>Avec le simulateur ci-dessous, visualisez immédiatement l’avantage fiscal que vous réserve votre générosité :</strong></p>
+          </div>
+      </div>
+      <div id="calculette" class="row bkg-blue padder-120">
+          <div class="large-10 large-offset-1 end columns">
+              <div class="center-img editable"><img src="/img/picto-calcul.png" alt="" /></div>
+              <h3 class="editable">Calculer votre <br>réduction d'impôts</h3>
+              <div class="row impot-before">
+                  <div class="large-9 columns impot-text editable">
+                      Impôt sur le revenu à payer <br>avant déduction des dons
+                  </div>
+                  <div class="large-3 columns">
+                      <input type="text" name="impotsBefore" id="calc-input" required>
+                  </div>
+              </div>
+              <div class="row impot-after">
+                  <div class="large-9 columns impot-text editable">
+                      Votre don pour réduire <br>votre impôt sur le revenu
+                  </div>
+                  <div class="large-3 columns">
+                      <input type="text" name="impotsAfter" id="calc-inter" required>
+                  </div>
+              </div>
+              <div class="row ligne">
+                  <div class="large-9 columns impot-text-deduc editable">
+                      Votre impôt sur le revenu après <br>déduction de votre don fiscale
+                  </div>
+                  <div class="large-3 columns text-right">
+                      <span class="total"><span id="calc-result">0</span>€</span>
+                  </div>
+              </div>
+
+
+              <div class="row">
+                      <div class="large-12 columns">
+                          <a href="#" target="_blank" id="module_calculatrice_link"><button type="submit">Je fais un don en ligne de <span id="don"></span> €</button></a>
+                      </div>
+                  </div>
+          </div>
+      </div>
+      {% include cvav_menu_qui_sommes_nous_footer.html %}
+  </section>
+</div>
+<script>var clac_impot_reduc = 1</script>

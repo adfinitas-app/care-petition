@@ -1,0 +1,65 @@
+---
+liste:
+  - titre: Lorem Ipsum
+    url:
+    configuration_liste:
+      affichage_image: true
+      image_path: /uploads/photo-garges2.png
+      couleur: rouge
+      blocTexte: 'Hey !'
+footer_bouton:
+  actif: true
+  background_bleu: true
+  type: transparent
+  boutons:
+    - titre: Je fais un don
+      url_path: 'https://coeursvaillants-amesvaillantes.iraiser.eu/b/mon-don'
+layout: t2
+---
+<div class="row">
+  <header id="titre" class="large-12 columns">
+    <div class="flecheG">
+        <a href="/qui-sommes-nous/pourquoi-un-fond-de-dotation.html"><img src="/img/flecheG.png" alt="" /></a>
+    </div>
+    <div class="flecheD">
+        <a href="/actualites/toutes-les-actualites.html"><img src="/img/flecheD.png" alt="" /></a>
+    </div>
+    <h1 class="editable">Les projets que nous soutenons</h1>
+    <div class="large-offset-1 large-10">
+        <p class="editable"></p>
+    </div>
+  </header>
+</div>
+
+<div class="row">
+  <div class="large-12">
+    <ul id="listId" class="liste-bloc large-block-grid-2 medium-block-grid-2 small-block-grid-1" data-equalizer>
+      {% for post in site.liste_projets %}
+      {% if post.configuration_liste.publication == true %}
+      <li>
+        <div {% if post.configuration_liste.couleur == 'bleu' %}class="bkg-marine blocha padder-bottom" {% elsif post.configuration_liste.couleur == 'jaune' %} class="bkg-yellow blocha padder-bottom" {% else %} class="bkg-red blocha padder-bottom" {% endif %} data-equalizer-watch>
+          <h3>{{ post.title }}</h3>
+          {% if post.configuration_liste.affichage_image %}
+          <div class="center-img">
+            <a href="{{ post.url }}"><img src="{{post.configuration_liste.image_path}}" alt="" /></a>
+          </div>
+          {% elsif post.configuration_liste.blocTexte != "" %}
+          <p><a href="{{ post.url }}">{{ post.configuration_liste.blocTexte }}</a></p>
+          {% else %}
+          <p><a href="{{ post.url }}">{{ post.introduction }}</a></p>
+          {% endif %}
+          <a href="{{ post.url }}"><div class="bloc-plus"></div></a>
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns pagination-centered">
+    <ul class="pagination"></ul>
+  </div>
+</div>
+{% include cvav_bouton_footer.html %}

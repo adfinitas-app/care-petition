@@ -1,0 +1,18 @@
+---
+title: 'Pierre-Antoine (Calais, 1948)'
+introduction: "Comment résumer ces 2 ans d'activités et quelles valeurs ont-elles favorisé chez des garçons de 10 ans environ : vivre-ensemble, se dépenser, découvrir notre région, le tout plongé dans une atmosphère d'effort, de droiture, d'esprit d'équipe..."
+meta:
+  title: 'null'
+  description: 'null'
+configuration_liste:
+  affichage_image: false
+  image_path: /img/mfjotte_160212v2.jpg
+  blocTexte:
+  publication: true
+  texte: "J'y ai appris la vie d'équipe dans le sens de la coopération, également le goût de l'ascèse pour soi-même, sans se comparer, ni juger les autres. J'y ai appris à voir la valeur de l'autre."
+  couleur: jaune
+module_images:
+---
+
+
+<div><p>Mon p&egrave;re &eacute;tant cheminot, nous d&eacute;m&eacute;nagions tous les 3/4 ans et nous habitions Calais en 1948, 1949 et 1950 ; &agrave; cette &eacute;poque, la partie Nord de la ville &eacute;tait encore totalement d&eacute;truite hormis la tour de guet et l'&eacute;glise Notre Dame o&ugrave; le Capitaine De Gaulle se maria vers 1920.</p><p>J'&eacute;tais en CM1 et CM2 dans une &eacute;cole libre de quartier compos&eacute;e de 2 classes : les "petits" (CP, CE1, CE2) et les "grands" (CM1 et CM2) : cette classe double se tenait dans une seule salle avec un po&ecirc;le &agrave; charbon en son centre ; un ma&icirc;tre remarquable en avait la responsabilit&eacute; et j'ai gard&eacute; des contacts &eacute;pistolaires avec e maitre jusqu'au Bac.</p><p>&Agrave; c&ocirc;t&eacute; de l'&eacute;cole, se tenait le patronage des C&oelig;urs Vaillants (CV) avec la pr&eacute;sence d'un aum&ocirc;nier pour encadrer la vingtaine de gar&ccedil;ons plein d'id&eacute;es et d'&eacute;nergie ; suivant la saison et le temps nos activit&eacute;s &eacute;taient "dedans" ou "dehors" :</p><p>- messe dominicale &agrave; l'&eacute;glise du Sacr&eacute;-C&oelig;ur toute proche,</p><p>- projection de films fixes (vue par vue) : dont Tintin ?</p><p>- construction en Meccano d'une &eacute;tag&egrave;re pour supporter une statue de Marie,</p><p>- jeux dans le parc Richelieu (Calais Nord) ou roulades dans les dunes existantes &agrave; l'&eacute;poque (depuis elles ont &eacute;t&eacute; aras&eacute;es pour laisser plus de place aux chaises longues et nos jambes vues : activation de la circulation sanguine garantie,</p><p>- grandes ballades jusqu&rsquo;aux Fontinettes (point de convergence des 3 lignes de chemin de fer vers Dunkerque, vers Lille et vers Paris,</p><p>Pendant l'une des grandes vacances, s&eacute;jour collectif de 10 jours avec l'aum&ocirc;nier et un ou deux adultes (?) dans un centre en dur &agrave; Hardinghen (20 km au sud de Calais) : c'&eacute;tait mon premier &eacute;loignement du nid familial, mais visite des parents le dimanche.</p><p>Comment r&eacute;sumer ces 2 ans d'activit&eacute;s et quelles valeurs ont-elles favoris&eacute; chez des gar&ccedil;ons de 10 ans environ : vivre-ensemble, se d&eacute;penser, d&eacute;couvrir notre r&eacute;gion, le tout plong&eacute; dans une atmosph&egrave;re d'effort, de droiture, d'esprit d'&eacute;quipe ; peut-&ecirc;tre tourn&eacute; sur soi-m&ecirc;me sans ouverture vers les Autres ?</p><p>Aujourd'hui je garde un bon souvenir de cette p&eacute;riode ; &eacute;tant retourn&eacute; &agrave; Calais il y a 5 ans, j'ai pu retrouver l'&eacute;cole primaire agrandie et Calais Nord reconstruite.</p><p>Nos petits-enfants se sont eux orient&eacute;s vers le Scoutisme : probl&egrave;me de disponibilit&eacute; d'encadrants.</p><p>Voil&agrave; quelques souvenirs d'il y a presque 70 ans.</p><p>"&Agrave; C&oelig;ur Vaillant, rien d'impossible".</p></div>

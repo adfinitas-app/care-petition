@@ -1,0 +1,55 @@
+---
+layout: default
+---
+{% include cvav_nav_mobile.html %}
+<div class="row padder-top">
+  <div class="large-3 small-12 columns nav">
+		{% include cvav_nav_desktop.html %}
+	</div>
+  <div id="contenu" class="large-9 columns">
+    <div class="row">
+      <header id="titre" class="large-12 columns">
+        {% include cvav_nav_collection.html %}
+        <h1>{{page.title}}</h1>
+        {% if page.introduction %}
+        <div class="large-offset-1 large-10">
+            <p>{{page.introduction}}</p>
+        </div>
+        {% endif %}
+      </header>
+    </div>
+
+    {% include cvav_video.html %}
+
+    {% include cvav_image.html %}
+
+    {% if page.my_collect == 'projets' %}
+      <!-- MODULE PROGRESSBAR-->
+      {% include cvav_progressbar.html %}
+      <!-- /MODULE PROGRESSBAR-->
+    {% endif %}
+
+
+    <!-- CONTENT-->
+    <div class="row cvav-content paraph-blue">
+      <div class="large-8 end large-offset-2 columns text-left module-text bkg-white">
+      {{content}}
+      </div>
+    </div>
+    <!-- /CONTENT-->
+
+    {% include cvav_bouton_footer.html %}
+
+    {% if page.my_collect == 'temoignages' %}
+      {% include cvav_formulaire_mise_en_relation.html %}
+    {% elsif page.my_collect == 'images' %}
+      {% include cvav_formulaire_mise_en_relation.html %}
+    {% else %}
+      {% include cvav_formulaire.html %}
+    {% endif %}
+
+    <!-- NEWSLETTER FOOTER -->
+    {% include cvav_t2_footer.html %}
+    <!-- /NEWSLETTER FOOTER -->
+  </div>
+</div>

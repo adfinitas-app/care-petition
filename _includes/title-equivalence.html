@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="large-12 columns" style="padding-left:0;margin-bottom:1rem">
+        <div class="row">
+            <div class="large-12 columns">
+                <h2>{{ include.title }}</h2>
+            </div>
+        </div>
+        {% if include.description != empty %}
+        <div class="row description">
+          <div class="large-12 columns">
+            <p>{{ include.description }}</p>
+          </div>
+        </div>
+        {% endif %}
+    </div>
+</div>

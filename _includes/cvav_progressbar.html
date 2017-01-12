@@ -1,0 +1,39 @@
+{% if page.module_progressbar.actif %}
+  <div class="module-progress full-size">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
+          <div class="large-offset-1 large-11 columns text-center">
+            <p class="nomarg text-left"><span>{{page.module_progressbar.texte}}&nbsp;</span> <span><strong>{{page.module_progressbar.objectif}}</strong></span><span><strong>&euro;</strong></span></p>
+          </div>
+        </div>
+        <div class="row padder-bottom">
+        <div class="large-1 columns hide-for-small-only">&nbsp;</div>
+        <div class="large-11 medium-12 small-12 columns">
+          <div class="row">
+            <div class="large-8 medium-12 small-12 columns">
+              <div class="row" style="padding-top: 0.3rem;">
+                <div class="progress small-12 large-12 radius round" style="margin-bottom:0;height: 45px;">
+                  <span class="meter" style="width: 0%" id="number"></span>
+                  <span class="avancement"></span>
+                </div>
+              </div>
+            </div>
+          <div class="large-3 medium-12 small-12 columns text-center end" style="padding-left: 0px;">
+            <a href="{{ site.url_iraiser }}/?cid={{page.iraiser_campaign_id}}" class="nomarg full-btn equalizer colle">
+              Faire un don
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="large-1 columns hide-for-small-only">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns don-progressbar text-center">
+      </div>
+    </div>
+  </div>
+    </div>
+    <script>var progressbar = 1;</script>
+  </div>
+{% endif %}

@@ -1,0 +1,79 @@
+<div id="form-info" class="row bkg-blue">
+    <div class="large-10 large-offset-1 end columns">
+        <form id="form_revivre" action="/remerciement/temoignage_image.html" method="post" data-abide>
+              <div class="row">
+                  <div class="large-12 columns editable"><h2>FORMULAIRE D'INSCRIPTION</h2></div>
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <input required class="form-field" type="text" name="lastname" placeholder="VOTRE NOM*" />
+                  <small class="error">Vous devez renseigner votre nom</small>
+                </div>
+                <div class="large-6 columns">
+                  <input type="hidden" name="nom_formulaire" value="depot_temoignage_image" />
+                  <input required class="form-field" type="text" name="firstname" placeholder="VOTRE PRÉNOM*" />
+                  <small class="error">Vous devez renseigner votre prénom</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <input class="form-field" type="text" name="phone" placeholder="TÉLÉPHONE" />
+                </div>
+                <div class="large-6 columns">
+                  <input required class="form-field" type="email" name="email" placeholder="EMAIL*" />
+                  <small class="error">Vous devez renseigner votre email</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <input class="form-field" type="text" name="address" placeholder="ADRESSE" />
+                  <!-- <small class="error">Vous devez renseigner votre adresse</small> -->
+                </div>
+                <div class="large-6 columns">
+                  <input class="form-field" type="text" name="city" placeholder="VILLE"  />
+                  <!-- <small class="error">Vous devez renseigner votre ville</small> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <input class="form-field"  type="text" name="postcode" placeholder="CODE POSTAL" />
+                  <!-- <small class="error">Vous devez renseigner votre code postal</small> -->
+                </div>
+                <div class="large-6 columns">
+                  <input class="form-field" type="text" name="city" placeholder="DATE DE NAISSANCE"  />
+                  <!-- <small class="error">Vous devez renseigner votre date de naissance</small> -->
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <p class="text-right">*Champs obligatoires</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <button id="btn_form_revivre" type="submit">Envoyer</button>
+                  <input type="hidden" name="cc_emails[]" value="{{site.data.configuration.formulaire_temoignage_destinataire}}" />
+                </div>
+              </div>
+        </form>
+    </div>
+</div>
+<script src="/js/vendor/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(document).keypress(function(e){
+            if (e.which == 13){
+                return false;
+            }
+        });
+        $("#btn_form_revivre").click(function(e){
+           e.preventDefault();
+           woopra.track("form_revivre", {email:$("input[name='email']").val()}, function(){
+               $("#form_revivre").submit();
+           });
+        });
+    });
+</script>
+<script type="text/javascript" src="http://api.filepicker.io/v2/filepicker.js"></script>

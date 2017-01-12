@@ -1,0 +1,18 @@
+	{% for item in include.items %}
+		{% if item.title == page.title %}
+			{% assign current_index = forloop.index0 %}
+
+			{% if forloop.last %}
+			  {% if include.next_collection.docs and include.next_collection.title != nill and include.next_collection.title != empty %}
+					{% assign items = include.next_collection.docs | sort: 'order' %}
+					<a href="{{ items.first.url }}" class="next"  title="Continue to {{ include.next_collection.title }}"><img src="/img/icons/arrow-forward.svg" /></a>
+				{% else %}
+					<span class="next disabled"></span>
+				{% endif %}
+			{% else %}
+				{% assign next_index = forloop.index0 | plus: 1 %}
+				<a href="{{ include.items[next_index].url }}" class="next"><img src="/img/icons/arrow-forward.svg" /></a>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+

@@ -1,0 +1,102 @@
+---
+layout: t2
+video:
+  actif: true
+  code_embed_de_la_video: '#'
+  legende: toto légende
+header_bouton:
+  bouton: '1'
+  background_bleu: false
+  type: transparent
+footer_bouton:
+  bouton: '0'
+  background_bleu: false
+  type: transparent
+---
+<div class="row">
+  <header id="titre" class="large-12 columns">
+    {% include cvav_nav_page.html %}
+    <h1 class="editable">MErci !</h1>
+    <div class="large-offset-1 large-10">
+        <p class="editable">Votre demande de mise en relation a bien &eacute;t&eacute; prise en compte.</p>
+    </div>
+  </header>
+</div>
+
+{% if page.header_bouton.bouton != '0' %}
+<div class="row {{page.header_bouton.type}}" {% if page.header_bouton.background_bleu %}style="background-color:#66a5cc"{% endif %}>
+  <div class="medium-12 large-12 small-12">
+    <div class="medium-9 large-9 small-9 columns large-centered medium-centered">
+      {% case page.header_bouton.bouton %}
+      {% when '4' %}
+      <!-- 4 boutons -->
+      <div class="large-3 medium-6 small-12 columns editable"><div class="full-btn align-center"><p><span style="line-height: 16px;">Toutes les actualit&eacute;s</span></p></div></div>
+      <div class="large-3 medium-6 small-12 columns editable"><div class="full-btn align-center"><p><span style="line-height: 16px;">&Eacute;v&egrave;nements</span></p></div></div>
+      <div class="large-3 medium-6 small-12 columns editable"><div class="full-btn align-center"><p><span class="align-middle"><a href="#">C</a>ampagnes</span></p></div></div>
+      <div class="large-3 medium-6 small-12 columns editable">
+          <a href="#"><div class="full-btn align-center"><p><span class="align-middle">Faire un don</span></p></div></a>
+      </div>
+      {% when '3' %}
+      <!-- 3 boutons -->
+      <div class="large-4 medium-12 small-12 columns editable"><div class="full-btn align-center"><p><span style="line-height: 16px;">Toutes les actualit&eacute;s</span></p></div></div>
+      <div class="large-4 medium-12 small-12 columns editable"><div class="full-btn"><p><span style="line-height: 16px;">&Eacute;v&egrave;nements</span></p></div></div>
+      <div class="large-4 medium-12 small-12 columns editable"><div class="full-btn"><p><span style="line-height: 16px;">Campagnes</span></p></div></div>
+      {% when '2' %}
+      <!-- 2 boutons -->
+      <div class="large-6 medium-6 small-12 columns editable">
+          <a href="#"><div class="full-btn align-center"><p><span class="align-middle">Déposer un témoignage</span></p></div></a>
+      </div>
+       <div class="large-6 medium-6 small-12 columns editable">
+           <a href="#"><div class="full-btn align-center"><p><span class="align-middle">Tous les témoignages</span></p></div></a>
+      </div>
+      {% when '1' %}
+      <!-- 1 bouton -->
+      <div class="large-12 medium-12 small-12 columns editable"><div class="full-btn align-center"><p><a href="/index.html">Retour &agrave; l'accueil</a></p></div></div>
+      {% endcase %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% include cvav_video.html %}
+
+<div class="row padder-bottom cvav-content paraph-blue">
+    <div class="large-8 end large-offset-2 text-left editable"></div>
+</div>
+
+{% if page.footer_bouton.bouton != '0' %}
+<div class="row {{page.header_bouton.type}}" {% if page.header_bouton.background_bleu %}style="background-color:#66a5cc"{% endif %}>
+  <div class="medium-12 large-12 small-12">
+    <div class="medium-9 large-9 small-9 columns large-centered medium-centered">
+      {% case page.footer_bouton.bouton %}
+      {% when '4' %}
+      <!-- 4 boutons -->
+      <div class="large-3 medium-6 small-12 columns editable"><div class="full-btn align-center"><p><span style="line-height: 16px;">Toutes les actualit&eacute;s</span></p></div></div>
+      <div class="large-3 medium-6 small-12 columns editable"><div class="full-btn align-center"><p><span style="line-height: 16px;">&Eacute;v&egrave;nements</span></p></div></div>
+      <div class="large-3 medium-6 small-12 columns editable"><div class="full-btn align-center"><p><span class="align-middle"><a href="#">C</a>ampagnes</span></p></div></div>
+      <div class="large-3 medium-6 small-12 columns editable">
+          <a href="#"><div class="full-btn align-center"><p><span class="align-middle">Faire un don</span></p></div></a>
+      </div>
+      {% when '3' %}
+      <!-- 3 boutons -->
+      <div class="large-4 medium-12 small-12 columns editable"><div class="full-btn align-center"><p><span style="line-height: 16px;">Toutes les actualit&eacute;s</span></p></div></div>
+      <div class="large-4 medium-12 small-12 columns editable"><div class="full-btn"><p><span style="line-height: 16px;">&Eacute;v&egrave;nements</span></p></div></div>
+      <div class="large-4 medium-12 small-12 columns editable"><div class="full-btn"><p><span style="line-height: 16px;">Campagnes</span></p></div></div>
+      {% when '2' %}
+      <!-- 2 boutons -->
+      <div class="large-6 medium-6 small-12 columns editable">
+          <a href="#"><div class="full-btn align-center"><p><span class="align-middle">Déposer un témoignage</span></p></div></a>
+      </div>
+       <div class="large-6 medium-6 small-12 columns editable">
+           <a href="#"><div class="full-btn align-center"><p><span class="align-middle">Tous les témoignages</span></p></div></a>
+      </div>
+      {% when '1' %}
+      <!-- 1 bouton -->
+      <div class="large-12 medium-12 small-12 columns editable">
+          <a href="#"><div class="full-btn align-center"><p><span class="align-middle">Faire un don</span></p></div></a>
+      </div>
+      {% endcase %}
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,75 @@
+---
+layout: t2
+---
+<header id="titre" class="large-12 columns">
+  <div class="flecheG">
+      <a href="/retrouvons-nous/toutes-les-images.html"><img src="/img/flecheG.png" alt="" /></a>
+  </div>
+  <div class="flecheD">
+      <a href="/nous-soutenir/le-legs-et-la-donation.html"><img src="/img/flecheD.png" alt="" /></a>
+  </div>
+    <h1 class="editable">Nous soutenir</h1>
+        <div class="large-offset-1 large-10 editable">
+            <p>Plusieurs moyens existent pour nous soutenir. Quel que soit le montant ou la fréquence de votre don, votre générosité favorise la poursuite de notre mission.</p>
+        </div>
+</header>
+{% include cvav_menu_nous_soutenir.html %}
+<div id="contenu-tab" class="tabs-content large-12 columns">
+    <section class="content active " id="don">
+        <div class="row padder-70">
+            <div class="large-12 columns editable">
+                <img class="full-width editable" src="/img/visu-donenligne.jpg" alt="" />
+            </div>
+            <div class="large-10 large-offset-1 columns padder-40 editable">
+            <p class="paraph-blue">Tout simplement plus efficace, votre soutien en ligne représente moins de frais de gestion tout en offrant une source de revenus constante et prévisible pour nos actions. En direct depuis votre smartphone ou depuis votre ordinateur, vous choisissez en toute sécurité le montant de votre don.</p>
+            </div>
+             <div class="large-offset-4 large-4 columns end editable">
+                <a href="{{site.url_iraiser}}"><div class="full-btn"><p><span class="align-middle">Je fais un don en ligne</span></p></div></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <img class="full-width editable" src="/img/visu-donregulier.jpg" alt="" />
+            </div>
+            <div class="large-10 large-offset-1 columns padder-40">
+            <p class="paraph-blue editable">Le don régulier nous permet de déployer nos missions sur le long terme avec davantage de souplesse et de sécurité. Le prélèvement régulier, nous permet de mieux planifier nos projets et d’anticiper nos capacités de trésorerie. Mensuelle ou trimestrielle, vous choisissez de répartir automatiquement votre contribution tout au long de l’année. Vous pilotez ainsi votre générosité en toute liberté.  Vous augmentez, diminuez ou interrompez votre contribution sur simple demande écrite à Fonds Cœurs Vaillants – Âmes Vaillantes.</p>
+            </div>
+             <div class="large-offset-4 large-4 columns padder-40 end editable">
+                <a href="{{site.url_iraiser}}"><div class="full-btn"><p><span class="align-middle">Je fais un don régulier</span></p></div></a>
+            </div>
+        </div>
+        <div class="row padder-20 editable">
+            <div class="center-img"><img src="/img/fleche.png" alt="" /></div>
+
+            <h1 class="editable">Avec votre don vous soutenez <br>nos projets</h1>
+        </div>
+
+        <ul id="listId" class="liste-bloc large-block-grid-2 medium-block-grid-2 small-block-grid-1" data-equalizer>
+          {% for post in site.projets %}
+          {% if post.configuration_liste.publication == true %}
+          <li>
+            <div {% if post.configuration_liste.couleur == 'bleu' %}class="bkg-marine blocha padder-bottom" {% elsif post.configuration_liste.couleur == 'jaune' %} class="bkg-yellow blocha padder-bottom" {% else %} class="bkg-red blocha padder-bottom" {% endif %} data-equalizer-watch>
+              <h3>{{ post.title }}</h3>
+              {% if post.configuration_liste.affichage_image %}
+              <div class="center-img">
+                <a href="{{ post.url }}"><img src="{{post.configuration_liste.image_path}}" alt="" /></a>
+              </div>
+              {% elsif post.configuration_liste.blocTexte != "" %}
+              <p><a href="{{ post.url }}">{{ post.configuration_liste.blocTexte }}</a></p>
+              {% else %}
+              <p><a href="{{ post.url }}">{{ post.introduction }}</a></p>
+              {% endif %}
+              <a href="{{ post.url }}"><div class="bloc-plus"></div></a>
+          </div>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+
+        <div class="row padder-120">
+            <div class="large-offset-4 large-4 columns end editable">
+                <a href="/projets/tous-les-projets.html"><div class="full-btn"><p><span class="align-middle">Voir tous les projets</span></p></div></a>
+            </div>
+        </div>
+    </section>
+</div>

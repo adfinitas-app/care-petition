@@ -1,0 +1,1 @@
+{% capture url %}{{ site.url_iraiser }}?cid={{ include.cid }}&amount={{ include.amount | times:100 }}&frequency={{ include.frequency }}&once_grid[]={{ include.amount | times:100 }}&once_grid[]={{ include.amount | plus : 20 | times:100 }}&once_grid[]={{ include.amount | plus : 35 | times:100 }}{% endcapture %}
